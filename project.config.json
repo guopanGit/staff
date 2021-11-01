@@ -1,17 +1,30 @@
 {
     "setting": {
-        "urlCheck": true,
+        "urlCheck": false,
         "es6": true,
-        "postcss": true,
-        "minified": true,
-        "newFeature": true
+        "newFeature": false,
+        "postcss": false,
+        "mockUpdate": false,
+        "minified": false,
+        "scripts": false,
+        "mockLogin": false
     },
-    "appid": "wx99f8dae1628ea76f",
+    "appid": "ttdb1aada744233dd601",
     "projectname": "参谋",
     "condition": {
         "miniprogram": {
-            "current": -1,
-            "list": []
+            "current": 1635734283415,
+            "list": [
+                {
+                    "id": 1635734283415,
+                    "name": "我的",
+                    "pathName": "pages/my/my",
+                    "query": "",
+                    "scene": "990001",
+                    "launchFrom": "scan",
+                    "location": "qr_code"
+                }
+            ]
         }
     }
 }

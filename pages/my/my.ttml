@@ -1,2 +1,50 @@
 <!-- pages/my/my.ttml -->
-<text>我的页面</text>
+<view>
+    <view class="bgTop"></view>
+<view class="wrap">
+    <view class="uesr" bindtap="islogin"> 
+        <view class="uesrImgwrap">
+            <view class="uesrImg">
+                <image class="uesrImg" src="{{avatarUrl}}" mode="" />
+            </view>
+            <view class="uesrName">{{nickName}}</view>
+        </view>
+    
+    </view>
+    <image class="uesrBg" src="/image/Rectangle 219.png" />
+    <view class="main">
+        <image class="stay mainItem" src="/image/ruzhu.jpg" mode=""  bindtap="toDetails" data-val="1"/>
+        <image class="course mainItem" src="/image/kecheng.jpg" mode="" bindtap="toDetails" data-val="2"/>
+    </view>
+    <view class="other">
+     <view class="otherItem" bindtap="toDetails" data-val="3">
+         <image class="icon" src="/image/duibi.png" mode="" />
+         <view class="itemName">
+             <text>同行业对比记录</text>
+             <text class="iconfont icon-right"></text>
+         </view>
+     </view>
+     <view class="otherItem" bindtap="toDetails" data-val="4">
+        <image class="icon" src="/image/jilu.png" mode="" />
+        <view class="itemName">
+            <text>项目浏览记录</text>
+            <text class="iconfont icon-right"></text>
+        </view>
+    </view>
+    <view class="otherItem" bindtap="toDetails" data-val="5">
+        <image class="icon" src="/image/ziyuan.png" mode="" />
+        <view class="itemName">
+            <text>测测我的创业喜好</text>
+            <text class="iconfont icon-right"></text>
+        </view>
+    </view>
+    <view class="otherItem" bindtap="toDetails" data-val="6">
+        <image class="icon" src="/image/fenxiang.png" mode="" />
+        <view class="itemName">
+            <text>分享我们</text>
+            <text class="iconfont icon-right"></text>
+        </view>
+    </view>
+    </view>
+</view>
+</view>
