@@ -1,0 +1,59 @@
+/* 全局通用样式 */
+
+page {
+   line-height: 1;
+}
+
+/* 字体大小 */ 
+
+.fz18{
+    font-size: 18rpx;
+  }
+  
+  .fz20 {
+    font-size: 20rpx;
+  }
+  
+  .fz24 {
+    font-size: 24rpx;
+  }
+  
+  .fz26 {
+    font-size: 26rpx;
+  }
+  
+  .fz28 {
+    font-size: 28rpx;
+  }
+  
+  .fz30 {
+    font-size: 30rpx;
+  }
+  
+  .fz32 {
+    font-size: 32rpx;
+  }
+  
+  .fz34 {
+    font-size: 34rpx;
+  }
+  
+  .fz36 {
+    font-size: 36rpx;
+  }
+  
+  .fz42 {
+    font-size: 42rpx;
+  }
+  
+  .fz46 {
+    font-size: 46rpx;
+  }
+  
+  .fz48 {
+    font-size: 48rpx;
+  }
+  
+  .fw{
+    font-weight: 700;
+  }
