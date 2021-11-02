@@ -1,0 +1,30 @@
+/* 我要入驻.ttss */
+ 
+page {
+   background-color: #3d74f3;
+}
+
+.wrap{
+    padding: 96rpx 28rpx;
+}
+
+.imgWrap{
+    width: 694rpx;
+    height: 878rpx;
+    border-radius: 16rpx;
+    background-color: #fff;
+}
+
+.btnWrap{
+    padding: 0 28rpx;
+    text-align: center;
+}
+
+.btn{
+    height: 94rpx;
+    line-height: 94rpx;
+    background-color: #fff;
+    font-size: 36rpx;
+    color: #333;
+    border-radius: 8rpx;
+}

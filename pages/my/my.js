@@ -23,7 +23,6 @@ Page({
         })
       },
       fail:(res) => {
-        console.log(res)
         this.setData({
           avatarUrl: '',
           nickName: '请授权',

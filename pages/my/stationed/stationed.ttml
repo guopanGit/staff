@@ -1,2 +1,11 @@
 <!-- 我要入驻.ttml -->
-<view>我要入驻</view>
+<view>
+   <view class="wrap">
+    <view class="imgWrap">
+        <image class="imgWrap" src="{{imgUrl}}" mode="" />
+    </view>
+   </view>
+   <view class="btnWrap" bindtap="save">
+       <view class="btn">保存图片</view>
+   </view>
+</view>
