@@ -12,6 +12,8 @@
     "pages/my/share/share"
   ],
   "window":{
+    "navigationBarBackgroundColor":"#fff",
+    "navigationBarTextStyle":"black",
     "backgroundColor": "#eee",
     "backgroundTextStyle": "light"
   },

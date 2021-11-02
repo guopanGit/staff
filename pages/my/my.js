@@ -17,6 +17,7 @@ Page({
         let userInfo = res.userInfo;
         // 获取appid 待补充
         console.log(userInfo);
+        tt.setStorageSync('userInfo', userInfo);
         this.setData({
           avatarUrl: userInfo.avatarUrl,
           nickName: userInfo.nickName,

@@ -1,2 +1,40 @@
 <!-- 我的课程.ttml -->
-<text>我的课程</text>
+<view class="wrap">
+  <view>
+    <view class="title">未观看</view>
+    <view>
+      <view class="videoItem" tt:for="{{list}}">
+         <view bindtap="getDetails" data-val="{{item}}">
+          <view class="video">
+              <image class="videoIcon" src="/image/shipin.png" mode="" />
+          </view>
+          <view class="videoTitle">送件侠送件侠送件侠送件侠送件侠</view>
+          <view class="nums">
+              <view class="num">5000人加入学习</view>
+              <view class="time">限时免费</view>
+          </view>
+          <view class="price">30分钟 / ￥99.9</view>
+         </view>
+      </view>
+    </view>
+  </view>
+ 
+<view>
+    <view class="title">已观看</view>
+    <view>
+      <view class="videoItem" tt:for="{{list}}">
+         <view bindtap="getDetails" data-val="{{item}}">
+          <view class="video">
+              <image class="videoIcon" src="/image/shipin.png" mode="" />
+          </view>
+          <view class="videoTitle">送件侠送件侠送件侠送件侠送件侠</view>
+          <view class="nums">
+              <view class="num">5000人加入学习</view>
+              <view class="time">限时免费</view>
+          </view>
+          <view class="price">30分钟 / ￥99.9</view>
+         </view>
+      </view>
+    </view>
+</view>
+</view>

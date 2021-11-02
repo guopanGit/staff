@@ -1,2 +1,23 @@
 <!-- 项目浏览记录.ttml -->
-<text>项目浏览记录</text>
+<view>
+    <view tt:for="{{8}}">
+        <view class="itemWrap" bindtap="toDetails" data-val="{{item}}">
+         <view class="logoWrap">
+             <image class="logoWrap" src="/image/logo.png" mode="" />
+         </view>
+         <view class="itemRight">
+          <view class="titleWrap">
+              <view class="name">送件侠</view>
+              <view class="simple">送件侠，后现在时代聚合者</view>
+          </view>
+          <view class="plan"> 
+              <view>融资中 / 融资中 / 融资中</view>
+              <view>5-10万</view>
+          </view>
+          <view>
+              <text class="type">互联网/快递</text>
+          </view>
+         </view>
+        </view>
+    </view>
+</view>

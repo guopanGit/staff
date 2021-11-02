@@ -1,1 +1,66 @@
-/* /Users/mac/Documents/work/staff/参谋/pages/my/course/course.ttss */
+/* 我的课程.ttss */
+
+.wrap{
+    padding-bottom: 40rpx;
+}
+
+.title{
+    padding-left: 28rpx;
+    margin-top: 40rpx;
+    font-size: 40rpx;
+    font-weight: 600;
+    color: #333;
+}
+
+.videoItem{
+    display: inline-block;
+    width: 332rpx;
+    margin: 22rpx 0 0 28rpx; 
+}
+
+.videoIcon{
+    width: 48rpx;
+    height: 46rpx;
+    position: absolute;
+    left: 12rpx;
+}
+
+.video{
+    width: 332rpx;
+    height: 188rpx;
+    border-radius: 12rpx;
+    position: relative;
+    background-color: cadetblue;
+}
+
+.videoTitle{
+    width: 308rpx;
+    height: 88rpx;
+    margin-top: 14rpx;
+    font-size: 28rpx;
+    line-height: 44rpx;
+    font-weight: 500;
+    color: #333;
+}
+
+.nums{
+    display: flex;
+    width: 308rpx;
+    margin-top: 14rpx;
+    justify-content: space-between;
+    font-size: 28rpx;
+}
+
+.num{
+    font-size: 24rpx;
+    color: #666;
+}
+
+.time{
+    color: #3D74F3;
+}
+
+.price{
+    margin-top: 14rpx;
+    color: #F96D09;
+}

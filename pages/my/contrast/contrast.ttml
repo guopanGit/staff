@@ -1,2 +1,20 @@
 <!-- 同行业对比.ttml -->
-<text>同行业对比</text>
+<view class="wrap">
+  <view tt:for="{{6}}">
+    <view class="resultWrap" bindtap="toDetails" data-val="{{item}}">
+        <view class="ityemWrap">
+            <text>对比分析结果</text>
+            <text class="iconfont icon-right"></text>
+        </view>
+        <view class="time">2021-10-29</view>
+        <view class="nameWrap">
+            <image class="blue" src="/image/blue.png" mode="" />
+            <image class="red" src="/image/red.png" mode="" />
+            <view class="itemName"> 
+                <view class="name mr40">送件侠</view>
+                <view class="name">送件侠</view>
+            </view>
+        </view>
+    </view>
+  </view>
+</view>

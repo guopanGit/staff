@@ -10,9 +10,9 @@
             </view>
             <view class="uesrName">{{nickName}}</view>
         </view>
-    
+        <image class="uesrBg" tt:if="{{!avatarUrl}}" src="/image/Ellipse 38.png" mode="aspectFill" />
+        <image class="uesrBg" tt:if="{{avatarUrl}}" src="{{avatarUrl}}" mode="aspectFill"/>
     </view>
-    <image class="uesrBg" src="/image/Rectangle 219.png" />
     <view class="main">
         <image class="stay mainItem" src="/image/ruzhu.jpg" mode=""  bindtap="toDetails" data-val="1"/>
         <image class="course mainItem" src="/image/kecheng.jpg" mode="" bindtap="toDetails" data-val="2"/>

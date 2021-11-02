@@ -1,2 +1,17 @@
 <!-- 我的创业测试.ttml -->
-<text>我的创业测试</text>
+<view>
+    <image class="bgTop" src="/image/bgtop.png" mode="" />
+    <view class="conter">
+        <image class="uesrImg" src="/image/Ellipse 38.png" mode="" />
+        <view class="uesrNsme">你的名字</view>
+       <!-- <image class="uesrImg" src="{{userInfo.avatarUrl}}" mode="" />
+        <view class="uesrNsme">{{userInfo.nickName}}</view> -->
+        <view class="typeList">
+            <view class="type waive">保守型</view>
+            <view class="type checked">稳健型</view>
+            <view class="type waive">成长型</view>
+            <view class="type waive">进取型</view>
+        </view>
+    </view>
+
+</view>

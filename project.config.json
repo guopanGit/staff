@@ -18,7 +18,16 @@
                 {
                     "id": 1635734283415,
                     "name": "我的",
-                    "pathName": "pages/my/stationed/stationed",
+                    "pathName": "pages/my/hobby/hobby",
+                    "query": "",
+                    "scene": "990001",
+                    "launchFrom": "scan",
+                    "location": "qr_code"
+                },
+                {
+                    "id": 1635845922958,
+                    "name": "1",
+                    "pathName": "pages/my/my",
                     "query": "",
                     "scene": "990001",
                     "launchFrom": "scan",

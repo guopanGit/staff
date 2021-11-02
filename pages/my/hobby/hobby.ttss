@@ -1,1 +1,53 @@
-/* /Users/mac/Documents/work/staff/参谋/pages/my/hobby/hobby.ttss */
+/* 我的创业测试.ttss */
+
+.bgTop{
+    width: 750rpx;
+    height: 176rpx;
+    }
+
+    .conter{
+     position: relative;
+    }
+
+    .uesrImg{
+        position: absolute;
+        left: 50%; 
+        width: 176rpx;
+        height: 176rpx;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .uesrNsme{
+        padding-top: 116rpx;
+        text-align: center;
+        font-size: 44rpx;
+        color: #000;
+    }
+
+    .typeList{
+        padding: 44rpx 0 20rpx 30rpx;
+    }
+
+    .type{
+        display: inline-block;
+        width: 148rpx;
+        height: 50rpx;
+        line-height: 50rpx;
+        text-align: center;
+        font-size: 28rpx;
+        margin-left: 20rpx;
+        border-radius: 200rpx;
+       
+        
+    }
+
+    .waive{
+      background: #C4C4C4;
+      color: #000;
+    }
+
+    .checked{
+        background: #3D74F3;
+        color: #fff;
+    } 

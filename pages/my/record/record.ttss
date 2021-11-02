@@ -1,1 +1,55 @@
 /* /Users/mac/Documents/work/staff/参谋/pages/my/record/record.ttss */
+
+.itemWrap{
+    display: flex;
+    background-color: #EEF7FF;
+    margin: 40rpx 28rpx;
+    padding: 32rpx 20rpx;
+    border-radius: 24rpx;
+}
+
+.itemRight{
+    padding-left: 24rpx;
+}
+
+.logoWrap{
+    width: 158rpx;
+    height: 158rpx;
+    border-radius: 158rpx;
+}
+
+.titleWrap{
+    padding-top: 6rpx;
+    color: #333333;
+}
+
+.name{
+    display: inline-block;
+    width: 108rpx;
+    margin-right: 20rpx;
+    font-size: 36rpx;  
+}
+
+.simple{
+    display: inline-block;
+    font-size: 28rpx;
+}
+
+.plan{
+    display: flex;
+    justify-content: space-between;
+    width: 390rpx;
+    padding-top: 14rpx;
+    font-size: 24rpx;
+    color: #666;
+}
+
+.type{
+    display: inline-block;
+    border-radius: 8rpx;
+    padding: 4rpx 8rpx;
+    margin-top: 14rpx;
+    font-size: 24rpx;
+    color: #fff;
+    background-color: #F96C04;
+}

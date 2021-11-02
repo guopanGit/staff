@@ -13,9 +13,9 @@
 .bgTop{
 font-size: 16rpx;
 width: 750rpx;
-height: 60rpx;
+height: 176rpx;
 background-color: #3d74f3;
-border-radius: 0 0 60rpx 60rpx;
+border-radius: 0 0 100% 100%;
 }
 
 .uesr{
@@ -30,8 +30,11 @@ border-radius: 0 0 60rpx 60rpx;
     position: absolute;
     width: 694rpx;
     height: 202rpx;
-    top: 25rpx;
+    border-radius: 16rpx;
+    top: 28rpx;
+    left: 28rpx;
     z-index: 1;
+    opacity: 0.3;
 }
 
 .uesrImgwrap{
