@@ -1,4 +1,4 @@
-// /Users/mac/Documents/work/staff/参谋/pages/my/my.js
+// pages/my/my.js
 
 import {
   ajaxPromise,
@@ -68,17 +68,29 @@ Page({
   toDetails(e){
    let val = e.currentTarget.dataset.val
    if(val == '1'){
-    showToast('我也入驻')
+    tt.navigateTo({
+      url:'/pages/my/stationed/stationed'
+    })
    } else if(val == '2'){
-    showToast('我的课程')
+    tt.navigateTo({
+      url:'/pages/my/course/course'
+    })
    }else if(val == '3'){
-    showToast('去同行业对比')
+    tt.navigateTo({
+      url:'/pages/my/contrast/contrast'
+    })
   }else if(val == '4'){
-    showToast('项目浏览记录')
+    tt.navigateTo({
+      url:'/pages/my/record/record'
+    })
   }else if(val == '5'){
-    showToast('测测我的创业喜好')
+    tt.navigateTo({
+      url:'/pages/my/hobby/hobby'
+    })
   }else if(val == '6'){
-    showToast('分享我们')
+    tt.navigateTo({
+      url:'/pages/my/share/share'
+    })
   }
    }
 })

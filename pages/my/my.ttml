@@ -5,7 +5,8 @@
     <view class="uesr" bindtap="islogin"> 
         <view class="uesrImgwrap">
             <view class="uesrImg">
-                <image class="uesrImg" src="{{avatarUrl}}" mode="" />
+                <image tt:if="{{!avatarUrl}}" class="uesrImg" src="/image/Ellipse 38.png" mode="" />
+                <image tt:if="{{avatarUrl}}" class="uesrImg" src="{{avatarUrl}}" mode="" />
             </view>
             <view class="uesrName">{{nickName}}</view>
         </view>

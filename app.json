@@ -3,7 +3,13 @@
     "pages/select/select",
     "pages/collect/collect",
     "pages/my/my",
-    "pages/init/init"
+    "pages/init/init",
+    "pages/my/stationed/stationed",
+    "pages/my/course/course",
+    "pages/my/contrast/contrast",
+    "pages/my/record/record",
+    "pages/my/hobby/hobby",
+    "pages/my/share/share"
   ],
   "window":{
     "backgroundColor": "#eee",
