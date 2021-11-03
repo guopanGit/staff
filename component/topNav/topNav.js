@@ -9,22 +9,6 @@ Component({
       type: Object,
       value: {},
       observer(newVal, oldVal){
-        console.log(newVal, oldVal)
-        let bgcolor = '#fff';
-        let color = '#333';
-        let pages = 1;
-        if(newVal.color){
-          color = newVal.color
-        }
-        if(newVal.bgcolor){
-          bgcolor = newVal.bgcolor
-        }
-        if(newVal.pages){
-          pages = newVal.pages
-        }
-        newVal.color = color
-        newVal.bgcolor = bgcolor
-        newVal.pages = pages
         this.setData({
           navData: newVal
         })

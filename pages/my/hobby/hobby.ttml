@@ -1,5 +1,9 @@
 <!-- 我的创业测试.ttml -->
+
 <view>
+    <topNav nav-data="{{navData}}"></topNav>
+</view>
+<view style="margin-top: {{height*2 + 20}}px;">
     <image class="bgTop" src="/image/bgtop.png" mode="" />
     <view class="conter">
         <image class="uesrImg" src="{{userInfo.avatarUrl}}" mode="aspectFill" />

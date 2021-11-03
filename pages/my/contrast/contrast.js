@@ -11,7 +11,9 @@ Page({
     let pages = getCurrentPages().length; 
     let navData = {
       title:'同业对比记录',
-      pages
+      pages,
+      bgcolor : '#fff',
+      color : '#333'
     }
     let height = getApp().globalData.height
     this.setData({

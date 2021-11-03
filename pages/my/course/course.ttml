@@ -1,5 +1,8 @@
 <!-- 我的课程.ttml -->
-<view class="wrap">
+<view>
+  <topNav nav-data="{{navData}}"></topNav>
+</view>
+<view class="wrap" style="margin-top: {{height*2 + 20}}px;">
   <view>
     <view class="title">未观看</view>
     <view>

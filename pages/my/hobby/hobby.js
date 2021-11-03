@@ -12,20 +12,19 @@ Page({
   },
   onLoad(){
     let userInfo = tt.getStorageSync('userInfo');
-    console.log(userInfo)
+    let pages = getCurrentPages().length; 
+    let navData = {
+      title:'我的创业测试',
+      pages,
+      bgcolor: "#3d74f3",
+      color:'#fff'
+    }
+    let height = getApp().globalData.height
     this.setData({
+      navData,
+      height,
       userInfo 
     })
-  },
-
-  onReady(){
-    tt.setNavigationBarTitle({
-      title: "我的创业测试",
-     })
-     tt.setNavigationBarColor({
-      frontColor: "#000000",
-      backgroundColor: "#3d74f3"
-     })
   },
 
   // 去测试

@@ -16,7 +16,8 @@ Page({
       let navData = {
         title:'我要入驻',
         pages,
-        color: "#3d74f3",
+        bgcolor: "#3d74f3",
+        color : '#fff',
       }
       let height = getApp().globalData.height
       this.setData({

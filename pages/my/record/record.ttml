@@ -1,5 +1,8 @@
 <!-- 项目浏览记录.ttml -->
 <view>
+    <topNav nav-data="{{navData}}"></topNav>
+</view>
+<view style="margin-top: {{height*2 + 20}}px;">
     <view tt:for="{{8}}">
         <view class="itemWrap" bindtap="toDetails" data-val="{{item}}">
          <view class="logoWrap">

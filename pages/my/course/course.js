@@ -5,12 +5,23 @@ import {
 
 Page({
   data: {
+    navData:{},
+    height: 0,
    list:[{a:1},{a:2},{a:3},{a:4},{a:5},{a:6}]
   },
   onLoad(options) {
-    tt.setNavigationBarTitle({
-      title: "我的课程",
-     })
+    let pages = getCurrentPages().length; 
+    let navData = {
+      title:'我的课程',
+      pages,
+      bgcolor : '#fff',
+      color : '#333'
+    }
+    let height = getApp().globalData.height
+    this.setData({
+      navData,
+      height
+    })
   },
   getDetails(e){
    console.log(e)

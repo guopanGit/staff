@@ -14,7 +14,6 @@ Page({
     height:0
   },
   onLoad(){
-    getNetworkType()
     let pages = getCurrentPages().length; 
     let navData = {
       title:'我的',

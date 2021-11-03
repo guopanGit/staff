@@ -9,8 +9,7 @@ App({
 
     // 获取胶囊位置
     let bottom = tt.getMenuButtonLayout().bottom;
-    this.globalData.bottom = bottom
-    console.log(bottom)
+    this.globalData.bottom = bottom;
 
     // 检查更新
     const updateManager = tt.getUpdateManager();
