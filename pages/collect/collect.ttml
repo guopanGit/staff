@@ -1,2 +1,8 @@
 <!-- /Users/mac/Documents/work/staff/参谋/pages/collect/collect.ttml -->
-<text>收藏</text>
+<view>
+    <topNav nav-data="{{navData}}"></topNav>
+</view>
+<view tt:if="{{list < 1}}" class="default">
+    <image class="defaulImg" src="/image/collect.png" mode="" />
+    <view>您还没有收藏任何项目哦～</text>
+</view>

@@ -26,5 +26,5 @@
 </view>
 <view tt:if="{{list < 1}}" class="default">
     <image class="defaulImg" src="/image/record.png" mode="" />
-    <view>您还没有浏览任何项目哦～</text>
+    <view>您还没有浏览任何项目哦～</view>
 </view>
