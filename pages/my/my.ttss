@@ -2,10 +2,6 @@
 
 @import '../../css/icon.ttss';
 
-page{
-    overflow: hidden;
-}
-
 .wrap{
     width: 750rpx;
     padding: 28rpx;

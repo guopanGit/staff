@@ -1,12 +1,14 @@
 // 项目浏览记录.js
 
  import {
-   showToast
+   showToast,
+   getType
  } from '../../../utils/utils';
 
 Page({
   data: {
-    height:0
+    height:0,
+    list:0
   },
   onLoad(options) {
     let pages = getCurrentPages().length; 
@@ -27,5 +29,10 @@ Page({
     let val = e.currentTarget.dataset.val;
     console.log(val)
     showToast('项目详情')
-   }
+   },
+
+   // 下拉刷新
+   onPullDownRefresh() {
+    tt.stopPullDownRefresh();
+  },
 })

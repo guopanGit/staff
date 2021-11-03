@@ -2,7 +2,7 @@
 <view>
     <topNav nav-data="{{navData}}"></topNav>
 </view>
-<view style="margin-top: {{height*2 + 20}}px;">
+<view style="padding-top: {{height*2 + 20}}px;">
     <image class="bgTop" src="/image/bgtop.png" mode="" />
 <view class="wrap">
     <view class="uesr" bindtap="islogin"> 

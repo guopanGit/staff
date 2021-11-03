@@ -1,9 +1,4 @@
 /* 我的创业测试.ttss */
-
-page{
-    overflow: hidden;
-}
-
 .bgTop{
     width: 750rpx;
     height: 176rpx;

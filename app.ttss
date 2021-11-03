@@ -25,3 +25,20 @@ view{
 .cf9{
   color: #F96C04;
 }
+
+.pb40{
+  padding-bottom: 20rpx;
+}
+
+.defaulImg{
+  width: 240rpx;
+  height: 226rpx;
+  margin-bottom: 66rpx;
+}
+
+.default{
+  padding-top: 500rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #999;
+}

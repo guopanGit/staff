@@ -86,21 +86,27 @@ export function ajaxPromise (url, data, method,){
  * 查询网络
  */
 
-  export function getNetworkType () {
-    tt.getNetworkType({
-      success(res) {
-        let networkType = res.networkType;
-        if (networkType == 'unknown') {
-          networkType = 'none'
-        }
-
-        if (networkType == 'none') {
-          tt.showToast({
-            title:'请检查网络',
-            icon,
-            duration: 1500
-        })
-        }
-      },
+  export function getType () {
+    return new Promise ((resolve) => {
+      tt.getNetworkType({
+        success(res) {
+          let networkType = res.networkType;
+          console.log(networkType)
+          if (networkType == 'unknown') {
+            networkType = 'none'
+          }
+  
+          if (networkType == 'none') {
+            tt.showToast({
+              title:'请检查网络',
+              icon:'fail',
+              duration: 1500
+          })
+          resolve(networkType)
+          } else {
+          resolve(networkType) 
+          }
+        },
+      })
     })
   }
