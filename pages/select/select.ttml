@@ -1,2 +1,7 @@
 <!-- pages/select/select.ttml -->
-<text>精选</text>
+<view>
+    <topNav nav-data="{{navData}}"></topNav>
+</view>
+<view class="pageWrap">
+    <text>精选</text>
+</view>

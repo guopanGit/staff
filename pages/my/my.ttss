@@ -2,20 +2,16 @@
 
 @import '../../css/icon.ttss';
 
+
 .wrap{
     width: 750rpx;
     padding: 28rpx;
-    position: fixed;
-    top: 0rpx;
-
+    transform: translateY(-176rpx);
 }
 
 .bgTop{
-font-size: 16rpx;
-width: 750rpx;
-height: 176rpx;
-background-color: #3d74f3;
-border-radius: 0 0 100% 100%;
+    width: 750rpx;
+    height: 176rpx;
 }
 
 .uesr{
@@ -24,6 +20,7 @@ border-radius: 0 0 100% 100%;
     padding: 32rpx 0 32rpx 40rpx;
     border-radius: 16rpx;
     background-color: #fff;
+    position: relative;
 }
 
 .uesrBg{
@@ -31,8 +28,8 @@ border-radius: 0 0 100% 100%;
     width: 694rpx;
     height: 202rpx;
     border-radius: 16rpx;
-    top: 28rpx;
-    left: 28rpx;
+    top: 0;
+    left: 0;
     z-index: 1;
     opacity: 0.3;
 }

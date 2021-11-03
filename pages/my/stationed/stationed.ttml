@@ -1,6 +1,9 @@
 <!-- 我要入驻.ttml -->
 <view>
-   <view class="wrap">
+    <view>
+        <topNav nav-data="{{navData}}"></topNav>
+    </view>
+   <view class="wrap" style=" margin-top: {{height*2 + 20}}px;">
     <view class="imgWrap">
         <image class="imgWrap" src="{{imgUrl}}" mode="" />
     </view>

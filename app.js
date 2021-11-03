@@ -1,6 +1,11 @@
 App({
   onLaunch (options) {
-
+     // 获取导航栏高度
+    tt.getSystemInfo({
+      success: (res) => {
+        this.globalData.height = res.statusBarHeight
+      }
+    })
     // 检查更新
     const updateManager = tt.getUpdateManager();
     updateManager.onCheckForUpdate((res) =>{
@@ -20,5 +25,8 @@ App({
       }
     })
     
+  },
+  globalData: {
+    height: 0,
   }
 })

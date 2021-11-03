@@ -9,13 +9,20 @@
     "pages/my/contrast/contrast",
     "pages/my/record/record",
     "pages/my/hobby/hobby",
-    "pages/my/share/share"
+    "pages/my/share/share",
+    "component/topNav/topNav"
   ],
   "window":{
     "navigationBarBackgroundColor":"#fff",
     "navigationBarTextStyle":"black",
     "backgroundColor": "#eee",
-    "backgroundTextStyle": "light"
+    "backgroundTextStyle": "light",
+    "navigationStyle": "custom"
+  },
+  "permission": {
+    "scope.album": {
+      "desc": "用于选取图片视频，或保存图片视频到你的相册"
+    }
   },
   "tabBar": {
     "color": "#333",

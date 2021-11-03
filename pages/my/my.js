@@ -9,10 +9,23 @@ import {
 Page({
   data: {
     avatarUrl:'',
-    nickName:''
+    nickName:'',
+    navData:{},
+    height:0
   },
   onLoad(){
     getNetworkType()
+    let pages = getCurrentPages().length; 
+    let navData = {
+      text:'我要入驻',
+      pages,
+      color: "#3d74f3",
+    }
+    let height = getApp().globalData.height
+    this.setData({
+      navData,
+      height
+    })
 
 tt.login({
   force: true,

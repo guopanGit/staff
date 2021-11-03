@@ -1,8 +1,8 @@
 /* 全局通用样式 */
 
-page {
-   line-height: 1;
-   background-color: #fff;
+page{
+  line-height: 1;
+  background-color: #fff;
 }
 
 view{

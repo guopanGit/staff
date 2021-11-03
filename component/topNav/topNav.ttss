@@ -1,0 +1,11 @@
+/* 头部导航组件.ttss */
+
+.vavWap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 750rpx;
+    padding-top: 60rpx;
+    text-align: center;
+    }

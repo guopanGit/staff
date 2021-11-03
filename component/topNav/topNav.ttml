@@ -1,0 +1,7 @@
+<!-- 组件 头部导航 -->
+<view class="vavWap" style="height: {{height*2 + 20}}px;
+background-color: {{color}};
+">{{navData.text}}
+
+
+</view>
