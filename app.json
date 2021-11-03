@@ -13,7 +13,6 @@
     "component/topNav/topNav"
   ],
   "window":{
-    "navigationBarBackgroundColor":"#fff",
     "navigationBarTextStyle":"black",
     "backgroundColor": "#eee",
     "backgroundTextStyle": "light",
@@ -32,20 +31,20 @@
       {
         "pagePath": "pages/select/select",
         "text": "精选",
-        "iconPath": "/image/jingxuan.jpg",
-        "selectedIconPath": "/image/jingxuan1.jpg"
+        "iconPath": "/image/jingxuan.png",
+        "selectedIconPath": "/image/jingxuan1.png"
       },
       {
         "pagePath": "pages/collect/collect",
         "text": "收藏",
-        "iconPath": "/image/shoucang.jpg",
-        "selectedIconPath": "/image/shoucang1.jpg"
+        "iconPath": "/image/shoucang.png",
+        "selectedIconPath": "/image/shoucang1.png"
       },
       {
         "pagePath": "pages/my/my",
         "text": "我的",
-        "iconPath": "/image/my.jpg",
-        "selectedIconPath": "/image/my1.jpg"
+        "iconPath": "/image/my.png",
+        "selectedIconPath": "/image/my1.png"
       }
     ]
   },

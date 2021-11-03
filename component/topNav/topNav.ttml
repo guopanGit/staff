@@ -1,7 +1,10 @@
 <!-- 组件 头部导航 -->
-<view class="vavWap" style="height: {{height*2 + 20}}px;
-background-color: {{color}};
-">{{navData.text}}
-
+<view class="nav-wrap" style="height: {{height*2 + 20}}px;
+background-color: {{navData.bgcolor}}; color: {{navData.color}};
+">
+<view class='nav-title' style='line-height: {{height*2 + 44}}px;'>{{navData.title}}</view>
+<view class="return" bindtap="return" tt:if="{{navData.pages > 1}}">
+ <image class="returnImg" src="/image/return.png" mode="" />
+</view>
 
 </view>

@@ -6,6 +6,12 @@ App({
         this.globalData.height = res.statusBarHeight
       }
     })
+
+    // 获取胶囊位置
+    let bottom = tt.getMenuButtonLayout().bottom;
+    this.globalData.bottom = bottom
+    console.log(bottom)
+
     // 检查更新
     const updateManager = tt.getUpdateManager();
     updateManager.onCheckForUpdate((res) =>{
@@ -28,5 +34,6 @@ App({
   },
   globalData: {
     height: 0,
+    bottom: 0
   }
 })

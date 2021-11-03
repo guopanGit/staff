@@ -17,9 +17,10 @@ Page({
     getNetworkType()
     let pages = getCurrentPages().length; 
     let navData = {
-      text:'我要入驻',
+      title:'我的',
       pages,
-      color: "#3d74f3",
+      bgcolor: "#3d74f3",
+      color:'#fff'
     }
     let height = getApp().globalData.height
     this.setData({
@@ -34,7 +35,7 @@ tt.login({
       success:(res) => {
         let userInfo = res.userInfo;
         // 获取appid 待补充
-        console.log(userInfo);
+       // console.log(userInfo);
         tt.setStorageSync('userInfo', userInfo);
         this.setData({
           avatarUrl: userInfo.avatarUrl,

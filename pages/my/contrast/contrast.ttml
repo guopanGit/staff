@@ -1,5 +1,9 @@
 <!-- 同行业对比.ttml -->
-<view class="wrap">
+<view>
+  <topNav nav-data="{{navData}}"></topNav>
+</view>
+
+<view class="wrap" style="margin-top: {{height*2 + 20}}px;">
   <view tt:for="{{6}}">
     <view class="resultWrap" bindtap="toDetails" data-val="{{item}}">
         <view class="ityemWrap">

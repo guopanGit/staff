@@ -13,25 +13,16 @@
     "projectname": "参谋",
     "condition": {
         "miniprogram": {
-            "current": 1635921866918,
+            "current": 1635734283415,
             "list": [
                 {
                     "id": 1635734283415,
                     "name": "我的",
-                    "pathName": "pages/my/hobby/hobby",
+                    "pathName": "pages/my/my",
                     "query": "",
                     "scene": "990001",
                     "launchFrom": "scan",
                     "location": "qr_code"
-                },
-                {
-                    "id": 1635921866918,
-                    "name": "123",
-                    "pathName": "pages/my/my",
-                    "query": "",
-                    "scene": "024003",
-                    "launchFrom": "qrcode_share",
-                    "location": "share_moments"
                 }
             ]
         }

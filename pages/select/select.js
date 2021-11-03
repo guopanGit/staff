@@ -2,7 +2,7 @@
 Page({
   data: {
     navData:{
-      text:'精选'
+      title:'精选'
     }
   },
   onLoad (options) {

@@ -5,12 +5,19 @@ import {
 
 Page({
   data: {
-
+    navData:{}
   },
   onLoad(options) {
-    tt.setNavigationBarTitle({
-      title: "同业对比记录",
-     })
+    let pages = getCurrentPages().length; 
+    let navData = {
+      title:'同业对比记录',
+      pages
+    }
+    let height = getApp().globalData.height
+    this.setData({
+      navData,
+      height
+    })
   },
 
   toDetails(e){

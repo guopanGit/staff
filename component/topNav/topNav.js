@@ -10,32 +10,45 @@ Component({
       value: {},
       observer(newVal, oldVal){
         console.log(newVal, oldVal)
-        let color = '#fff';
+        let bgcolor = '#fff';
+        let color = '#333';
+        let pages = 1;
         if(newVal.color){
           color = newVal.color
         }
-        console.log(color)
+        if(newVal.bgcolor){
+          bgcolor = newVal.bgcolor
+        }
+        if(newVal.pages){
+          pages = newVal.pages
+        }
+        newVal.color = color
+        newVal.bgcolor = bgcolor
+        newVal.pages = pages
         this.setData({
-          navData: newVal,
-          color
+          navData: newVal
         })
       }
     }
   },
   data: {
-    height: '',
-    navData:{},
-    color:'#fff'
+    height: 0,
+    bottom: 0,
+    navData:{}
   },
   methods: {
     // Component internal method
-    customMethod: function () {},
+    return (e) {
+      console.log(e)
+      tt.navigateBack()
+    },
   },
 
     attached () {
       // 设置导航高度
       this.setData({
-        height: app.globalData.height
+        height: app.globalData.height,
+        bottom: app.globalData.bottom
       })
     }
 });
