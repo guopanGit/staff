@@ -2,16 +2,22 @@
 <view>
     <image class="bgTop" src="/image/bgtop.png" mode="" />
     <view class="conter">
-        <image class="uesrImg" src="/image/Ellipse 38.png" mode="" />
-        <view class="uesrNsme">你的名字</view>
-       <!-- <image class="uesrImg" src="{{userInfo.avatarUrl}}" mode="" />
-        <view class="uesrNsme">{{userInfo.nickName}}</view> -->
+        <image class="uesrImg" src="{{userInfo.avatarUrl}}" mode="aspectFill" />
+        <view class="uesrNsme">{{userInfo.nickName}}</view> 
         <view class="typeList">
             <view class="type waive">保守型</view>
             <view class="type checked">稳健型</view>
             <view class="type waive">成长型</view>
             <view class="type waive">进取型</view>
         </view>
+        <view class="introWrap">
+          <view class="intro">您属于<text class="c3d"
+            >稳健型</text>创业类型，您期望<text class="cf9"
+            >某某</text>行业<text class="c3d"
+            >10万-20万</text>的项目。</view>
+        </view>
+
+        <view class="viewBtn btn" bindtap="toTest">再测一遍</view>
     </view>
 
 </view>

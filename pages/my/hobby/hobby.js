@@ -1,4 +1,11 @@
 // 我的创业测试.js
+
+import {
+  ajaxPromise,
+  showToast,
+  getNetworkType
+} from '../../../utils/utils';
+
 Page({
   data: {
     userInfo:{}
@@ -6,7 +13,6 @@ Page({
   onLoad(){
     let userInfo = tt.getStorageSync('userInfo');
     console.log(userInfo)
-    console.log('1')
     this.setData({
       userInfo 
     })
@@ -21,4 +27,11 @@ Page({
       backgroundColor: "#3d74f3"
      })
   },
+
+  // 去测试
+  toTest() {
+    tt.navigateTo({
+      url:'/pages/test/test'
+    })
+  }
 })

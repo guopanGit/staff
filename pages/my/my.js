@@ -3,6 +3,7 @@
 import {
   ajaxPromise,
   showToast,
+  getNetworkType
 } from '../../utils/utils';
 
 Page({
@@ -11,9 +12,13 @@ Page({
     nickName:''
   },
   onLoad(){
+    getNetworkType()
+
+tt.login({
+  force: true,
+  success: (res) => {
     tt.getUserInfo({
       success:(res) => {
-        console.log(res);
         let userInfo = res.userInfo;
         // 获取appid 待补充
         console.log(userInfo);
@@ -28,8 +33,11 @@ Page({
           avatarUrl: '',
           nickName: '请授权',
         })
-      }
+      },
     });
+  }
+});
+
   },
   onReady(){
     tt.setNavigationBarTitle({
@@ -40,6 +48,8 @@ Page({
       backgroundColor: "#3d74f3"
      })
   },
+
+  // 点击用户名
   islogin(){
     tt.getSetting({
       success: (res) =>{

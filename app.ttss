@@ -8,3 +8,20 @@ page {
 view{
   box-sizing: border-box;
 }
+
+.viewBtn{
+  width: 506rpx;
+  height: 96rpx;
+  line-height: 96rpx;
+  border-radius: 96rpx;
+  text-align: center;
+  font-size: 44rpx;
+}
+
+.c3d{
+  color: #3D74F3;
+}
+
+.cf9{
+  color: #F96C04;
+}

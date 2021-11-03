@@ -70,7 +70,6 @@ export function ajaxPromise (url, data, method,){
  /**
  * 弹框封装 
  */
-
  export function showToast(title,icon){
      if (!icon) {
         icon = 'none'
@@ -82,3 +81,26 @@ export function ajaxPromise (url, data, method,){
         duration: 1500
     })
  }
+
+  /**
+ * 查询网络
+ */
+
+  export function getNetworkType () {
+    tt.getNetworkType({
+      success(res) {
+        let networkType = res.networkType;
+        if (networkType == 'unknown') {
+          networkType = 'none'
+        }
+
+        if (networkType == 'none') {
+          tt.showToast({
+            title:'请检查网络',
+            icon,
+            duration: 1500
+        })
+        }
+      },
+    })
+  }
