@@ -2,6 +2,10 @@
 <view>
     <topNav nav-data="{{navData}}"></topNav>
 </view>
-<view class="pageWrap">
+<view tt:if="{{type}}" class="pageWrap" style="padding-top: {{height*2 + 20}}px;">
     <text>精选</text>
+</view>
+<view tt:if="{{!type}}" class="default">
+    <image class="defaulImg" src="/image/fail.png" mode="" />
+    <view>哎呀，我们还没有捕捉到数据，歇会再来吧～</view>
 </view>

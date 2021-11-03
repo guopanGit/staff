@@ -2,7 +2,8 @@
 Page({
   data: {
     navData:{},
-    list:0
+    height:0,
+    list:3
   },
   onLoad (options) {
     let pages = getCurrentPages().length; 

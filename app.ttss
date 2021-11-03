@@ -30,15 +30,21 @@ view{
   padding-bottom: 20rpx;
 }
 
-.defaulImg{
-  width: 240rpx;
-  height: 226rpx;
-  margin-bottom: 66rpx;
-}
-
 .default{
   padding-top: 500rpx;
   text-align: center;
   font-size: 28rpx;
   color: #999;
+}
+
+.dfailImg{
+  width: 312rpx;
+  height: 288rpx;
+  margin-bottom: 66rpx;
+}
+
+.defaulImg{
+  width: 240rpx;
+  height: 226rpx;
+  margin-bottom: 66rpx;
 }
