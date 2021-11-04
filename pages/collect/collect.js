@@ -3,7 +3,7 @@ Page({
   data: {
     navData:{},
     height:0,
-    list:3
+    list:0
   },
   onLoad (options) {
     let pages = getCurrentPages().length; 

@@ -23,11 +23,9 @@ Component({
   methods: {
     // Component internal method
     return (e) {
-      console.log(e)
       tt.navigateBack()
     },
   },
-
     attached () {
       // 设置导航高度
       this.setData({

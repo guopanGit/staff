@@ -21,7 +21,7 @@ Page({
        return
       } else {
         this.setData({
-          type:true
+          type:false
          })
       }
     })

@@ -4,6 +4,6 @@
 </view>
 <view tt:if="{{list > 0 }}" style="padding-top: {{height*2 + 20}}px;">123</view>
 <view tt:if="{{list < 1}}" class="default">
-    <image class="defaulImg" src="/image/fail.png" mode="" />
+    <image class="defaulImg" src="/image/collect.png" mode="" />
     <view>您还没有收藏任何项目哦～</view>
 </view>

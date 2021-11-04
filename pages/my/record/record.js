@@ -8,7 +8,7 @@
 Page({
   data: {
     height:0,
-    list:0
+    list:6
   },
   onLoad(options) {
     let pages = getCurrentPages().length; 
