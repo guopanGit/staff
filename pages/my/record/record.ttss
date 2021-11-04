@@ -2,9 +2,17 @@
 
 @import url('../../../css/icon.ttss');
 
+.center{
+    padding: 0 28rpx;
+}
+
 .itemWrap{
     display: flex;
     padding: 20rpx 28rpx;
+    margin-bottom: 20rpx;
+    border-radius: 20rpx;
+    box-shadow: 0 8rpx 8rpx rgba(0, 0, 0, 0.25);
+    background-color: #EEF7FF;
 }
 
 .itemRight{
@@ -20,8 +28,9 @@
 }
 
 .titleWrap{
-    padding-top: 6rpx;
-    color: #333333;
+    display: flex;
+    align-items: center;
+    color: #333;
 }
 
 .name{
@@ -49,7 +58,6 @@
     display: inline-block;
     border-radius: 8rpx;
     padding: 4rpx 8rpx;
-    margin-top: 14rpx;
     font-size: 24rpx;
     color: #fff;
     background-color: #F96C04;
@@ -59,7 +67,7 @@
     display: inline-block;
     border-radius: 8rpx;
     padding: 4rpx 8rpx;
-    margin: 14rpx 0 0 20rpx;
+    margin: 0 0 0 20rpx;
     font-size: 24rpx;
     color: #fff;
     background-color: #FF7171;  
@@ -68,7 +76,7 @@
 .titleTyupe{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 .titleDetails{
