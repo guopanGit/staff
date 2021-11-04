@@ -3,9 +3,90 @@
     <topNav nav-data="{{navData}}"></topNav>
 </view>
 <view tt:if="{{type}}" class="pageWrap" style="padding-top: {{height*2 + 20}}px;">
-    <text>精选</text>
+    <image class="bgTop" src="/image/bgtop.png" mode="" />
+    <view class="swiperWrap">
+        <swiper class="swiper" autoplay="{{true}}" circular="{{true}}"
+        previous-margin="28rpx" next-margin = "28rpx"
+        bindchange="currentChange" data-val="{{imgUrls}}"
+        >
+            <block tt:for="{{imgUrls}}">
+                <swiper-item class="swiper-item">
+                    <image src="{{item}}" class="slide-image" mode="aspectFill" />
+                </swiper-item>
+            </block>
+        </swiper> 
+        <view class="currentWrap">
+            <block tt:for="{{imgUrls}}" tt:for-index="ind">
+                <view class="current {{ind == index ? 'nowaday' : '' }}"></view>
+            </block>
+        </view>
+    </view> 
+    <view>
+        <view class="titlewrap">
+            <view class="title">
+                <view class="titleName {{title == 1 ? 'c3' : 'c6' }}" bindtap="switch" data-val="1">匹配项目</view>
+                <view class="titleName {{title == 1 ? 'c6' : 'c3' }}" bindtap="switch" data-val="2">项目课程</view>
+            </view>
+            <image class="titleIndex  {{title == 1 ? 'titleLeft' : 'titleRight' }}"
+            src="/image/titleIndex.png" mode="" />
+        </view>
+        <view tt:if="{{title == 1}}" class="matterWrap">
+            <block tt:for="{{4}}">
+                <view class="content">
+                    <view class="itemWrap" bindtap="toDetails">
+                        <view class="logoWrap">
+                            <image class="logoWrap" src="/image/logo1.png" mode="" />
+                        </view>
+                        <view class="itemRight">
+                         <view class="titleTyupe">
+                            <view class="nameWrap">
+                                <view class="name">送件侠</view>
+                                <view class="type">互联网/快递</view> 
+                                <view class="sum">5-10万</view> 
+                            </view>
+                            <view class="titleDetails">
+                                <text>详情</text>
+                                <text class="iconfont icon-right"></text>
+                            </view>
+                         </view>
+                         <view>
+                            <view class="simple">送件侠，后现在时代聚合者</view> 
+                         </view>
+                         <view class="plan"> 
+                             <view>融资中 / 融资中 / 融资中</view>
+                         </view>
+                        </view>
+                    </view>
+                    <view class="article">
+                     <image class="articleImg" src="/image/grop.jpg" mode="aspectFill" />
+                     <view class="judge"><text class="head">参谋点评：</text>新兴行业，总公司产品研发能力强劲；用户数目达到500万，新型行业，总公司产品研发能力强进。</view>
+                    </view>
+                </view>
+            </block>
+        </view>
+        <view tt:if="{{title == 2}}" class="matterWrap">
+            <view class="bgcf">
+            <block tt:for="{{6}}">
+                <view class="videoItem">
+                    <view bindtap="getDetails" data-val="{{item}}">
+                     <view class="video">
+                         <image class="videoIcon" src="/image/shipin.png" mode="" />
+                     </view>
+                     <view class="videoTitle">送件侠送件侠送件侠送件侠送件侠</view>
+                     <view class="nums">
+                         <view class="num">5000人加入学习</view>
+                         <view class="c3d">限时免费</view>
+                     </view>
+                     <view class="price">30分钟 / ￥99.9</view>
+                    </view>
+                 </view>   
+            </block>
+        </view>
+    </view>
+    </view>
 </view>
+
 <view tt:if="{{!type}}" class="default">
-    <image class="defaulImg" src="/image/fail.png" mode="" />
+    <image class="defaulImg" src="/image/fail.png" mode="aspectFill" />
     <view>哎呀，我们还没有捕捉到数据，歇会再来吧～</view>
 </view>

@@ -9,6 +9,12 @@ view{
   box-sizing: border-box;
 }
 
+.bgTop{
+  width: 750rpx;
+  height: 176rpx;
+  position: absolute;  
+}
+
 .viewBtn{
   width: 506rpx;
   height: 96rpx;
@@ -24,6 +30,18 @@ view{
 
 .cf9{
   color: #F96C04;
+}
+
+.c3{
+  color: #333;
+}
+
+.c6{
+  color: #666;
+}
+
+.bgcf{
+  background-color: #fff;
 }
 
 .pb40{

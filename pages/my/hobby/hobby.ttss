@@ -1,11 +1,8 @@
 /* 我的创业测试.ttss */
-.bgTop{
-    width: 750rpx;
-    height: 176rpx;
-    }
 
     .conter{
      position: relative;
+     padding-top: 176rpx;
     }
 
     .uesrImg{

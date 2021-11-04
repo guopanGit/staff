@@ -1,21 +1,22 @@
-/* /Users/mac/Documents/work/staff/参谋/pages/my/record/record.ttss */
+/* 项目浏览记录.ttss */
+
+@import url('../../../css/icon.ttss');
 
 .itemWrap{
     display: flex;
-    background-color: #EEF7FF;
-    margin: 40rpx 28rpx;
-    padding: 32rpx 20rpx;
-    border-radius: 24rpx;
+    padding: 20rpx 28rpx;
 }
 
 .itemRight{
+    width: 100%;
     padding-left: 24rpx;
+
 }
 
 .logoWrap{
-    width: 158rpx;
-    height: 158rpx;
-    border-radius: 158rpx;
+    width: 124rpx;
+    height: 124rpx;
+    border-radius: 16rpx;
 }
 
 .titleWrap{
@@ -52,4 +53,26 @@
     font-size: 24rpx;
     color: #fff;
     background-color: #F96C04;
+}
+
+.sum{
+    display: inline-block;
+    border-radius: 8rpx;
+    padding: 4rpx 8rpx;
+    margin: 14rpx 0 0 20rpx;
+    font-size: 24rpx;
+    color: #fff;
+    background-color: #FF7171;  
+}
+
+.titleTyupe{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.titleDetails{
+    display: inline-block;
+    font-size: 28rpx;
+    color: #4171F7;
 }

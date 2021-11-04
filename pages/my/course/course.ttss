@@ -56,10 +56,6 @@
     color: #666;
 }
 
-.time{
-    color: #3D74F3;
-}
-
 .price{
     margin-top: 14rpx;
     color: #F96D09;

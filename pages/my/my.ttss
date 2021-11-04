@@ -5,12 +5,6 @@
 .wrap{
     width: 750rpx;
     padding: 28rpx;
-    transform: translateY(-176rpx);
-}
-
-.bgTop{
-    width: 750rpx;
-    height: 176rpx;
 }
 
 .uesr{

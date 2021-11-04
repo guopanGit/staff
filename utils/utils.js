@@ -91,7 +91,6 @@ export function ajaxPromise (url, data, method,){
       tt.getNetworkType({
         success(res) {
           let networkType = res.networkType;
-          console.log(networkType)
           if (networkType == 'unknown') {
             networkType = 'none'
           }
