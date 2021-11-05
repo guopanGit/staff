@@ -52,6 +52,11 @@ view {
     margin-left: 20rpx;
 }
 
+.bar {
+    font-size: 40rpx;
+    color: #333;
+}
+
 .default {
     padding-top: 500rpx;
     text-align: center;

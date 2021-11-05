@@ -3,12 +3,46 @@
     <view>
         <topNav nav-data="{{navData}}"></topNav>
     </view>
-   <view class="wrap" style=" margin-top: {{height*2 + 20}}px;">
-    <view class="imgWrap">
-        <image class="imgWrap" src="{{imgUrl}}" mode="" />
+   <view style="padding-top: {{height*2 + 20}}px;">
+    <view>
+        <image class="imgWrap" src="/image/grop.jpg" mode="aspectFill" />
     </view>
-   </view>
-   <view class="btnWrap" bindtap="save">
-       <view class="btn">保存图片</view>
+    <view class="center">
+        <view class="bar">填写入驻资料</view>
+        <view class="from">
+            <view class="single">
+                <view><text>品牌名称</text><text class="orange">*</text></view>
+                <view>
+                    <input class="input" type="text" placeholder="请输入品牌名称" value="{{userData.title}}"/>
+                </view>
+            </view>
+            <view class="single">
+                <view><text>公司名称</text><text class="orange">*</text></view>
+                <view>
+                    <input class="input" type="text" placeholder="请输入公司名称" value="{{userData.title}}"/>
+                </view>
+            </view>
+            <view class="single">
+                <view><text>所在城市</text><text class="orange">*</text></view>
+                <view>
+                    <input class="input" type="text" placeholder="请输入所在城市" value="{{userData.title}}"/>
+                </view>
+            </view>
+            <view class="single">
+                <view><text>姓名</text><text class="orange">*</text></view>
+                <view>
+                    <input class="input" type="text" placeholder="联系人姓名" value="{{userData.title}}"/>
+                </view>
+            </view>
+            <view class="single">
+                <view><text>手机号</text><text class="orange">*</text></view>
+                <view>
+                    <input class="input" type="number" placeholder="请输入联系人手机号" value="{{userData.title}}"/>
+                </view>
+            </view>
+            
+        </view>
+        <view class="applicat" bindtap="applicat">申请入住</view>
+    </view>
    </view>
 </view>
