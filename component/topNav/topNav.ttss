@@ -39,3 +39,11 @@
     left: 10rpx;
     bottom: 20rpx;
 }
+
+.homeImg{
+    width: 45rpx;
+    height: 41rpx;
+    position: absolute;
+    left: 10rpx;
+    bottom: 20rpx;
+}

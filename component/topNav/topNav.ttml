@@ -3,8 +3,17 @@
 background-color: {{navData.bgcolor}}; color: {{navData.color}};
 ">
 <view class='nav-title' style='line-height: {{height*2 + 44}}px;'>{{navData.title}}</view>
-<view class="return" bindtap="return" tt:if="{{navData.pages > 1}}">
+<!-- 返回上一页 -->
+<view tt:if="{{navData.pages > 1}}" class="return" bindtap="return">
  <image class="returnImg" src="/image/return.png" mode="" />
+</view> 
+<!-- 返回项目详情 -->
+<view tt:if="{{isReturn == 1}}" class="return" bindtap="toAppoint">
+    <image class="returnImg" src="/image/return.png" mode="" />
+</view>
+   <!-- 返回首页 -->
+<view tt:if="{{isHome == 0 && isReturn == 0}}" class="return" bindtap="toHome">
+    <image class="homeImg" src="/image/jingxuan.png" mode="" />
 </view>
 
 </view>

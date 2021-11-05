@@ -2,35 +2,20 @@
 
 @import '../../css/icon.ttss';
 
-.wrap{
-    width: 750rpx;
-    padding: 28rpx;
-}
-
-.uesr{
-    display: flex;
-    height: 202rpx;
-    padding: 32rpx 0 32rpx 40rpx;
-    border-radius: 16rpx;
-    background-color: #fff;
+.topWrap{
     position: relative;
 }
 
-.uesrBg{
-    position: absolute;
-    width: 694rpx;
-    height: 202rpx;
-    border-radius: 16rpx;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 0.3;
+.uesr{
+    width: 100%;
+    height: 268rpx;
+    padding: 28rpx;
+    background-color: #3D74F3;
 }
 
-.uesrImgwrap{
-    display: flex;
-    position: absolute;
-    z-index: 2;
+
+.uesrWrap{
+ display: flex;
 }
 
 .uesrImg{
@@ -40,44 +25,55 @@
 }
 
 .uesrName{
+    line-height: 138rpx;
     font-size: 36rpx;
     font-weight: 400;
-    padding: 43rpx 0 0 24rpx;
+    color: #fff;
+    padding-left: 20rpx;
+}
+
+.join{
+    width: 694rpx;
+    height: 202rpx;
 }
 
 .main{
-    padding: 40rpx 20rpx;
+    position: absolute;
+    left: 28rpx;
+    bottom: -136rpx;
 }
 
-.mainItem{
-    display: inline-block;
-    width: 292rpx;
-    height: 108rpx;
-    border-radius: 8rpx;
-}
+/* 导航 */
 
-.course{
-    margin-left: 40rpx;
+.wrap{
+    width: 750rpx;
+    padding: 136rpx 28rpx 0;
 }
 
 .other{
-    padding: 40rpx 10rpx;
+    padding: 22rpx;
+    margin: 40rpx 0 40rpx;
+    background-color: #EEF7FF;
 }
 
 .otherItem{
-    display: flex;
-    margin-bottom: 40rpx;
+  margin-bottom: 32rpx;
+  display: flex;
+  align-items: center;
+}
+
+.otherItem:last-child{
+  margin-bottom: 0;
 }
 
 .itemName{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 608rpx;
-    height: 68rpx;
-    margin-left: 34rpx;
-    border-bottom: 2rpx solid rgba(153, 153, 153, .3);
-    font-size: 32rpx;
-    color: #666666;
+    align-items: center;
+    margin-left: 20rpx;
+    font-size: 28rpx;
+    color: #666;
 }
 
 .icon{
@@ -85,7 +81,16 @@
   height: 48rpx;
 }
 
+.begin{
+    height: 40rpx;
+    display: inline-block;
+   line-height: 30rpx;
+    font-size: 24rpx;
+    vertical-align: middle;
+    color: #3D74F3;
+}
+
 
 .icon-right{
- color: rgba(153, 153, 153, .5);
+ color: #4171F7;
 }

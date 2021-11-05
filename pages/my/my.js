@@ -96,23 +96,27 @@ tt.login({
     })
    } else if(val == '2'){
     tt.navigateTo({
-      url:'/pages/my/course/course'
-    })
-   }else if(val == '3'){
-    tt.navigateTo({
       url:'/pages/my/contrast/contrast'
     })
-  }else if(val == '4'){
+   } else if(val == '3'){
     tt.navigateTo({
       url:'/pages/my/record/record'
     })
-  }else if(val == '5'){
+  } else if(val == '4'){
+    tt.navigateTo({
+      url:'/pages/my/course/course'
+    })
+  } else if(val == '5'){
     tt.navigateTo({
       url:'/pages/my/hobby/hobby'
     })
-  }else if(val == '6'){
+  } else if(val == '6'){
     tt.navigateTo({
       url:'/pages/my/share/share'
+    })
+  } else if(val == '7'){
+    tt.navigateTo({
+      url:'/pages/my/contact/contact'
     })
   }
    }

@@ -10,6 +10,7 @@
     "pages/my/record/record",
     "pages/my/hobby/hobby",
     "pages/my/share/share",
+    "pages/my/contact/contact",
     "component/topNav/topNav"
   ],
   "window":{
