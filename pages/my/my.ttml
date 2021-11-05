@@ -3,74 +3,73 @@
     <topNav nav-data="{{navData}}"></topNav>
 </view>
 <view style="padding-top: {{height*2 + 20}}px;">
-<view class="topWrap">
-    <view class="uesr" bindtap="islogin"> 
-        <view class="uesrWrap">
-            <view class="uesrImg">
-                <image tt:if="{{!avatarUrl}}" class="uesrImg" src="/image/Ellipse 38.png" mode="aspectFill" />
-                <image tt:if="{{avatarUrl}}" class="uesrImg" src="{{avatarUrl}}" mode="aspectFill" />
+    <view class="topWrap">
+        <view class="uesr" bindtap="islogin">
+            <view class="uesrWrap">
+                <view class="uesrImg">
+                    <image tt:if="{{!avatarUrl}}" class="uesrImg" src="/image/Ellipse 38.png" mode="aspectFill" />
+                    <image tt:if="{{avatarUrl}}" class="uesrImg" src="{{avatarUrl}}" mode="aspectFill" />
+                </view>
+                <view class="uesrName">{{nickName}}</view>
             </view>
-            <view class="uesrName">{{nickName}}</view>
+        </view>
+        <view class="main">
+            <image class="join" src="/image/ruzhu.png" mode="aspectFill" bindtap="toDetails" data-val="1" />
         </view>
     </view>
-    <view class="main">
-        <image class="join" src="/image/ruzhu.png" mode="aspectFill"
-        bindtap="toDetails" data-val="1" />
-    </view>
-</view>
 
 
-<view class="wrap">
-  <view class="other">
-    <view class="otherItem" bindtap="toDetails" data-val="2">
-        <image class="icon" src="/image/duibi.png" mode="" />
-        <view class="itemName">
-            <view>同行业对比记录</view>
-            <text class="iconfont icon-right"></text>
-        </view>
-    </view>
-    <view class="otherItem" bindtap="toDetails" data-val="3">
-        <image class="icon" src="/image/jilu.png" mode="" />
-        <view class="itemName">
-            <view>项目浏览记录</view>
-            <text class="iconfont icon-right"></text>
-        </view>
-    </view>
-  </view>
-    <view class="other">
-        <view class="otherItem" bindtap="toDetails" data-val="4">
-            <image class="icon" src="/image/kecheng.png" mode="" />
-            <view class="itemName">
-                <view>我的课程</view>
-                <view>
-                    <text class="begin">即将开始</text>
+    <view class="wrap">
+        <view class="other">
+            <view class="otherItem" bindtap="toDetails" data-val="2">
+                <image class="icon" src="/image/duibi.png" mode="" />
+                <view class="itemName">
+                    <view>同行业对比记录</view>
+                    <text class="iconfont icon-right"></text>
+                </view>
+            </view>
+            <view class="otherItem" bindtap="toDetails" data-val="3">
+                <image class="icon" src="/image/jilu.png" mode="" />
+                <view class="itemName">
+                    <view>项目浏览记录</view>
                     <text class="iconfont icon-right"></text>
                 </view>
             </view>
         </view>
-    <view class="otherItem" bindtap="toDetails" data-val="5">
-        <image class="icon" src="/image/ziyuan.png" mode="" />
-        <view class="itemName">
-            <text>测测我的创业喜好</text>
-            <text class="iconfont icon-right"></text>
-        </view>
-    </view>
-    </view>
-    <view class="other">
-        <view class="otherItem" bindtap="toDetails" data-val="6">
-            <image class="icon" src="/image/fenxiang.png" mode="" />
-            <view class="itemName">
-                <view>分享我们</view>
-                <text class="iconfont icon-right"></text>
+        <view class="other">
+            <view class="otherItem" bindtap="toDetails" data-val="4">
+                <image class="icon" src="/image/kecheng.png" mode="" />
+                <view class="itemName">
+                    <view>我的课程</view>
+                    <view>
+                        <view class="begin">即将开始</view>
+                        <text class="iconfont icon-right"></text>
+                    </view>
+                </view>
+            </view>
+            <view class="otherItem" bindtap="toDetails" data-val="5">
+                <image class="icon" src="/image/ziyuan.png" mode="" />
+                <view class="itemName">
+                    <text>测测我的创业喜好</text>
+                    <text class="iconfont icon-right"></text>
+                </view>
             </view>
         </view>
-    <view class="otherItem" bindtap="toDetails" data-val="7">
-        <image class="icon" src="/image/lianxi.png" mode="" />
-        <view class="itemName">
-            <text>联系我们</text>
-            <text class="iconfont icon-right"></text>
+        <view class="other">
+            <view class="otherItem" bindtap="toDetails" data-val="6">
+                <image class="icon" src="/image/fenxiang.png" mode="" />
+                <view class="itemName">
+                    <view>分享我们</view>
+                    <text class="iconfont icon-right"></text>
+                </view>
+            </view>
+            <view class="otherItem" bindtap="toDetails" data-val="7">
+                <image class="icon" src="/image/lianxi.png" mode="" />
+                <view class="itemName">
+                    <text>联系我们</text>
+                    <text class="iconfont icon-right"></text>
+                </view>
+            </view>
         </view>
     </view>
-    </view>
-</view>
 </view>

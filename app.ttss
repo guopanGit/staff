@@ -1,68 +1,72 @@
 /* 全局通用样式 */
 
-page{
-  line-height: 1;
-  background-color: #fff;
+page {
+    line-height: 1;
+    background-color: #fff;
 }
 
-view{
-  box-sizing: border-box;
+view {
+    box-sizing: border-box;
 }
 
-.bgTop{
-  width: 750rpx;
-  height: 176rpx;
-  position: absolute;  
+.bgTop {
+    width: 750rpx;
+    height: 176rpx;
+    position: absolute;
 }
 
-.viewBtn{
-  width: 506rpx;
-  height: 96rpx;
-  line-height: 96rpx;
-  border-radius: 96rpx;
-  text-align: center;
-  font-size: 44rpx;
+.viewBtn {
+    width: 506rpx;
+    height: 96rpx;
+    line-height: 96rpx;
+    border-radius: 96rpx;
+    text-align: center;
+    font-size: 44rpx;
 }
 
-.c3d{
-  color: #3D74F3;
+.c3d {
+    color: #3D74F3;
 }
 
-.cf9{
-  color: #F96C04;
+.cf9 {
+    color: #F96C04;
 }
 
-.c3{
-  color: #333;
+.c3 {
+    color: #333;
 }
 
-.c6{
-  color: #666;
+.c6 {
+    color: #666;
 }
 
-.bgcf{
-  background-color: #fff;
+.bgcf {
+    background-color: #fff;
 }
 
-.pb40{
-  padding-bottom: 20rpx;
+.pb40 {
+    padding-bottom: 20rpx;
 }
 
-.default{
-  padding-top: 500rpx;
-  text-align: center;
-  font-size: 28rpx;
-  color: #999;
+.ml20 {
+    margin-left: 20rpx;
 }
 
-.dfailImg{
-  width: 312rpx;
-  height: 288rpx;
-  margin-bottom: 66rpx;
+.default {
+    padding-top: 500rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #999;
 }
 
-.defaulImg{
-  width: 240rpx;
-  height: 226rpx;
-  margin-bottom: 66rpx;
+.dfailImg {
+    width: 312rpx;
+    height: 288rpx;
+    margin-bottom: 66rpx;
+}
+
+.defaulImg {
+    width: 240rpx;
+    height: 226rpx;
+    margin-bottom: 66rpx;
 }

@@ -13,7 +13,7 @@ background-color: {{navData.bgcolor}}; color: {{navData.color}};
 </view>
    <!-- 返回首页 -->
 <view tt:if="{{isHome == 0 && isReturn == 0}}" class="return" bindtap="toHome">
-    <image class="homeImg" src="/image/jingxuan.png" mode="" />
+    <image class="homeImg" src="/image/shouye.png" mode="" />
 </view>
 
 </view>

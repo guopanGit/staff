@@ -1,12 +1,11 @@
 /* 项目浏览记录.ttss */
 
 @import url('../../../css/icon.ttss');
-
-.center{
+.center {
     padding: 0 28rpx;
 }
 
-.itemWrap{
+.itemWrap {
     display: flex;
     padding: 20rpx 28rpx;
     margin-bottom: 20rpx;
@@ -15,37 +14,36 @@
     background-color: #EEF7FF;
 }
 
-.itemRight{
+.itemRight {
     width: 100%;
     padding-left: 24rpx;
-
 }
 
-.logoWrap{
+.logoWrap {
     width: 124rpx;
     height: 124rpx;
     border-radius: 16rpx;
 }
 
-.titleWrap{
+.titleWrap {
     display: flex;
     align-items: center;
     color: #333;
 }
 
-.name{
+.name {
     display: inline-block;
     width: 108rpx;
     margin-right: 20rpx;
-    font-size: 36rpx;  
+    font-size: 36rpx;
 }
 
-.simple{
+.simple {
     display: inline-block;
     font-size: 28rpx;
 }
 
-.plan{
+.plan {
     display: flex;
     justify-content: space-between;
     width: 390rpx;
@@ -54,7 +52,7 @@
     color: #666;
 }
 
-.type{
+.type {
     display: inline-block;
     border-radius: 8rpx;
     padding: 4rpx 8rpx;
@@ -63,23 +61,23 @@
     background-color: #F96C04;
 }
 
-.sum{
+.sum {
     display: inline-block;
     border-radius: 8rpx;
     padding: 4rpx 8rpx;
     margin: 0 0 0 20rpx;
     font-size: 24rpx;
     color: #fff;
-    background-color: #FF7171;  
+    background-color: #FF7171;
 }
 
-.titleTyupe{
+.titleTyupe {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.titleDetails{
+.titleDetails {
     display: inline-block;
     font-size: 28rpx;
     color: #4171F7;

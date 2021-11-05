@@ -1,2 +1,31 @@
 <!-- 分享我们.ttml -->
-<text>分享</text>
+<view>
+  <topNav nav-data="{{navData}}"></topNav>
+</view>
+<view style="padding-top: {{height*2 + 20}}px;">
+  <view class="wrap">
+    <view class="center">
+      <view class="logoWrap">
+        <image class="logo" src="/image/logo1.png" mode="" />
+        <view>
+          <image class="logo1" src="/image/logo3.png" mode="" />
+        </view>
+      </view>
+      <view class="title">项目参谋</view>
+      <view>
+        <image class="icon-douhao" src="/image/douhao.png" mode="" />
+        <image class="icon-douhao" src="/image/douhao.png" mode="" />
+      </view>
+      <view class="text">
+        <view>限时免费帮你看项目</view>
+        <view><text>看风险</text><text class="ml20">做分析</text><text class="ml20">做对比</text><text class="ml20">推荐项目</text>
+        </view>
+      </view>
+      <view class="iconWrap">
+        <image class="icon-douhao" src="/image/douhao.png" mode="" />
+        <image class="icon-douhao" src="/image/douhao.png" mode="" />
+      </view>
+    </view>
+    <button class="shares" open-type="share">分享 ></button>
+  </view>
+</view>

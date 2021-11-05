@@ -31,7 +31,7 @@ Component({
     // 返回首页
     toHome(){
      tt.switchTab({
-       url:'pages/select/select'
+       url:'/pages/select/select'
      })
     },
 
@@ -42,7 +42,7 @@ Component({
       })
     }
   },
-  
+
     attached () {
       // 设置导航高度
       this.setData({

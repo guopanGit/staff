@@ -1,30 +1,28 @@
 /* /Users/mac/Documents/work/staff/参谋/pages/my/my.ttss */
 
 @import '../../css/icon.ttss';
-
-.topWrap{
+.topWrap {
     position: relative;
 }
 
-.uesr{
+.uesr {
     width: 100%;
     height: 268rpx;
     padding: 28rpx;
     background-color: #3D74F3;
 }
 
-
-.uesrWrap{
- display: flex;
+.uesrWrap {
+    display: flex;
 }
 
-.uesrImg{
+.uesrImg {
     width: 138rpx;
     height: 138rpx;
     border-radius: 138rpx;
 }
 
-.uesrName{
+.uesrName {
     line-height: 138rpx;
     font-size: 36rpx;
     font-weight: 400;
@@ -32,41 +30,42 @@
     padding-left: 20rpx;
 }
 
-.join{
+.join {
     width: 694rpx;
     height: 202rpx;
 }
 
-.main{
+.main {
     position: absolute;
     left: 28rpx;
     bottom: -136rpx;
 }
 
+
 /* 导航 */
 
-.wrap{
+.wrap {
     width: 750rpx;
     padding: 136rpx 28rpx 0;
 }
 
-.other{
+.other {
     padding: 22rpx;
     margin: 40rpx 0 40rpx;
     background-color: #EEF7FF;
 }
 
-.otherItem{
-  margin-bottom: 32rpx;
-  display: flex;
-  align-items: center;
+.otherItem {
+    margin-bottom: 32rpx;
+    display: flex;
+    align-items: center;
 }
 
-.otherItem:last-child{
-  margin-bottom: 0;
+.otherItem:last-child {
+    margin-bottom: 0;
 }
 
-.itemName{
+.itemName {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -76,21 +75,20 @@
     color: #666;
 }
 
-.icon{
-  width: 48rpx;
-  height: 48rpx;
+.icon {
+    width: 48rpx;
+    height: 48rpx;
 }
 
-.begin{
+.begin {
     height: 40rpx;
     display: inline-block;
-   line-height: 30rpx;
+    line-height: 30rpx;
     font-size: 24rpx;
     vertical-align: middle;
     color: #3D74F3;
 }
 
-
-.icon-right{
- color: #4171F7;
+.icon-right {
+    color: #4171F7;
 }

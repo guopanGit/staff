@@ -41,9 +41,9 @@
 }
 
 .homeImg{
-    width: 45rpx;
-    height: 41rpx;
+    width: 40rpx;
+    height: 40rpx;
     position: absolute;
     left: 10rpx;
-    bottom: 20rpx;
+    bottom: 8rpx;
 }
