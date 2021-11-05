@@ -1,6 +1,6 @@
 /* 我要入驻.ttss */
 
-.imgWrap {
+.img {
     width: 750rpx;
     height: 290rpx;
 }

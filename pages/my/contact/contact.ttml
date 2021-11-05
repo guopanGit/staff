@@ -1,23 +1,34 @@
 <!-- 联系我们.ttml -->
 <view>
-    <topNav nav-data="{{navData}}"></topNav>
-  </view>
-  
-  <view class="wrap" style="padding-top: {{height*2 + 20}}px;">
-    <view tt:for="{{6}}">
-      <view class="resultWrap" bindtap="toDetails" data-val="{{item}}">
-        <view class="nameWrap">
-          <image class="blue" src="/image/blue.png" mode="" />
-          <image class="red" src="/image/red.png" mode="" />
-          <view class="itemName"> 
-              <view class="name mr40">送件侠</view>
-              <view class="name">送件侠</view>
-          </view>
+  <topNav nav-data="{{navData}}"></topNav>
+</view>
+
+<view style="padding-top: {{height*2 + 20}}px;">
+  <image class="img" src="/image/grop.jpg" mode="aspectFill" />
+  <view class="wrap">
+    <view class="itemWrap">
+      <image class="itemIcon" src="/image/guanggao.png" mode="" />
+      <view bindtap="makePhone">
+        <view>广告投放</view>
+        <view class="phone">在线广告、招商电话：<text>1888888888</text></view>
+        <image class="phoneIcon" src="/image/phone.png" mode="" />
       </view>
-          <view class="itemWrap">
-              <text>2021-10-29</text>
-              <text class="iconfont icon-right"></text>
-          </view> 
+    </view>
+    <view class="itemWrap">
+      <image class="itemIcon" src="/image/shouhou.png" mode="" />
+      <view bindtap="makePhone">
+        <view>售后、投诉、建议</view>
+        <view class="phone">联系电话：<text>1888888888</text></view>
+        <image class="phoneIcon" src="/image/phone.png" mode="" />
+      </view>
+    </view>
+    <view class="itemWrap">
+      <image class="itemIcon" src="/image/touzi.png" mode="" />
+      <view bindtap="makePhone">
+        <view>投资者服务</view>
+        <view class="phone">联系电话：<text>1888888888</text></view>
+        <image class="phoneIcon" src="/image/phone.png" mode="" />
       </view>
     </view>
   </view>
+</view>

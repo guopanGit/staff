@@ -21,12 +21,14 @@
     width: 122rpx;
     height: 122rpx;
     border-radius: 24rpx;
+    transform: translate(-21rpx);
 }
 
 .logo1 {
     width: 252rpx;
     height: 88rpx;
     margin-top: 20rpx;
+    transform: translate(-21rpx);
 }
 
 .title {

@@ -4,9 +4,7 @@
         <topNav nav-data="{{navData}}"></topNav>
     </view>
    <view style="padding-top: {{height*2 + 20}}px;">
-    <view>
-        <image class="imgWrap" src="/image/grop.jpg" mode="aspectFill" />
-    </view>
+        <image class="img" src="/image/grop.jpg" mode="aspectFill" />
     <view class="center">
         <view class="bar">填写入驻资料</view>
         <view class="from">
