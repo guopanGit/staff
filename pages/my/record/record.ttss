@@ -8,7 +8,7 @@
 .itemWrap {
     display: flex;
     padding: 20rpx 28rpx;
-    margin-bottom: 20rpx;
+    margin-bottom: 40rpx;
     border-radius: 20rpx;
     box-shadow: 0 8rpx 8rpx rgba(0, 0, 0, 0.25);
     background-color: #EEF7FF;

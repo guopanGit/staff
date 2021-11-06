@@ -61,12 +61,14 @@ Page({
                 let val = res.authSetting['scope.userLocation'];
                 if (!val) {
                     tt.openSetting({
-                        success: (res) => {
-                            console.log(res)
-                            this.getLocation()
+                        success: () => {
+                            this.location()
                         }
                     })
                 }
+            },
+            fail: (res) => {
+                console.log(res)
             }
         });
     }
