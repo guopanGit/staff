@@ -11,6 +11,8 @@ Page({
             title: ''
         },
         height: 0,
+        color: 'c6',
+        location: '请输入所在城市'
     },
     onLoad(options) {
         tt.showShareMenu()
@@ -26,37 +28,46 @@ Page({
             navData,
             height
         })
+        this.location()
     },
-    // 保存图片
-    save() {
+    // 获取当前定位位置
+    location() {
+        tt.getLocation({
+            success: (res) => {
+                let { latitude, longitude } = res;
+                //  坐标逆转换
+                showToast('浙江省 杭州市 余杭区', )
+                this.setData({
+                    location: '浙江省 杭州市 余杭区',
+                    color: 'c3'
+                })
+            }
+        })
+    },
+
+    //  选择城市
+    bindChange(e) {
+        let arr = new Set(e.detail.value);
+        let location = Array.from(arr);
+        this.setData({
+            location,
+            color: 'c3'
+        })
+    },
+    // 重新授权
+    getLocation() {
         tt.getSetting({
             success: (res) => {
-                let state = res.authSetting['scope.album']
-                if (!state) {
-                    tt.openSetting()
-                } else {
-                    let url = this.data.imgUrl;
-                    tt.downloadFile({
-                        url,
+                let val = res.authSetting['scope.userLocation'];
+                if (!val) {
+                    tt.openSetting({
                         success: (res) => {
-                            let filePath = res.tempFilePath;
-                            tt.saveImageToPhotosAlbum({
-                                filePath,
-                                success: (res) => {
-                                    showToast('保存成功', 'success')
-                                },
-                                fail: (res) => {
-                                    showToast('保存失败', 'fail')
-                                },
-                            })
-
-                        },
-                        fail: () => {
-                            showToast('保存失败', 'fail')
+                            console.log(res)
+                            this.getLocation()
                         }
                     })
                 }
             }
-        })
+        });
     }
 })

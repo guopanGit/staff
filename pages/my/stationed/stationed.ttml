@@ -9,31 +9,36 @@
         <view class="bar">填写入驻资料</view>
         <view class="from">
             <view class="single">
-                <view><text>品牌名称</text><text class="orange">*</text></view>
+                <view class="tr"><text>品牌名称</text><text class="orange">*</text></view>
                 <view>
                     <input class="input" type="text" placeholder="请输入品牌名称" value="{{userData.title}}"/>
                 </view>
             </view>
             <view class="single">
-                <view><text>公司名称</text><text class="orange">*</text></view>
+                <view class="tr"><text>公司名称</text><text class="orange">*</text></view>
                 <view>
                     <input class="input" type="text" placeholder="请输入公司名称" value="{{userData.title}}"/>
                 </view>
             </view>
             <view class="single">
-                <view><text>所在城市</text><text class="orange">*</text></view>
+                <view class="tr"><text>所在城市</text><text class="orange">*</text></view>
                 <view>
-                    <input class="input" type="text" placeholder="请输入所在城市" value="{{userData.title}}"/>
+                    <picker class="input" mode="region" bindchange="bindChange">
+                        <view class="{{color}}">{{location}}</view>
+                    </picker>
+                    <view class="location" bindtap="getLocation">
+                        <image class="locationIcon" src="/image/dingwei.png" mode="" />
+                    </view>
                 </view>
             </view>
             <view class="single">
-                <view><text>姓名</text><text class="orange">*</text></view>
+                <view class="tr"><text>姓名</text><text class="orange">*</text></view>
                 <view>
                     <input class="input" type="text" placeholder="联系人姓名" value="{{userData.title}}"/>
                 </view>
             </view>
             <view class="single">
-                <view><text>手机号</text><text class="orange">*</text></view>
+                <view class="tr"><text>手机号</text><text class="orange">*</text></view>
                 <view>
                     <input class="input" type="number" placeholder="请输入联系人手机号" value="{{userData.title}}"/>
                 </view>

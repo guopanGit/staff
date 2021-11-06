@@ -24,6 +24,9 @@ view {
     font-size: 44rpx;
 }
 
+
+/* 颜色 */
+
 .c3d {
     color: #3D74F3;
 }
@@ -64,6 +67,9 @@ view {
     color: #999;
 }
 
+
+/* 缺省图 */
+
 .dfailImg {
     width: 312rpx;
     height: 288rpx;
@@ -74,4 +80,11 @@ view {
     width: 240rpx;
     height: 226rpx;
     margin-bottom: 66rpx;
+}
+
+
+/* 对齐 */
+
+.tr {
+    text-align: right;
 }
