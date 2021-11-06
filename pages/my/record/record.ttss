@@ -2,7 +2,7 @@
 
 @import url('../../../css/icon.ttss');
 .center {
-    padding: 10rpx 28rpx 0;
+    padding: 40rpx 28rpx 0;
 }
 
 .itemWrap {

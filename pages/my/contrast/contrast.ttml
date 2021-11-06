@@ -4,14 +4,18 @@
 </view>
 
 <view class="wrap" style="padding-top: {{height*2 + 20}}px;">
-  <view tt:for="{{6}}">
+  <view tt:for="{{2}}">
     <view class="resultWrap" bindtap="toDetails" data-val="{{item}}">
       <view class="nameWrap">
         <image class="blue" src="/image/blue.png" mode="" />
         <image class="red" src="/image/red.png" mode="" />
         <view class="itemName"> 
-            <view class="name mr40">送件侠</view>
-            <view class="name">送件侠</view>
+            <view class="name small">
+              <image class="logo" src="/image/logo1.png" mode="" /><text>送件侠送件侠</text>
+            </view>
+            <view class="name big"><text
+              >送件侠送...</text><image class="logo logo1" src="/image/logo1.png" mode="" />
+            </view>
         </view>
     </view>
         <view class="itemWrap">

@@ -23,7 +23,7 @@ Page({
     },
     makePhone(e) {
         tt.makePhoneCall({
-            phoneNumber: '19919951645'
+            phoneNumber: '19919911991'
         })
     }
 })

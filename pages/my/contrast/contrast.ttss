@@ -1,67 +1,85 @@
 /* 同行业对比.ttss */
 
 @import url('/css/icon.ttss');
-
-.wrap{
+.wrap {
     padding: 0 28rpx 40rpx;
 }
 
-.resultWrap{
+.resultWrap {
     width: 694rpx;
     height: 222rpx;
     margin-top: 40rpx;
-    padding: 42rpx 60rpx 0;
+    padding: 34rpx 60rpx 0;
     border-radius: 24rpx;
     background-color: #EEF7FF;
 }
 
-.itemWrap{
+.itemWrap {
     display: flex;
     justify-content: space-between;
-    padding-top: 20rpx;
+    padding: 20rpx 0;
     font-size: 28rpx;
     color: #3D74F3;
 }
 
-.nameWrap{
+.nameWrap {
     width: 574rpx;
+    padding-bottom: 30rpx;
+    border-bottom: 2rpx solid rgba(153, 153, 153, 0.3);
     position: relative;
 }
 
-.blue{
-    width: 338rpx;
+.blue {
+    width: 260rpx;
     height: 88rpx;
     position: absolute;
     left: 0;
 }
 
-.red{
-    width: 338rpx;
+.red {
+    width: 378rpx;
     height: 88rpx;
     position: absolute;
     right: 0;
 }
 
-.itemName{
+.itemName {
     position: relative;
-
 }
 
-.name{
-  display: inline-block;
-  width: 260rpx;
-  height: 88rpx;
-  line-height: 88rpx;
-  padding-left: 10rpx;
-  text-align: center;
-  word-break:keep-all;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  font-size: 36rpx;
-  color: #fff;
+.big {
+    width: 370rpx;
+    padding-right: 16rpx;
+    text-align: right;
 }
 
-.mr40{
-    margin-right: 40rpx;
+.small {
+    width: 204rpx;
+    padding-left: 16rpx;
+    text-align: left;
+}
+
+.name {
+    display: inline-block;
+    height: 88rpx;
+    line-height: 88rpx;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24rpx;
+    color: #fff;
+}
+
+.logo {
+    width: 64rpx;
+    height: 64rpx;
+    margin-right: 12rpx;
+    border-radius: 16rpx;
+    vertical-align: middle;
+}
+
+.logo1 {
+    margin-right: 0rpx;
+    margin-left: 12rpx;
 }

@@ -15,6 +15,7 @@
     width: 694rpx;
     height: 126rpx;
     position: relative;
+    border-radius: 8rpx;
     margin-top: 28rpx;
     background-color: #F4F4F4;
     font-size: 36rpx;

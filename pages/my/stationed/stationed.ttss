@@ -80,5 +80,5 @@
 }
 
 .bar {
-    font-weight: 500rpx;
+    font-weight: 600;
 }
