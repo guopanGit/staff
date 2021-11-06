@@ -24,7 +24,7 @@
             <view class="otherItem" bindtap="toDetails" data-val="2">
                 <image class="icon" src="/image/duibi.png" mode="" />
                 <view class="itemName">
-                    <view>同行业对比记录</view>
+                    <view>行业对比记录</view>
                     <text class="iconfont icon-right"></text>
                 </view>
             </view>

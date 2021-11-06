@@ -1,1 +1,17 @@
 /* 创业测试.ttss */
+
+page {
+    background-color: #3d74f3;
+}
+
+.logoWrap {
+    width: 750rpx;
+    height: 244rpx;
+    display: flex;
+    padding: 20rpx 20rpx;
+}
+
+.logo3 {
+    width: 252rpx;
+    height: 88rpx;
+}

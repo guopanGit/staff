@@ -1,2 +1,10 @@
 <!-- 创业测试.ttml -->
-<text>创业测试</text>
+<view>
+    <topNav nav-data="{{navData}}"></topNav>
+</view>
+<view style="padding-top: {{height*2 + 20}}px;">
+    <view class="logoWrap">
+        <image src="" mode="" />
+        <image class="logo3" src="/image/logo3.png" mode="aspectFill" />
+    </view>
+</view>
