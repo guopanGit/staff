@@ -1,38 +1,35 @@
 /* 精选.ttss */
 
 @import url('../../css/icon.ttss');
-
-.pageWrap{
+.pageWrap {
     position: relative;
 }
 
-
-.swiperWrap{
+.swiperWrap {
     width: 750rpx;
     margin-top: 50rpx;
 }
 
-.swiper{
-  height: 280rpx;  
+.swiper {
+    height: 280rpx;
 }
 
-.swiper-item{
+.swiper-item {
     text-align: center;
     border-radius: 16rpx;
 }
 
-
-.slide-image{
-  width: 674rpx;
-  height: 280rpx;
-  border-radius: 16rpx;
+.slide-image {
+    width: 674rpx;
+    height: 280rpx;
+    border-radius: 16rpx;
 }
 
-.currentWrap{
+.currentWrap {
     text-align: center;
 }
 
-.current{
+.current {
     display: inline-block;
     width: 14rpx;
     height: 8rpx;
@@ -41,23 +38,24 @@
     margin: 0 4rpx;
 }
 
-.nowaday{
+.nowaday {
     width: 36rpx;
     background-color: #4171F7;
     transition: width .5s;
 }
 
-.titlewrap{
-    position: relative; 
+.titlewrap {
+    position: relative;
     padding: 40rpx 28rpx 0;
 }
 
-.titleName{
+.titleName {
     display: inline-block;
     margin-right: 10rpx;
+    font-weight: 600;
 }
 
-.titleIndex{
+.titleIndex {
     width: 154rpx;
     height: 12rpx;
     border-radius: 12rpx;
@@ -68,73 +66,74 @@
     z-index: -1;
 }
 
-.titleLeft{
+.titleLeft {
     color: #666;
     transform: translateX(0rpx);
-    transition: transform .5s; 
+    transition: transform .5s;
 }
 
-.titleRight{
+.titleRight {
     transform: translateX(162rpx);
-    transition: transform .5s; 
+    transition: transform .5s;
 }
 
-.matterWrap{
- background-color: #eee;
- margin-top: 8rpx;
+.matterWrap {
+    background-color: #eee;
+    margin-top: 8rpx;
 }
 
-.matterWrap:first-child{
+.matterWrap:first-child {
     margin-bottom: 0;
-   }
+}
 
-.content{
+.content {
     background-color: #fff;
     margin-bottom: 6rpx;
 }
 
- /* title1 */
-.itemWrap{
+
+/* title1 */
+
+.itemWrap {
     display: flex;
     padding: 20rpx 28rpx;
 }
 
-.itemRight{
+.itemRight {
     width: 100%;
     padding-left: 24rpx;
-
 }
 
-.logoWrap{
+.logoWrap {
     width: 124rpx;
     height: 124rpx;
     border-radius: 16rpx;
 }
 
-.titleWrap{
+.titleWrap {
     padding-top: 6rpx;
     color: #333333;
 }
 
-.nameWrap{
+.nameWrap {
     display: flex;
     align-items: center;
     color: #333333;
 }
 
-.name{
+.name {
     display: inline-block;
     width: 108rpx;
     margin-right: 20rpx;
-    font-size: 36rpx;  
+    font-size: 36rpx;
 }
 
-.simple{
+.simple {
     display: inline-block;
     font-size: 28rpx;
 }
 
-.plan{
+.plan {
     display: flex;
     justify-content: space-between;
     width: 390rpx;
@@ -143,7 +142,7 @@
     color: #666;
 }
 
-.type{
+.type {
     display: inline-block;
     border-radius: 8rpx;
     padding: 4rpx 8rpx;
@@ -152,39 +151,39 @@
     background-color: #F96C04;
 }
 
-.sum{
+.sum {
     display: inline-block;
     border-radius: 8rpx;
     padding: 4rpx 8rpx;
     margin: 0 0 0 20rpx;
     font-size: 24rpx;
     color: #fff;
-    background-color: #FF7171;  
+    background-color: #FF7171;
 }
 
-.titleTyupe{
+.titleTyupe {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.titleDetails{
+.titleDetails {
     display: inline-block;
     font-size: 28rpx;
     color: #4171F7;
 }
 
-.article{
- padding: 0 28rpx 40rpx;
+.article {
+    padding: 0 28rpx 40rpx;
 }
 
-.articleImg{
+.articleImg {
     width: 694rpx;
     height: 304rpx;
     border-radius: 16rpx;
 }
 
-.judge{
+.judge {
     width: 694rpx;
     height: 110rpx;
     border-radius: 12rpx;
@@ -196,26 +195,28 @@
     color: #666;
 }
 
-.head{
-   font-size: 28rpx;
-   color: #4171F7;
+.head {
+    font-size: 28rpx;
+    color: #4171F7;
 }
+
 
 /* title2 */
-.videoItem{
+
+.videoItem {
     display: inline-block;
     width: 332rpx;
-    margin: 22rpx 0 0 28rpx; 
+    margin: 22rpx 0 0 28rpx;
 }
 
-.videoIcon{
+.videoIcon {
     width: 48rpx;
     height: 46rpx;
     position: absolute;
     left: 12rpx;
 }
 
-.video{
+.video {
     width: 332rpx;
     height: 188rpx;
     border-radius: 12rpx;
@@ -223,7 +224,7 @@
     background-color: cadetblue;
 }
 
-.videoTitle{
+.videoTitle {
     width: 308rpx;
     height: 88rpx;
     margin-top: 14rpx;
@@ -233,7 +234,7 @@
     color: #333;
 }
 
-.nums{
+.nums {
     display: flex;
     width: 308rpx;
     margin-top: 14rpx;
@@ -241,13 +242,12 @@
     font-size: 28rpx;
 }
 
-.num{
+.num {
     font-size: 24rpx;
     color: #666;
 }
 
-
-.price{
+.price {
     margin-top: 10rpx;
     color: #F96D09;
     font-size: 28rpx;
