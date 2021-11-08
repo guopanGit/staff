@@ -1,5 +1,6 @@
 /* 创业测试.ttss */
 
+@import url(../../css/icon.ttss);
 page {
     background-color: #3d74f3;
 }
@@ -8,10 +9,80 @@ page {
     width: 750rpx;
     height: 244rpx;
     display: flex;
-    padding: 20rpx 20rpx;
+    padding: 32rpx 20rpx 0;
+    flex-direction: row-reverse;
 }
 
 .logo3 {
     width: 252rpx;
     height: 88rpx;
+    margin-left: 42rpx;
+}
+
+.num {
+    width: 122rpx;
+    height: 134rpx;
+    margin-top: 76rpx;
+}
+
+.title {
+    margin-top: 32rpx;
+    color: #fff;
+    font-size: 50rpx;
+    font-weight: 600;
+    text-align: center;
+}
+
+.topic {
+    padding: 0 78rpx;
+    text-align: center;
+    font-size: 44rpx;
+    color: #666;
+}
+
+.moreWrap {
+    padding: 0 28rpx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.alone {
+    height: 114rpx;
+    line-height: 114rpx;
+    margin-top: 40rpx;
+    background-color: #fff;
+    border-radius: 114rpx;
+}
+
+.more {
+    display: inline-block;
+    height: 82rpx;
+    padding: 16rpx 38rpx;
+    margin-top: 40rpx;
+    border-radius: 82rpx;
+    border: 2rpx solid #fff;
+    color: #fff;
+}
+
+.checked {
+    background-color: #F6964F;
+    color: #fff;
+}
+
+.next {
+    display: flex;
+    box-sizing: content-box;
+    width: 100%;
+    height: 50rpx;
+    line-height: 50rpx;
+    padding: 40rpx 20rpx 0 0;
+    font-size: 40rpx;
+    flex-direction: row-reverse;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.icon-right {
+    margin-left: 10rpx;
+    font-size: 40rpx;
 }

@@ -3,22 +3,22 @@
 background-color: {{navData.bgcolor}}; color: {{navData.color}};
 ">
 <view class='nav-title'>
-    <image tt:if="{{isHome == 0 && isReturn == 0}}" class="homeImg" src="/image/shouye.png" mode="" />
-    <image tt:if="{{isReturn == 1}}" class="returnImg" src="/image/return.png" mode="" />
-    <image tt:if="{{navData.pages > 1}}" class="returnImg" src="/image/return.png" mode="" />
+    <image tt:if="{{isHome == 0 && isReturn == 0}}" bindtap="toHome" class="homeImg" src="/image/shouye.png" mode="" />
+    <image tt:if="{{isReturn == 1}}" bindtap="toAppoint" class="returnImg" src="/image/return.png" mode="" />
+    <image tt:if="{{navData.pages > 1}}" bindtap="return" class="returnImg" src="/image/return.png" mode="" />
     <text style='width: 100%;'>{{navData.title}}</text>
 </view>
 <!-- 返回上一页 -->
-<view tt:if="{{navData.pages > 1}}" class="return" bindtap="return">
- <!-- <image class="returnImg" src="/image/return.png" mode="" /> -->
-</view> 
+<!-- <view tt:if="{{navData.pages > 1}}" class="return" bindtap="return">
+  <image class="returnImg" src="/image/return.png" mode="" /> 
+</view> -->
 <!-- 返回项目详情 -->
-<view tt:if="{{isReturn == 1}}" class="return" bindtap="toAppoint">
-    <!-- <image class="returnImg" src="/image/return.png" mode="" /> -->
-</view>
+<!-- <view tt:if="{{isReturn == 1}}" class="return" bindtap="toAppoint">
+     <image class="returnImg" src="/image/return.png" mode="" /> 
+</view> -->
    <!-- 返回首页 -->
-<view tt:if="{{isHome == 0 && isReturn == 0}}" class="return" bindtap="toHome">
-    <!-- <image class="homeImg" src="/image/shouye.png" mode="" /> -->
-</view>
+ <!-- <view tt:if="{{isHome == 0 && isReturn == 0}}" class="return" bindtap="toHome">
+    <image class="homeImg" src="/image/shouye.png" mode="" /> 
+</view>-->
 
 </view>

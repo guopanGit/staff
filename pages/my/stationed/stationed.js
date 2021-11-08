@@ -18,7 +18,7 @@ Page({
         tt.showShareMenu()
         let pages = getCurrentPages().length;
         let navData = {
-            title: '我要入驻',
+            title: '项目入驻',
             pages,
             bgcolor: "#fff",
             color: '#333',

@@ -8,8 +8,8 @@ App({
         })
 
         // 获取胶囊位置
-        let bottom = tt.getMenuButtonLayout().top;
-        this.globalData.bottom = bottom;
+        let top = tt.getMenuButtonLayout().top;
+        this.globalData.top = top;
 
         // 检查更新
         const updateManager = tt.getUpdateManager();
@@ -33,6 +33,6 @@ App({
     },
     globalData: {
         height: 0,
-        bottom: 0
+        top: 0
     }
 })

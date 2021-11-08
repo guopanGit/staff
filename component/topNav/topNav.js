@@ -30,6 +30,7 @@ Component({
 
         // 返回首页
         toHome() {
+            console.log('123')
             tt.switchTab({
                 url: '/pages/select/select'
             })
@@ -45,13 +46,9 @@ Component({
 
     attached() {
 
-        let val = tt.getMenuButtonLayout()
-        console.log(val)
-
         // 设置导航高度
         this.setData({
             height: app.globalData.height,
-            bottom: app.globalData.bottom,
         })
     },
     ready() {

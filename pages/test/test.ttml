@@ -4,7 +4,33 @@
 </view>
 <view style="padding-top: {{height*2 + 20}}px;">
     <view class="logoWrap">
-        <image src="" mode="" />
         <image class="logo3" src="/image/logo3.png" mode="aspectFill" />
+        <image tt:if="{{num == 1}}" class="num" src="/image/one.png" mode="" />
+        <image tt:if="{{num == 2}}" class="num" src="/image/two.png" mode="" />
+        <image tt:if="{{num == 3}}" class="num" src="/image/three.png" mode="" />
+        <image tt:if="{{num == 4}}" class="num" src="/image/four.png" mode="" />
+    </view>
+    <view class="title">{{title}}</view>
+
+    <view  tt:if="{{num == 1}}" class="topic">题目</view>
+
+    <view  tt:if="{{num == 2}}" class="topic">
+        <block tt:for="{{two}}" tt:for-index="index" tt:for-item="item">
+            <view class="alone {{index == twoInx ? 'checked': ''}}" bindtap="oneAlone" data-inx="{{index}}">{{item}}</view>
+        </block>
+    </view>
+    <view  tt:if="{{num == 3}}" class="topic">
+        <block tt:for="{{three}}" tt:for-index="index" tt:for-item="item">
+            <view class="alone {{index == threeInx ? 'checked': ''}}" bindtap="twoAlone" data-inx="{{index}}">{{item}}</view>
+        </block>
+    </view>
+    <view  tt:if="{{num == 4}}" class="topic moreWrap">
+        <block tt:for="{{four}}" tt:for-index="index" tt:for-item="item">
+            <view class="more {{threeInx.indexOf(index) == -1 ? '': 'checked'}}" bindtap="checkbox" data-inx="{{index}}">{{item}}</view>
+        </block>
+    </view>
+    <view tt:if="{{num < 4}}" class="next" bindtap="next">
+        <text class="iconfont icon-right"></text>
+        <view>下一题</view>
     </view>
 </view>

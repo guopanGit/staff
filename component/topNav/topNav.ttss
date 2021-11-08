@@ -13,7 +13,7 @@
     align-items: flex-end;
     position: absolute;
     text-align: center;
-    max-width: 680rpx;
+    max-width: 700rpx;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
