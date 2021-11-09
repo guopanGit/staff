@@ -41,7 +41,7 @@ export function formatTime(date, dateTime, divide) {
  * @data 请求参数
  * @method 请求类型
  */
-export function ajaxPromise(url, data, method, ) {
+export function ajaxPromise(url, data, method,) {
     // 请求判断类型
     if (method) {
         method = 'POST'
@@ -77,7 +77,7 @@ export function getLocation() {
                 if (res.authSetting['scope.userLocation']) {
                     tt.getLocation({
                         success: (res) => {
-                            let { latitude, longitude } = res;
+                            let {latitude, longitude} = res;
                             let data = `${longitude},${latitude}`
                             let url = `https://restapi.amap.com/v3/geocode/regeo?key=d4ad4c1303994f5f7dc20ef93b2d2b79&location=${data}`
                             tt.request({
@@ -86,12 +86,12 @@ export function getLocation() {
                                     "content-type": "application/json",
                                 },
                                 success: (res) => {
-                                    let { province, city, district } = res.data.regeocode.addressComponent;
+                                    let {province, city, district} = res.data.regeocode.addressComponent;
                                     let location = `${province} ${city} ${district}`
                                     if (city.length == 0) {
                                         location = `${province} ${district}`
                                     }
-                                    let data = { province, city, district, location }
+                                    let data = {province, city, district, location}
                                     resolve(data)
                                 },
                                 fail: (res) => {
@@ -107,7 +107,7 @@ export function getLocation() {
                             if (res.authSetting['scope.userLocation']) {
                                 tt.getLocation({
                                     success: (res) => {
-                                        let { latitude, longitude } = res;
+                                        let {latitude, longitude} = res;
                                         let data = `${longitude},${latitude}`
                                         let url = `https://restapi.amap.com/v3/geocode/regeo?key=d4ad4c1303994f5f7dc20ef93b2d2b79&location=${data}`
                                         tt.request({
@@ -116,12 +116,12 @@ export function getLocation() {
                                                 "content-type": "application/json",
                                             },
                                             success: (res) => {
-                                                let { province, city, district } = res.data.regeocode.addressComponent;
+                                                let {province, city, district} = res.data.regeocode.addressComponent;
                                                 let location = `${province} ${city} ${district}`
                                                 if (city.length == 0) {
                                                     location = `${province} ${district}`
                                                 }
-                                                let data = { province, city, district, location }
+                                                let data = {province, city, district, location}
                                                 resolve(data)
                                             },
                                             fail: (res) => {
@@ -144,7 +144,7 @@ export function getLocation() {
 }
 
 /**
- * 弹框封装 
+ * 弹框封装
  */
 export function showToast(title, icon) {
     if (!icon) {

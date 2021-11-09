@@ -33,7 +33,7 @@
             </view>
         </view>
         <view tt:if="{{title == 1}}" class="matterWrap">
-            <block tt:for="{{4}}">
+            <block tt:for="{{10}}">
                 <view class="content">
                     <view class="itemWrap" bindtap="toDetails">
                         <view class="logoWrap">
@@ -69,7 +69,7 @@
         </view>
         <view tt:if="{{title == 2}}" class="matterWrap">
             <view class="bgcf">
-                <block tt:for="{{6}}">
+                <block tt:for="{{10}}">
                     <view class="videoItem">
                         <view bindtap="getDetails" data-val="{{item}}">
                             <view class="video">

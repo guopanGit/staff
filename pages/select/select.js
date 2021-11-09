@@ -59,7 +59,6 @@ Page({
 
     switch(e) {
         let title = e.currentTarget.dataset.val
-        console.log(title)
         this.setData({
             title
         })
@@ -79,7 +78,6 @@ Page({
             } else if (e.scrollTop < oldTop) {
                 isFixed = false
             }
-            console.log(isFixed);
             this.setData({
                 isFixed
             })

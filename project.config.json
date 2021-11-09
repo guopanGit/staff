@@ -13,12 +13,12 @@
     "projectname": "参谋",
     "condition": {
         "miniprogram": {
-            "current": -1,
+            "current": 1635734283415,
             "list": [
                 {
                     "id": 1635734283415,
                     "name": "我的",
-                    "pathName": "pages/test/test",
+                    "pathName": "pages/my/record/record",
                     "query": "",
                     "scene": "990001",
                     "launchFrom": "scan",

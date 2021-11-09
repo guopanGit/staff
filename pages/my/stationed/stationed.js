@@ -1,6 +1,7 @@
 // 我要入驻.js
 
 import {
+    getLocation,
     showToast
 } from '../../../utils/utils';
 
@@ -30,20 +31,7 @@ Page({
         })
         this.location()
     },
-    // 获取当前定位位置
-    location() {
-        tt.getLocation({
-            success: (res) => {
-                let { latitude, longitude } = res;
-                //  坐标逆转换
-                showToast('浙江省 杭州市 余杭区', )
-                this.setData({
-                    location: '浙江省 杭州市 余杭区',
-                    color: 'c3'
-                })
-            }
-        })
-    },
+
 
     //  选择城市
     bindChange(e) {
@@ -55,21 +43,13 @@ Page({
         })
     },
     // 重新授权
-    getLocation() {
-        tt.getSetting({
-            success: (res) => {
-                let val = res.authSetting['scope.userLocation'];
-                if (!val) {
-                    tt.openSetting({
-                        success: () => {
-                            this.location()
-                        }
-                    })
-                }
-            },
-            fail: (res) => {
-                console.log(res)
-            }
-        });
+    location() {
+        // 获取当前定位位置
+        getLocation().then((res) => {
+            let {location} = res
+            this.setData({
+                location
+            })
+        })
     }
 })

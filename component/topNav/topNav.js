@@ -30,7 +30,6 @@ Component({
 
         // 返回首页
         toHome() {
-            console.log('123')
             tt.switchTab({
                 url: '/pages/select/select'
             })

@@ -26,7 +26,7 @@
                     <picker class="input" mode="region" bindchange="bindChange">
                         <view class="{{color}}">{{location}}</view>
                     </picker>
-                    <view class="location" bindtap="getLocation">
+                    <view class="location" bindtap="location">
                         <image class="locationIcon" src="/image/dingwei.png" mode="" />
                     </view>
                 </view>
