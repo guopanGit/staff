@@ -1,6 +1,7 @@
 /* 创业测试.ttss */
 
 @import url(../../css/icon.ttss);
+
 page {
     background-color: #3d74f3;
 }
@@ -40,6 +41,36 @@ page {
     color: #666;
 }
 
+.wrap {
+    display: flex;
+    padding-top: 52rpx;
+}
+
+.location {
+    width: 98rpx;
+    height: 68rpx;
+    padding-top: 10rpx;
+    text-align: right;
+}
+
+.locationIcon {
+    width: 58rpx;
+    height: 58rpx;
+}
+
+.inputWrap {
+    border-bottom: 2rpx solid rgba(255, 255, 255, 0.40);
+}
+
+.input {
+    width: 490rpx;
+    height: 58rpx;
+    display: inline-block;
+    font-size: 32rpx;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .moreWrap {
     padding: 0 28rpx;
     display: flex;
@@ -65,11 +96,6 @@ page {
     color: #fff;
 }
 
-.checked {
-    background-color: #F6964F;
-    color: #fff;
-}
-
 .next {
     display: flex;
     box-sizing: content-box;
@@ -85,4 +111,24 @@ page {
 .icon-right {
     margin-left: 10rpx;
     font-size: 40rpx;
+}
+
+.icon-bottom {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.getBtn {
+    width: 506rpx;
+    height: 96rpx;
+    line-height: 96rpx;
+    border-radius: 96rpx;
+    font-size: 44rpx;
+    color: #fff;
+    background-color: #CACACA;
+    margin: 100rpx auto 0;
+}
+
+.checked {
+    background-color: #F6964F;
+    color: #fff;
 }

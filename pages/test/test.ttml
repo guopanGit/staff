@@ -4,30 +4,46 @@
 </view>
 <view style="padding-top: {{height*2 + 20}}px;">
     <view class="logoWrap">
-        <image class="logo3" src="/image/logo3.png" mode="aspectFill" />
-        <image tt:if="{{num == 1}}" class="num" src="/image/one.png" mode="" />
-        <image tt:if="{{num == 2}}" class="num" src="/image/two.png" mode="" />
-        <image tt:if="{{num == 3}}" class="num" src="/image/three.png" mode="" />
-        <image tt:if="{{num == 4}}" class="num" src="/image/four.png" mode="" />
+        <image class="logo3" src="/image/logo3.png" mode="aspectFill"/>
+        <image tt:if="{{num == 1}}" class="num" src="/image/one.png" mode=""/>
+        <image tt:if="{{num == 2}}" class="num" src="/image/two.png" mode=""/>
+        <image tt:if="{{num == 3}}" class="num" src="/image/three.png" mode=""/>
+        <image tt:if="{{num == 4}}" class="num" src="/image/four.png" mode=""/>
     </view>
     <view class="title">{{title}}</view>
 
-    <view  tt:if="{{num == 1}}" class="topic">题目</view>
+    <view tt:if="{{num == 1}}" class="topic p0">
+        <view class="wrap">
+            <view class="location" bindtap="location">
+                <image class="locationIcon" src="/image/dingwei1.png" mode=""/>
+            </view>
+            <view class="inputWrap">
+                <picker class="input" mode="region" bindchange="bindChange">
+                    <view>{{location}}</view>
+                </picker>
+                <text class="iconfont icon-bottom"></text>
+            </view>
+        </view>
+    </view>
 
-    <view  tt:if="{{num == 2}}" class="topic">
+    <view tt:if="{{num == 2}}" class="topic">
         <block tt:for="{{two}}" tt:for-index="index" tt:for-item="item">
-            <view class="alone {{index == twoInx ? 'checked': ''}}" bindtap="oneAlone" data-inx="{{index}}">{{item}}</view>
+            <view class="alone {{index == twoInx ? 'checked': ''}}" bindtap="oneAlone" data-inx="{{index}}">{{item}}
+            </view>
         </block>
     </view>
-    <view  tt:if="{{num == 3}}" class="topic">
+    <view tt:if="{{num == 3}}" class="topic">
         <block tt:for="{{three}}" tt:for-index="index" tt:for-item="item">
-            <view class="alone {{index == threeInx ? 'checked': ''}}" bindtap="twoAlone" data-inx="{{index}}">{{item}}</view>
+            <view class="alone {{index == threeInx ? 'checked': ''}}" bindtap="twoAlone" data-inx="{{index}}">{{item}}
+            </view>
         </block>
     </view>
-    <view  tt:if="{{num == 4}}" class="topic moreWrap">
+    <view tt:if="{{num == 4}}" class="topic moreWrap">
         <block tt:for="{{four}}" tt:for-index="index" tt:for-item="item">
-            <view class="more {{threeInx.indexOf(index) == -1 ? '': 'checked'}}" bindtap="checkbox" data-inx="{{index}}">{{item}}</view>
+            <view class="more {{item.checked ? 'checked': ''}}" bindtap="checkbox" data-inx="{{index}}">{{item.val}}
+            </view>
         </block>
+        <view class="getBtn {{fourInx.length < 1 ? '' : 'checked'}}" bindtap="getResult">获取分析结果</view>
     </view>
     <view tt:if="{{num < 4}}" class="next" bindtap="next">
         <text class="iconfont icon-right"></text>

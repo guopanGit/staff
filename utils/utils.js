@@ -72,35 +72,73 @@ export function ajaxPromise(url, data, method, ) {
  */
 export function getLocation() {
     return new Promise((resolve, rejected) => {
-
-
-
-        tt.getLocation({
+        tt.getSetting({
             success: (res) => {
-                let { latitude, longitude } = res;
-                let data = `${longitude},${latitude}`
-                let url = `https://restapi.amap.com/v3/geocode/regeo?key=d4ad4c1303994f5f7dc20ef93b2d2b79&location=${data}`
-                tt.request({
-                    url,
-                    header: {
-                        "content-type": "application/json",
-                    },
-                    success: (res) => {
-                        let { province, city, district } = res.data.regeocode.addressComponent;
-                        let location = `${province} ${city} ${district}`
-                        if (city.length == 0) {
-                            location = `${province} ${district}`
-                        }
-                        let data = { province, city, district, location }
-                        resolve(data)
-                    },
-                    fail: (res) => {
-                        rejected(res)
-                    }
-                })
+                if (res.authSetting['scope.userLocation']) {
+                    tt.getLocation({
+                        success: (res) => {
+                            let { latitude, longitude } = res;
+                            let data = `${longitude},${latitude}`
+                            let url = `https://restapi.amap.com/v3/geocode/regeo?key=d4ad4c1303994f5f7dc20ef93b2d2b79&location=${data}`
+                            tt.request({
+                                url,
+                                header: {
+                                    "content-type": "application/json",
+                                },
+                                success: (res) => {
+                                    let { province, city, district } = res.data.regeocode.addressComponent;
+                                    let location = `${province} ${city} ${district}`
+                                    if (city.length == 0) {
+                                        location = `${province} ${district}`
+                                    }
+                                    let data = { province, city, district, location }
+                                    resolve(data)
+                                },
+                                fail: (res) => {
+                                    rejected(res)
+                                }
+                            })
 
+                        }
+                    })
+                } else {
+                    tt.openSetting({
+                        success: (res) => {
+                            if (res.authSetting['scope.userLocation']) {
+                                tt.getLocation({
+                                    success: (res) => {
+                                        let { latitude, longitude } = res;
+                                        let data = `${longitude},${latitude}`
+                                        let url = `https://restapi.amap.com/v3/geocode/regeo?key=d4ad4c1303994f5f7dc20ef93b2d2b79&location=${data}`
+                                        tt.request({
+                                            url,
+                                            header: {
+                                                "content-type": "application/json",
+                                            },
+                                            success: (res) => {
+                                                let { province, city, district } = res.data.regeocode.addressComponent;
+                                                let location = `${province} ${city} ${district}`
+                                                if (city.length == 0) {
+                                                    location = `${province} ${district}`
+                                                }
+                                                let data = { province, city, district, location }
+                                                resolve(data)
+                                            },
+                                            fail: (res) => {
+                                                rejected(res)
+                                            }
+                                        })
+
+                                    }
+                                })
+                            }
+                        }
+                    })
+                }
             }
         })
+        return
+
     })
 
 }
