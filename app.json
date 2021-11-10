@@ -1,54 +1,56 @@
 {
-    "pages": [
-        "pages/select/select",
-        "pages/collect/collect",
-        "pages/my/my",
-        "pages/test/test",
-        "pages/my/stationed/stationed",
-        "pages/my/course/course",
-        "pages/my/contrast/contrast",
-        "pages/my/record/record",
-        "pages/my/hobby/hobby",
-        "pages/my/share/share",
-        "pages/my/contact/contact",
-        "component/topNav/topNav"
-    ],
-    "window": {
-        "navigationBarTextStyle": "black",
-        "backgroundColor": "#eee",
-        "backgroundTextStyle": "light",
-        "navigationStyle": "custom"
-    },
-    "permission": {
-        "scope.userLocation": {
-            "desc": "地理位置仅作为项目推荐依据不做他用"
-        }
-    },
-    "tabBar": {
-        "color": "#333",
-        "selectedColor": "#666",
-        "backgroundColor": "#fff",
-        "list": [{
-                "pagePath": "pages/select/select",
-                "text": "精选",
-                "iconPath": "/image/jingxuan.png",
-                "selectedIconPath": "/image/jingxuan1.png"
-            },
-            {
-                "pagePath": "pages/collect/collect",
-                "text": "收藏",
-                "iconPath": "/image/shoucang.png",
-                "selectedIconPath": "/image/shoucang1.png"
-            },
-            {
-                "pagePath": "pages/my/my",
-                "text": "我的",
-                "iconPath": "/image/my.png",
-                "selectedIconPath": "/image/my1.png"
-            }
-        ]
-    },
-    "networkTimeout": {
-        "request": 60000
+  "pages": [
+    "pages/select/select",
+    "pages/collect/collect",
+    "pages/my/my",
+    "pages/test/test",
+    "pages/my/stationed/stationed",
+    "pages/my/course/course",
+    "pages/my/contrast/contrast",
+    "pages/my/record/record",
+    "pages/my/hobby/hobby",
+    "pages/my/share/share",
+    "pages/my/contact/contact",
+    "pages/select/project/project",
+    "component/topNav/topNav"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eee",
+    "backgroundTextStyle": "light",
+    "navigationStyle": "custom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "地理位置仅作为项目推荐依据不做他用"
     }
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#666",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/select/select",
+        "text": "精选",
+        "iconPath": "/image/jingxuan.png",
+        "selectedIconPath": "/image/jingxuan1.png"
+      },
+      {
+        "pagePath": "pages/collect/collect",
+        "text": "收藏",
+        "iconPath": "/image/shoucang.png",
+        "selectedIconPath": "/image/shoucang1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/image/my.png",
+        "selectedIconPath": "/image/my1.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 60000
+  }
 }

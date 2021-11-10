@@ -13,7 +13,8 @@ view {
 .bgTop {
     width: 750rpx;
     height: 176rpx;
-    position: absolute;
+    position: fixed;
+    z-index: -1;
 }
 
 .viewBtn {
@@ -42,6 +43,14 @@ view {
 
 .c6 {
     color: #666;
+}
+
+.c9{
+    color: #999;
+}
+
+.c41{
+    color: #4171F7;
 }
 
 .bgcf {
@@ -92,4 +101,15 @@ view {
 
 .p0 {
     padding: 0 !important;
+}
+
+/* 遮罩 */
+.mack{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(51, 51, 51, 0.6);;
+    z-index: 9999;
 }

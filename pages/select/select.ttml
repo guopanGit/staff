@@ -3,8 +3,8 @@
     <topNav nav-data="{{navData}}"></topNav>
 </view>
 <view tt:if="{{type}}" class="pageWrap" style="padding-top: {{height*2 + 20}}px;">
-    <image class="bgTop" src="/image/bgtop.png" mode=""/>
-    <view class="swiperWrap">
+    <image class="bgTop" src="/image/bgtop.png" mode="aspectFill"/>
+    <view tt:if="{{type}}" class="swiperWrap">
         <swiper class="swiper" autoplay="{{true}}" circular="{{true}}"
                 previous-margin="28rpx" next-margin="28rpx"
                 bindchange="currentChange" data-val="{{imgUrls}}"
@@ -23,7 +23,7 @@
     </view>
     <view>
         <view class="titlewrap">
-            <view class="{{isFixed ? 'fixed ' : '' }}" style="top: {{ isFixed ? height*2 + 20 : 0 }}px" >
+            <view class="{{isFixed ? 'fixed ' : '' }}" style="top: {{ isFixed ? height*2 + 20 : 0 }}px">
                 <view class="title">
                     <view class="titleName {{title == 1 ? 'c3' : 'c6' }}" bindtap="switch" data-val="1">匹配项目</view>
                     <view class="titleName {{title == 1 ? 'c6' : 'c3' }}" bindtap="switch" data-val="2">项目课程</view>
@@ -34,8 +34,8 @@
         </view>
         <view tt:if="{{title == 1}}" class="matterWrap">
             <block tt:for="{{10}}">
-                <view class="content">
-                    <view class="itemWrap" bindtap="toDetails">
+                <view class="content"  bindtap="toProject">
+                    <view class="itemWrap">
                         <view class="logoWrap">
                             <image class="logoWrap" src="/image/logo1.png" mode=""/>
                         </view>

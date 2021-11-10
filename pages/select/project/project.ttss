@@ -1,0 +1,305 @@
+/* 项目详情/project.ttss */
+
+@import url('../../../css/icon.ttss');
+
+.wrap {
+    padding-bottom:98rpx ;
+    background-color: #eee;
+}
+
+.top {
+    padding: 32rpx 28rpx 40rpx;
+    margin-bottom: 12rpx;
+    background-color: #fff;
+}
+
+.ad {
+    width: 694rpx;
+    height: 304rpx;
+    border-radius: 24rpx;
+}
+
+.titleWrap {
+    display: flex;
+    align-content: center;
+    margin-top: 22rpx;
+    font-size: 24rpx;
+}
+
+.title {
+    display: inline-block;
+    font-size: 36rpx;
+    font-weight: 500;
+    color: #333;
+}
+
+.type {
+    padding: 6rpx;
+    margin: 0 20rpx 4rpx;
+    border-radius: 8rpx;
+    color: #fff;
+    background: rgba(249, 108, 4, 0.70);
+}
+
+.num {
+    padding: 6rpx;
+    margin-bottom: 4rpx;
+    border-radius: 8rpx;
+    color: #fff;
+    background-color: #FF7171;
+}
+
+.plan {
+    margin-top: 18rpx;
+    font-size: 24rpx;
+    color: #666;
+}
+
+.brief {
+    margin-top: 10rpx;
+    line-height: 32rpx;
+    font-size: 24rpx;
+    color: #999;
+}
+
+.tally {
+    display: flex;
+    justify-content: space-between;
+    width: 694rpx;
+    height: 108rpx;
+    padding: 10rpx 40rpx;
+    position: relative;
+    border-radius: 24rpx;
+    margin-top: 12rpx;
+    background-color: #EEF7FF;
+}
+
+.tallyItem {
+    width: 128rpx;
+}
+
+.man, .name {
+    text-align: center;
+    font-size: 28rpx;
+    line-height: 40rpx;
+}
+
+.left {
+    display: inline-block;
+}
+
+.iconWrap {
+    display: inline-block;
+    width: 60rpx;
+    height: 90rpx;
+    padding: 20rpx 16rpx 0 4rpx;
+    position: absolute;
+    right: 4rpx;
+    top: 10rpx;
+}
+
+.icon {
+    width: 38rpx;
+    height: 40rpx;
+}
+
+.warn {
+    width: 600rpx;
+    margin: 710rpx auto 0;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    color: #fff;
+}
+
+.mack {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+
+.bottom{
+    background-color: #fff;
+    padding-bottom: 20rpx;
+}
+
+.bottomTitle{
+    padding:20rpx 0 0 28rpx;
+    font-size: 40rpx;
+    font-weight: 600;
+    color: #333;
+}
+.videoItem {
+    display: inline-block;
+    width: 332rpx;
+    margin: 22rpx 0 0 28rpx;
+}
+
+.videoIcon {
+    width: 48rpx;
+    height: 46rpx;
+    position: absolute;
+    left: 12rpx;
+}
+
+.video {
+    width: 332rpx;
+    height: 188rpx;
+    border-radius: 12rpx;
+    position: relative;
+    background-color: cadetblue;
+}
+
+.videoTitle {
+    width: 308rpx;
+    height: 88rpx;
+    margin-top: 14rpx;
+    font-size: 28rpx;
+    line-height: 44rpx;
+    font-weight: 500;
+    color: #333;
+}
+
+.nums {
+    display: flex;
+    width: 308rpx;
+    margin-top: 14rpx;
+    justify-content: space-between;
+    font-size: 28rpx;
+}
+
+.inNum {
+    font-size: 24rpx;
+    color: #666;
+}
+
+.price {
+    margin-top: 10rpx;
+    color: #F96D09;
+    font-size: 28rpx;
+}
+
+.middle{
+    padding: 20rpx 28rpx 4rpx 34rpx;
+    background-color: #fff;
+    margin-bottom: 12rpx;
+}
+
+.middleTitle{
+    margin-bottom: 18rpx;
+    font-size: 40rpx;
+    font-weight: 600;
+    color: #333;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 328rpx;
+    height: 160rpx;
+    border-radius: 8rpx;
+    margin-bottom: 22rpx;
+    padding: 16rpx 24rpx;
+    background-color: #8852da;
+}
+
+.itemName{
+    font-size: 28rpx;
+    font-weight: 500;
+    color: #fff;
+}
+
+.duration{
+    margin-top: 8rpx;
+    font-size: 24rpx;
+    font-weight: 400;
+    color: rgba(255,255,255,0.70);
+}
+
+.state{
+    margin-top: 8rpx;
+}
+
+.fulfil{
+    width: 44rpx;
+    height: 44rpx;
+    vertical-align: middle;
+}
+
+.fulfilText{
+    margin-left: 12rpx;
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #fff;
+}
+
+.progressWrap{
+    margin-top: 24rpx;
+}
+
+.progress{
+    display: inline-block;
+    width: 156rpx;
+}
+
+.bottomNav{
+    display: flex;
+    height: 98rpx;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0rpx 0rpx 8rpx 0rpx rgba(0, 0, 0, 0.25);
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200rpx;
+    height: 98rpx;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    width: 456rpx;
+    height: 98rpx;
+    padding: 0 28rpx 0 54rpx;
+}
+.shares {
+    width: 100rpx;
+    height: 76rpx;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.shares::after {
+    border: 0;
+}
+
+.sharesIcon{
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.collect{
+    width: 100rpx;
+    height: 76rpx;
+    padding: 8rpx;
+}
+.getBtn{
+    width: 192rpx;
+    height: 82rpx;
+    padding: 24rpx 0;
+    border-radius: 20rpx;
+    text-align: center;
+    font-size: 36rpx;
+    background-color: #4171f7;
+    color: #fff;
+}

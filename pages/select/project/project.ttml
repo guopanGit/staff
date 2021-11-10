@@ -1,0 +1,199 @@
+<!-- 项目详情/project.ttml -->
+<view>
+    <topNav nav-data="{{navData}}"></topNav>
+</view>
+
+<view tt:if="{{type}}" class="pageWrap" style="padding-top: {{height*2 + 20}}px;">
+    <view class="wrap">
+        <view class="top">
+            <image class="ad" src="/image/grop.jpg" mode="aspectFill"/>
+            <view class="titleWrap">
+                <view class="title">送件侠</view>
+                <view class="type">互联网/快递</view>
+                <view class="num">5-10万</view>
+            </view>
+            <view class="plan">融资中 / 融资中 / 融资中</view>
+            <view class="brief">送件侠是全新的互联网聚合支付品隶属于浙江省杭州市快乐一天
+                股份有限公司，目前已有3000份成交，累计服务60000商家。
+            </view>
+            <view class="tally">
+                <view class="tallyItem">
+                    <view class="man c41">3w</view>
+                    <view class="name c9">浏览</view>
+                </view>
+                <view class="tallyItem">
+                    <view class="man c41">3000</view>
+                    <view class="name c9">收藏</view>
+                </view>
+                <view class="tallyItem">
+                    <view class="man c41">25</view>
+                    <view class="name c9">咨询</view>
+                </view>
+                <view class="tallyItem">
+                        <view class="man c41">3000</view>
+                        <view class="name c9">考察</view>
+                </view>
+                <view class="iconWrap" bindtap="showMack">
+                    <image class="icon" src="/image/wenhao.png"/>
+                </view>
+            </view>
+        </view>
+        <view class="middle">
+            <view class="middleTitle">参谋分析 项目介绍</view>
+            <view class="items">
+                <view class="item">
+                    <view class="itemName">参谋分析</view>
+                    <view class="duration">时长3分钟</view>
+                    <view tt:if="{{true}}" class="progressWrap">
+                        <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                                  percent="70" active="{{true}}" stroke-width="6"
+                                  active-color="#37CDA1" background-color="#EAEAEA" />
+                        <text class="fulfilText">完成40%</text>
+                    </view>
+                    <view tt:if="{{false}}" class="state">
+                        <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                        <text class="fulfilText">已完成</text>
+                    </view>
+                </view>
+                <view class="item">
+                    <view class="itemName">行业趋势</view>
+                    <view class="duration">时长3分钟</view>
+                    <view tt:if="{{true}}" class="progressWrap">
+                        <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                                  percent="20" active="{{true}}" stroke-width="6"
+                                  active-color="#37CDA1" background-color="#EAEAEA" />
+                        <text class="fulfilText">完成40%</text>
+                    </view>
+                    <view tt:if="{{false}}" class="state">
+                        <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                        <text class="fulfilText">已完成</text>
+                    </view>
+                </view>
+                <view class="item">
+                    <view class="itemName">项目模式</view>
+                    <view class="duration">时长3分钟</view>
+                    <view tt:if="{{false}}" class="progressWrap">
+                        <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                                  percent="40" active="{{true}}" stroke-width="6"
+                                  active-color="#37CDA1" background-color="#EAEAEA" />
+                        <text class="fulfilText">完成40%</text>
+                    </view>
+                    <view tt:if="{{true}}" class="state">
+                        <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                        <text class="fulfilText">已完成</text>
+                    </view>
+                </view>
+                <view class="item">
+                    <view class="itemName">公司实力</view>
+                    <view class="duration">时长3分钟</view>
+                    <view tt:if="{{false}}" class="progressWrap">
+                        <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                                  percent="40" active="{{true}}" stroke-width="6"
+                                  active-color="#37CDA1" background-color="#EAEAEA" />
+                        <text class="fulfilText">完成40%</text>
+                    </view>
+                    <view tt:if="{{true}}" class="state">
+                        <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                        <text class="fulfilText">已完成</text>
+                    </view>
+                </view>
+                <view class="item">
+                    <view class="itemName">产品介绍</view>
+                    <view class="duration">时长3分钟</view>
+                    <view tt:if="{{false}}" class="progressWrap">
+                        <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                                  percent="40" active="{{true}}" stroke-width="6"
+                                  active-color="#37CDA1" background-color="#EAEAEA" />
+                        <text class="fulfilText">完成40%</text>
+                    </view>
+                    <view tt:if="{{true}}" class="state">
+                        <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                        <text class="fulfilText">已完成</text>
+                    </view>
+                </view>
+                <view class="item">
+                    <view class="itemName">成功案例</view>
+                    <view class="duration">时长3分钟</view>
+                    <view tt:if="{{false}}" class="progressWrap">
+                        <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                                  percent="70" active="{{true}}" stroke-width="6"
+                                  active-color="#37CDA1" background-color="#EAEAEA" />
+                        <text class="fulfilText">完成40%</text>
+                    </view>
+                    <view tt:if="{{true}}" class="state">
+                        <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                        <text class="fulfilText">已完成</text>
+                    </view>
+                </view>
+                <view class="item">
+                    <view class="itemName">合作流程</view>
+                    <view class="duration">时长3分钟</view>
+                    <view tt:if="{{true}}" class="progressWrap">
+                        <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                                  percent="60" active="{{true}}" stroke-width="6"
+                                  active-color="#37CDA1" background-color="#EAEAEA" />
+                        <text class="fulfilText">完成40%</text>
+                    </view>
+                    <view tt:if="{{false}}" class="state">
+                        <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                        <text class="fulfilText">已完成</text>
+                    </view>
+                </view>
+                <view class="item">
+                    <view class="itemName">服务支持</view>
+                    <view class="duration">时长3分钟</view>
+                    <view tt:if="{{true}}" class="progressWrap">
+                        <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                                  percent="50" active="{{true}}" stroke-width="6"
+                                  active-color="#37CDA1" background-color="#EAEAEA" />
+                        <text class="fulfilText">完成40%</text>
+                    </view>
+                    <view tt:if="{{false}}" class="state">
+                        <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                        <text class="fulfilText">已完成</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="bottom">
+            <view class="bottomTitle">项目课程</view>
+            <block tt:for="{{4}}">
+                <view class="videoItem">
+                    <view bindtap="getDetails" data-val="{{item}}">
+                        <view class="video">
+                            <image class="videoIcon" src="/image/shipin.png" mode=""/>
+                        </view>
+                        <view class="videoTitle">送件侠送件侠送件侠送件侠送件侠</view>
+                        <view class="nums">
+                            <view class="inNum">5000人加入学习</view>
+                            <view class="c3d">限时免费</view>
+                        </view>
+                        <view class="price">30分钟 / ￥99.9</view>
+                    </view>
+                </view>
+            </block>
+        </view>
+        <view class="bottomNav">
+            <view class="left">
+                <button class="shares" open-type="share">
+                    <image class="sharesIcon" src="/image/fenxiang.png" mode="aspectFill"/>
+                    <view>分享</view>
+                </button>
+                <view class="collect">
+                    <image class="sharesIcon" src="/image/shoucang.png" mode="aspectFill"/>
+                </view>
+            </view>
+            <view class="right">
+                <view class="getBtn" bindtap="consult">立即咨询</view>
+                <view class="getBtn" bindtap="getData">获取资料</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view tt:if="{{!type}}" class="default">
+    <image class="defaulImg" src="/image/fail.png" mode="aspectFill"/>
+    <view>哎呀，我们还没有捕捉到数据，歇会再来吧～</view>
+</view>
+<view tt:if="{{mack}}" class="mack" bindtap="hideMack">
+    <view class="warn">创业参谋只自主采集了项目公司公开数据，其他项目信息和数据均由项目方提供，项目参谋的5纬度分析结果只做参考使用。</view>
+</view>

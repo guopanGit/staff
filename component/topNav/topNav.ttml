@@ -2,7 +2,7 @@
 <view class="nav-wrap" style="height: {{height*2 + 20}}px;
 background-color: {{navData.bgcolor}}; color: {{navData.color}};
 ">
-    <view class='nav-title'>
+    <view class='nav-title' style="padding-top: {{bottom+4}}px;">
         <image tt:if="{{isHome == 0 && isReturn == 0}}" bindtap="toHome" class="homeImg" src="/image/shouye.png"
                mode=""/>
         <image tt:if="{{isReturn == 1}}" bindtap="toAppoint" class="returnImg" src="/image/return.png" mode=""/>

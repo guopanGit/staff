@@ -187,7 +187,8 @@
 }
 
 .titleDetails {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     font-size: 28rpx;
     color: #4171F7;
 }
