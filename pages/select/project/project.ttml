@@ -40,7 +40,7 @@
         </view>
         <view class="middle">
             <view class="middleTitle">参谋分析 项目介绍</view>
-            <view class="items">
+            <view class="items" bindtap="toDetails">
                 <view class="item">
                     <view class="itemName">参谋分析</view>
                     <view class="duration">时长3分钟</view>

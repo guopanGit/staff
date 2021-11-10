@@ -42,6 +42,13 @@ Page({
         })
   },
 
+  // 去项目详情
+  toDetails(){
+    tt.navigateTo({
+      url:'/pages/select/details/details'
+    })
+  },
+
   // 立即咨询
   consult() {
     showToast('立即咨询')

@@ -1,0 +1,18 @@
+<!-- 项目详情/details.ttml -->
+<view>
+    <topNav nav-data="{{navData}}"></topNav>
+</view>
+<view tt:if="{{type}}" class="pageWrap" style="padding-top: {{height*2 + 20}}px;">
+    <view class="videoWrap">
+        <video id="myVideo" src="{{video}}" bindtimeupdate="videoPlan" bindpause="pauseVido"
+               poster="{{video1}}"
+        ></video>
+        <button class="share" open-type="share">
+            <image src="/image/fenxiang.png" class="shareIcon" mode="aspectFill"/>
+        </button>
+    </view>
+</view>
+<view tt:if="{{!type}}" class="default">
+    <image class="defaulImg" src="/image/fail.png" mode="aspectFill"/>
+    <view>哎呀，我们还没有捕捉到数据，歇会再来吧～</view>
+</view>

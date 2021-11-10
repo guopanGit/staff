@@ -12,6 +12,7 @@
     "pages/my/share/share",
     "pages/my/contact/contact",
     "pages/select/project/project",
+    "pages/select/details/details",
     "component/topNav/topNav"
   ],
   "window": {

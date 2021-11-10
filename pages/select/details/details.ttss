@@ -1,0 +1,28 @@
+/* 项目详情/details.ttss */
+
+#myVideo{
+    width: 750rpx;
+    height: 420rpx;
+}
+
+.videoWrap{
+    position: relative;
+}
+
+.share{
+    width: 100rpx;
+    height: 100rpx;
+    position: absolute;
+    top: 0rpx;
+    right: 0rpx;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.share::after {
+    border: 0 !important;
+}
+
+.shareIcon{
+    width: 34rpx;
+    height: 38rpx;
+}

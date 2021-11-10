@@ -38,7 +38,7 @@ Component({
     // 返回项目详情
     toAppoint() {
       tt.redirectTo({
-        url: 'xiangmuxiangqing'
+        url: '/pages/select/project/project'
       })
     }
   },
@@ -55,7 +55,7 @@ Component({
     let route = getCurrentPages()['0'].route;
     let isHome = 0;
     let isReturn = 0;
-    if (route == 'xiangmuxiangqing') {
+    if (route == 'pages/select/details/details') {
       isReturn = 1
     }
     if (route == 'pages/my/my') {
