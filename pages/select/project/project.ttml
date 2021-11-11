@@ -40,8 +40,8 @@
         </view>
         <view class="middle">
             <view class="middleTitle">参谋分析 项目介绍</view>
-            <view class="items" bindtap="toDetails">
-                <view class="item">
+            <view class="items">
+                <view class="item" bindtap="toDetails">
                     <view class="itemName">参谋分析</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{true}}" class="progressWrap">
@@ -55,7 +55,7 @@
                         <text class="fulfilText">已完成</text>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" bindtap="toDetails">
                     <view class="itemName">行业趋势</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{true}}" class="progressWrap">
@@ -69,7 +69,7 @@
                         <text class="fulfilText">已完成</text>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" bindtap="toDetails">
                     <view class="itemName">项目模式</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{false}}" class="progressWrap">
@@ -83,7 +83,7 @@
                         <text class="fulfilText">已完成</text>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" bindtap="toDetails">
                     <view class="itemName">公司实力</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{false}}" class="progressWrap">
@@ -97,7 +97,7 @@
                         <text class="fulfilText">已完成</text>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" bindtap="toDetails">
                     <view class="itemName">产品介绍</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{false}}" class="progressWrap">
@@ -111,7 +111,7 @@
                         <text class="fulfilText">已完成</text>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" bindtap="toDetails">
                     <view class="itemName">成功案例</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{false}}" class="progressWrap">
@@ -125,7 +125,7 @@
                         <text class="fulfilText">已完成</text>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" bindtap="toDetails">
                     <view class="itemName">合作流程</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{true}}" class="progressWrap">
@@ -139,7 +139,7 @@
                         <text class="fulfilText">已完成</text>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" bindtap="toDetails">
                     <view class="itemName">服务支持</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{true}}" class="progressWrap">
@@ -176,11 +176,10 @@
         <view class="bottomNav">
             <view class="left">
                 <button class="shares" open-type="share">
-                    <image class="sharesIcon" src="/image/fenxiang.png" mode="aspectFill"/>
-                    <view>分享</view>
+                    <image class="sharesIcon" src="/image/fenxiang1.png" mode="aspectFill"/>
                 </button>
-                <view class="collect">
-                    <image class="sharesIcon" src="/image/shoucang.png" mode="aspectFill"/>
+                <view class="collect" bindtap="collect">
+                    <image class="sharesIcon" src="/image/shoucang0.png" mode="aspectFill"/>
                 </view>
             </view>
             <view class="right">

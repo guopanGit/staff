@@ -49,6 +49,10 @@ Page({
     })
   },
 
+  collect(){
+    showToast('收藏')
+  },
+
   // 立即咨询
   consult() {
     showToast('立即咨询')
@@ -60,16 +64,17 @@ Page({
   },
 
   showMack() {
-    let mack = this.data.mack;
     this.setData({
       mack: true
     })
   },
 
   hideMack() {
-    let mack = this.data.mack;
     this.setData({
       mack: false
     })
-  }
+  },
+
+  // 分享
+  onShareAppMessage() {}
 })

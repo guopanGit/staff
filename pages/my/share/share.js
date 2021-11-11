@@ -25,5 +25,5 @@ Page({
     })
   },
 
-  onShareAppMessage() { }
+  onShareAppMessage() {}
 })

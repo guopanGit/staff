@@ -3,14 +3,192 @@
     <topNav nav-data="{{navData}}"></topNav>
 </view>
 <view tt:if="{{type}}" class="pageWrap" style="padding-top: {{height*2 + 20}}px;">
-    <view class="videoWrap">
+    <view tt:if="{{isVideo}}" class="videoWrap">
         <video id="myVideo" src="{{video}}" bindtimeupdate="videoPlan" bindpause="pauseVido"
-               poster="{{video1}}"
-        ></video>
+               show-playback-rate-btn="{{true}}" poster="{{video1}}"></video>
         <button class="share" open-type="share">
             <image src="/image/fenxiang.png" class="shareIcon" mode="aspectFill"/>
         </button>
     </view>
+    <view class="audio" tt:if="{{!isVideo}}" bindtap="showPlay">
+        <view class="sliderWrap">
+            <view>{{startTime}}</view>
+            <slider class="slider" value="{{start}}"  max="{{duration}}" step="1" bindchanging="audioChanging"
+                    block-size="16" bindchange="audioChange" />
+            <view>{{minute}}</view>
+        </view>
+        <button class="share" open-type="share">
+            <image src="/image/fenxiang.png" class="shareIcon" mode="aspectFill"/>
+        </button>
+
+
+       <view class="logoWrap">
+           <image src="/image/logo.png" class="logo" mode="aspectFill"/>
+       </view>
+
+        <view tt:if="{{showPlay}}" class="startAudio" bindtap="audioPlay">
+            <image src="/image/bofang.png" class="startIcon" mode="aspectFill"/>
+        </view>
+        <view tt:if="{{showStop}}" class="stopAudio" bindtap="audioStop">
+            <image src="/image/zhanting.png" class="stopIcon" mode="aspectFill"/>
+        </view>
+
+    </view>
+    <view class="bgcf mb12">
+        <view class="title">
+            <view class="titleName">送件侠</view>
+            <view>5888人 已观看</view>
+        </view>
+        <view class="synopsis">送件侠是全新的互联网聚合支付产品，隶属于浙江省杭州市快乐 一天股份有限公司，目前已有3000份成交，累计服务60000商家。</view>
+    </view>
+
+    <view class="nav">
+        <view class="navTitle">参谋分析 项目介绍</view>
+        <scroll-view class="scrollView" scroll-x="{{true}}"
+                     scroll-with-animation="{{true}}">
+            <view class="scrollItem cutItem" bindtap="cutItem">
+                <view>参谋分析</view>
+                <view tt:if="{{true}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="70" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA" />
+                    <text class="fulfilText">40%</text>
+                </view>
+                <view tt:if="{{false}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已完成</text>
+                </view>
+            </view>
+            <view class="scrollItem" bindtap="cutItem">
+                <view>行业趋势</view>
+                <view tt:if="{{true}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="70" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA" />
+                    <text class="fulfilText">40%</text>
+                </view>
+                <view tt:if="{{false}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已完成</text>
+                </view>
+            </view>
+            <view class="scrollItem" bindtap="cutItem">
+                <view>项目模式</view>
+                <view tt:if="{{true}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="70" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA" />
+                    <text class="fulfilText">40%</text>
+                </view>
+                <view tt:if="{{false}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已完成</text>
+                </view>
+            </view>
+            <view class="scrollItem" bindtap="cutItem">
+                <view>公司实力</view>
+                <view tt:if="{{true}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="70" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA" />
+                    <text class="fulfilText">40%</text>
+                </view>
+                <view tt:if="{{false}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已完成</text>
+                </view>
+            </view>
+            <view class="scrollItem" bindtap="cutItem">
+                <view>产品介绍</view>
+                <view tt:if="{{true}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="70" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA" />
+                    <text class="fulfilText">40%</text>
+                </view>
+                <view tt:if="{{false}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已完成</text>
+                </view>
+            </view>
+            <view class="scrollItem" bindtap="cutItem">
+                <view>成功案例</view>
+                <view tt:if="{{true}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="70" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA" />
+                    <text class="fulfilText">40%</text>
+                </view>
+                <view tt:if="{{false}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已完成</text>
+                </view>
+            </view>
+            <view class="scrollItem" bindtap="cutItem">
+                <view>合作流程</view>
+                <view tt:if="{{true}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="70" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA" />
+                    <text class="fulfilText">40%</text>
+                </view>
+                <view tt:if="{{false}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已完成</text>
+                </view>
+            </view>
+            <view class="scrollItem" bindtap="cutItem">
+                <view>服务支持</view>
+                <view tt:if="{{true}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="70" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA" />
+                    <text class="fulfilText">40%</text>
+                </view>
+                <view tt:if="{{false}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已完成</text>
+                </view>
+            </view>
+
+        </scroll-view>
+    </view>
+
+    <view class="content">
+        <view class="navWrap">
+            <view class="navName {{nav == 1 ? 'current' : ''}}" bindtap="cutNav" data-nav="1">图文信息</view>
+            <view class="navName {{nav == 2 ? 'current' : ''}}" bindtap="cutNav" data-nav="2">F&Q</view>
+        </view>
+        <view tt:if="{{nav== 1}}" class="nav1">
+            <image src="{{video1}}" class="navImage" mode="aspectFill"/>
+            <text class="navText">
+                送件侠是全新的互联网聚合支付产品，隶属于浙江省杭州市快乐 一天股份有限公司，目前已有3000份成交，累计服务60000商家
+                送件侠是全新的互联网聚合支付产品，隶属于浙江省杭州市快乐 一天股份有限公司，目前已有3000份成交，累计服务60000商家
+                送件侠是全新的互联网聚合支付产品，隶属于浙江省杭州市快乐 一天股份有限公司，目前已有3000份成交，累计服务60000商家
+            </text>
+            <!-- 渲染富文本 -->
+            <!-- <rich-text nodes="{{}}"></rich-text> -->
+        </view>
+        <view tt:if="{{nav== 2}}" class="">
+            <block tt:for="{{2}}">
+                <view class="askReply">
+                    <view class="askTitle">基本问题</view>
+                    <block tt:for="{{2}}">
+                        <view class="askReplyItem">
+                            <view class="ask">Q1 项目都是哪来的？</view>
+                            <view class="iconWrap" bindtap="isShow">
+                                <text tt:if="{{!show}}" class="iconfont icon-bottom"></text>
+                                <text tt:if="{{show}}" class="iconfont icon-top"></text>
+                            </view>
+
+                        </view>
+                        <view tt:if="{{show}}" class="reply">项目是从哪来的，项目是从哪来的，项目是从哪来的，项目是从哪来的。</view>
+                    </block>
+                </view>
+            </block>
+        </view>
+    </view>
+
 </view>
 <view tt:if="{{!type}}" class="default">
     <image class="defaulImg" src="/image/fail.png" mode="aspectFill"/>

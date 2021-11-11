@@ -53,6 +53,7 @@ view {
     color: #4171F7;
 }
 
+/* 背景颜色 */
 .bgcf {
     background-color: #fff;
 }
@@ -63,6 +64,10 @@ view {
 
 .ml20 {
     margin-left: 20rpx;
+}
+
+.mb12{
+    margin-bottom: 12rpx;
 }
 
 .bar {

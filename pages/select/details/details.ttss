@@ -1,15 +1,21 @@
 /* 项目详情/details.ttss */
 
-#myVideo{
+@import url('/css/icon.ttss');
+
+.pageWrap {
+    background-color: #EAEAEA;
+}
+
+#myVideo {
     width: 750rpx;
     height: 420rpx;
 }
 
-.videoWrap{
+.videoWrap {
     position: relative;
 }
 
-.share{
+.share {
     width: 100rpx;
     height: 100rpx;
     position: absolute;
@@ -22,7 +28,224 @@
     border: 0 !important;
 }
 
-.shareIcon{
+.shareIcon {
     width: 34rpx;
     height: 38rpx;
+}
+
+.title {
+    display: flex;
+    height: 40rpx;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40rpx 28rpx 18rpx 28rpx;
+    font-size: 24rpx;
+    color: #666;
+}
+
+.titleName {
+    font-size: 28rpx;
+    font-weight: 500;
+    color: #333;
+}
+
+.synopsis {
+    padding: 14rpx 18rpx 20rpx 28rpx;
+    line-height: 34rpx;
+    font-size: 24rpx;
+    color: #999;
+}
+
+.nav {
+    padding: 20rpx 0 40rpx 28rpx;
+    background-color: #fff;
+    margin-bottom: 12rpx;
+}
+
+.navTitle {
+    font-size: 28rpx;
+    font-weight: 600;
+    color: #333;
+}
+
+.content {
+    padding: 20rpx 28rpx;
+    background-color: #fff;
+}
+
+.navWrap {
+    display: flex;
+    width: 348rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    border-radius: 16rpx;
+    overflow: hidden;
+    text-align: center;
+    font-size: 32rpx;
+    color: #999;
+    background-color: rgba(65, 113, 247, 0.10);
+}
+
+.navName {
+    width: 174rpx;
+    text-align: center;
+}
+
+.current {
+    color: #fff;
+    background-color: #4171F7;
+}
+
+.nav1 {
+    padding: 20rpx 28rpx;
+}
+
+.askReply {
+    padding: 0 0 20rpx;
+}
+
+.askTitle {
+    padding-top: 20rpx;
+    font-size: 32rpx;
+    font-weight: 500;
+    color: #333;
+}
+
+.ask {
+    padding-top: 18rpx;
+    font-size: 28rpx;
+    color: #666;
+}
+
+.reply {
+    padding: 18rpx 0;
+    border-bottom: 2rpx solid rgba(144, 153, 153, 0.20);
+    font-size: 24rpx;
+    color: #999;
+}
+
+.iconfont {
+    color: #999;
+}
+
+
+.askReplyItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconWrap {
+    width: 50rpx;
+    height: 50rpx;
+    text-align: right;
+}
+
+/* 音频 */
+
+.audio, .startAudio, stopAudio, .logoWrap {
+    width: 750rpx;
+    height: 422rpx;
+    position: relative;
+    background-color: #ba2cea;
+}
+
+.sliderWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20rpx;
+    left: 50rpx;
+    font-size: 24rpx;
+    color: #fff;
+    z-index: 2;
+}
+
+.startAudio, .stopAudio {
+    width: 750rpx;
+    height: 422rpx;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 4;
+}
+
+.startIcon, .stopIcon {
+    width: 92rpx;
+    height: 92rpx;
+}
+
+.logo {
+    width: 108rpx;
+    height: 108rpx;
+    border-radius: 50%;
+}
+
+.logoWrap, .startAudio, .stopAudio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slider {
+    width: 500rpx;
+}
+
+.scrollView{
+    width: 750rpx;
+    height: 140rpx;
+    white-space: nowrap;
+}
+
+
+.scrollItem {
+    display: inline-block;
+    width: 216rpx;
+    height: 120rpx;
+    padding: 12rpx 0 0 24rpx;
+    margin: 20rpx 16rpx 0 0 ;
+    background: #4a86fe;
+    border-radius: 8rpx;
+    font-size: 28rpx;
+    font-weight: 500;
+    color: #fff;
+}
+
+.cutItem{
+    box-shadow: 0rpx 0rpx 20rpx 0rpx rgba(58,113,223,0.80);
+}
+
+
+.state{
+    margin-top: 8rpx;
+}
+
+.fulfil{
+    width: 44rpx;
+    height: 44rpx;
+    vertical-align: middle;
+}
+
+.fulfilText{
+    margin-left: 12rpx;
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #fff;
+}
+
+.progressWrap{
+    width: 170rpx;
+    margin-top: 24rpx;
+}
+
+.progress{
+    display: inline-block;
+    width: 104rpx;
+}
+
+.navImage {
+    margin: 0 auto;
+    width: 660rpx;
 }
