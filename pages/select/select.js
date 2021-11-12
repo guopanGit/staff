@@ -70,6 +70,12 @@ Page({
     })
   },
 
+  getDetails(e){
+    tt.navigateTo({
+      url: '/pages/select/course/course'
+    })
+  },
+
   // 固定元素
   onPageScroll(e) {
     let query = tt.createSelectorQuery();

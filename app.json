@@ -6,6 +6,7 @@
     "pages/test/test",
     "pages/my/stationed/stationed",
     "pages/my/course/course",
+    "pages/my/course/video/video",
     "pages/my/contrast/contrast",
     "pages/my/record/record",
     "pages/my/hobby/hobby",
@@ -13,6 +14,7 @@
     "pages/my/contact/contact",
     "pages/select/project/project",
     "pages/select/details/details",
+    "pages/select/course/course",
     "component/topNav/topNav"
   ],
   "window": {

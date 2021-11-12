@@ -1,0 +1,58 @@
+<!-- 课程介绍/course.ttml -->
+<view>
+    <topNav nav-data="{{navData}}"></topNav>
+</view>
+
+<view tt:if="{{type}}" class="pageWrap" style="padding-top: {{height*2 + 20}}px;">
+    <image class="courseImg" src="/image/grop.jpg" mode="aspectFill"/>
+    <view class="wrap">
+        <view class="projectWrap" bindtap="toProject">
+            <view class="projectName">送件侠</view>
+            <view class="brief">送件侠，后现在时代聚合者</view>
+            <view class="iconWrap">
+                <text>去看看</text>
+                <text class="iconfont icon-right"></text>
+            </view>
+        </view>
+        <view class="messageWrap">
+            <view class="messageTitle">
+                <view class="msgName">课程介绍信息</view>
+                <view class="warnMsg" bindtap="msgWarn">
+                    <image class="warn" src="/image/tixing.png" mode="aspectFill"/>
+                    <text>开播提醒</text>
+                </view>
+            </view>
+            <view class="subhead">课程一二三五六七</view>
+            <view class="richTextWrap">
+                这是课程描述内容这是，课程描述内容这是课程描述内容这是课程描述内容。
+                这是课程描述内容这是，课程描这是课程描述内容这是，课程描述内容这是课程描述内容这是课程描述内容。
+                这是课程描述内容这是，课程描 述内容这是课程描述内容这是课程描述内容。
+                这是课程 描述内容这是，课程描这是课程描述内容这是，课程描 述内容这是课程描述内容这是课程描述内容。
+            </view>
+            <view class="participant">
+                <view class="icons">
+                    <image class="users icon1" src="/image/canyu.png" mode="aspectFill"/>
+                    <image class="users icon2" src="/image/canyu.png" mode="aspectFill"/>
+                    <image class="users icon3" src="/image/canyu.png" mode="aspectFill"/>
+                    <image class="users icon4" src="/image/canyu.png" mode="aspectFill"/>
+                    <image class="users icon5" src="/image/canyu.png" mode="aspectFill"/>
+                </view>
+                <view>500人参与课程</view>
+            </view>
+            <view class="btnWrap">
+                <view tt:if="{{true}}" class="btn" bindtap="lookVideo">马上观看</view>
+                <view tt:if="{{false}}" class="btn">限时免费</view>
+                <view tt:if="{{false}}" class="btn1" bindtap="getMe">
+                    <view>限时优惠：44元</view>
+                    <view class="former">原价：100元</view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+</view>
+
+<view tt:if="{{!type}}" class="default">
+    <image class="defaulImg" src="/image/fail.png" mode="aspectFill"/>
+    <view>哎呀，我们还没有捕捉到数据，歇会再来吧～</view>
+</view>

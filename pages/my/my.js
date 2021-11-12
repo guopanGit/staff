@@ -46,9 +46,25 @@ Page({
     tt.login({
       force: true,
       success: (res) => {
+        console.log(res);
+        let data = {
+          code: res.code,
+          iv: '',
+          encryptedData: '',
+          user_type: 'douyin'
+        };
         tt.getUserInfo({
+          withCredentials: true,
           success: (res) => {
+            console.log(res);
             let userInfo = res.userInfo;
+            let url = 'https://api.xiangmucanmou.com/user/auth_login'
+            data.iv = res.iv;
+            data.encryptedData = res.encryptedData;
+            console.log(data);
+            ajaxPromise(url,data,'POST').then((res) => {
+              console.log(res,'1');
+            })
             // 获取appid 待补充
             // console.log(userInfo);
             tt.setStorageSync('userInfo', userInfo);

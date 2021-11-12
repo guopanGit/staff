@@ -4,7 +4,7 @@
 </view>
 <view tt:if="{{type}}" class="pageWrap" style="padding-top: {{height*2 + 20}}px;">
     <view tt:if="{{isVideo}}" class="videoWrap">
-        <video id="myVideo" src="{{video}}" bindtimeupdate="videoPlan" bindpause="pauseVido"
+        <video id="myVideo" src="{{video2}}" bindtimeupdate="videoPlan" bindpause="pauseVido"
                show-playback-rate-btn="{{true}}" poster="{{video1}}"></video>
         <button class="share" open-type="share">
             <image src="/image/fenxiang.png" class="shareIcon" mode="aspectFill"/>

@@ -9,7 +9,6 @@ Component({
       type: Object,
       value: {},
       observer(newVal, oldVal) {
-        console.log(newVal);
         this.setData({
           navData: newVal
         })

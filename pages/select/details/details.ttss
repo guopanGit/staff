@@ -57,12 +57,13 @@
 }
 
 .nav {
-    padding: 20rpx 0 40rpx 28rpx;
+    padding: 20rpx 0 40rpx 0;
     background-color: #fff;
     margin-bottom: 12rpx;
 }
 
 .navTitle {
+    padding-left: 24rpx;
     font-size: 28rpx;
     font-weight: 600;
     color: #333;
@@ -205,7 +206,7 @@
     width: 216rpx;
     height: 120rpx;
     padding: 12rpx 0 0 24rpx;
-    margin: 20rpx 16rpx 0 0 ;
+    margin: 20rpx 16rpx 0 24rpx ;
     background: #4a86fe;
     border-radius: 8rpx;
     font-size: 28rpx;
