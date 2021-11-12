@@ -11,6 +11,10 @@ App({
     let bottom = tt.getMenuButtonLayout().top;
     this.globalData.bottom = bottom;
 
+    // 获取系统信息
+    let systemInfo = tt.getSystemInfoSync();
+    console.log(systemInfo);
+
     // 检查更新
     const updateManager = tt.getUpdateManager();
     updateManager.onCheckForUpdate((res) => {

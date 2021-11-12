@@ -1,2 +1,88 @@
-<!-- /Users/mac/Documents/work/staff/参谋/pages/my/course/video/video.ttml -->
-<text>/Users/mac/Documents/work/staff/参谋/pages/my/course/video/video.ttml</text>
+<!-- 我的课程/video.ttml -->
+<view>
+    <topNav nav-data="{{navData}}"></topNav>
+</view>
+<view tt:if="{{type}}" class="pageWrap" style="padding-top: {{height*2 + 20}}px;">
+    <view class="videoWrap">
+        <video id="myVideo" src="{{video2}}" bindtimeupdate="videoPlan" bindpause="pauseVido"
+               show-playback-rate-btn="{{true}}" poster="{{video1}}"></video>
+        <button class="share" open-type="share">
+            <image src="/image/fenxiang.png" class="shareIcon" mode="aspectFill"/>
+        </button>
+    </view>
+
+    <view class="wrap">
+        <view class="projectWrap">
+            <view class="projectName">送件侠</view>
+            <view class="brief">送件侠，后现在时代聚合者</view>
+            <view class="icons">
+                <text>去看看</text>
+                <text class="iconfont icon-right"></text>
+            </view>
+        </view>
+        <view class="messageWrap">
+            <view class="messageTitle">
+                <view class="msgName">课程介绍信息</view>
+                <view class="warnMsg">
+                    <image class="warn" src="/image/tixing.png" mode="aspectFill"/>
+                    <text>开播提醒</text>
+                </view>
+            </view>
+            <view class="subhead">课程一二三五六七</view>
+            <view class="richTextWrap">
+                这是课程描述内容这是，课程描述内容这是课程描述内容这是课程描述内容。
+                这是课程描述内容这是，课程描这是课程描述内容这是，课程描述内容这是课程描述内容这是课程描述内容。
+                这是课程描述内容这是，课程描 述内容这是课程描述内容这是课程描述内容。
+                这是课程 描述内容这是，课程描这是课程描述内容这是，课程描 述内容这是课程描述内容这是课程描述内容。
+            </view>
+            <view class="participant">
+                <view class="icons">
+                    <image class="users icon1" src="/image/canyu.png" mode="aspectFill"/>
+                    <image class="users icon2" src="/image/canyu.png" mode="aspectFill"/>
+                    <image class="users icon3" src="/image/canyu.png" mode="aspectFill"/>
+                    <image class="users icon4" src="/image/canyu.png" mode="aspectFill"/>
+                    <image class="users icon5" src="/image/canyu.png" mode="aspectFill"/>
+                </view>
+                <view>500人参与课程</view>
+            </view>
+        </view>
+    </view>
+    <view class="content">
+        <view class="navWrap">
+            <view class="navName {{nav == 1 ? 'current' : ''}}" bindtap="cutNav" data-nav="1">图文信息</view>
+            <view class="navName {{nav == 2 ? 'current' : ''}}" bindtap="cutNav" data-nav="2">F&Q</view>
+        </view>
+        <view tt:if="{{nav== 1}}" class="nav1">
+            <image src="{{video1}}" class="navImage" mode="aspectFill"/>
+            <text class="navText">
+                送件侠是全新的互联网聚合支付产品，隶属于浙江省杭州市快乐 一天股份有限公司，目前已有3000份成交，累计服务60000商家
+                送件侠是全新的互联网聚合支付产品，隶属于浙江省杭州市快乐 一天股份有限公司，目前已有3000份成交，累计服务60000商家
+                送件侠是全新的互联网聚合支付产品，隶属于浙江省杭州市快乐 一天股份有限公司，目前已有3000份成交，累计服务60000商家
+            </text>
+            <!-- 渲染富文本 -->
+            <!-- <rich-text nodes="{{}}"></rich-text> -->
+        </view>
+        <view tt:if="{{nav== 2}}" class="">
+            <block tt:for="{{2}}">
+                <view class="askReply">
+                    <view class="askTitle">基本问题</view>
+                    <block tt:for="{{2}}">
+                        <view class="askReplyItem">
+                            <view class="ask">Q1 项目都是哪来的？</view>
+                            <view class="iconWrap" bindtap="isShow">
+                                <text tt:if="{{!show}}" class="iconfont icon-bottom"></text>
+                                <text tt:if="{{show}}" class="iconfont icon-top"></text>
+                            </view>
+                        </view>
+                        <view tt:if="{{show}}" class="reply">项目是从哪来的，项目是从哪来的，项目是从哪来的，项目是从哪来的。</view>
+                    </block>
+                </view>
+            </block>
+        </view>
+    </view>
+
+</view>
+<view tt:if="{{!type}}" class="default">
+    <image class="defaulImg" src="/image/fail.png" mode="aspectFill"/>
+    <view>哎呀，我们还没有捕捉到数据，歇会再来吧～</view>
+</view>

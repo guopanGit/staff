@@ -17,9 +17,13 @@
         <view class="messageWrap">
             <view class="messageTitle">
                 <view class="msgName">课程介绍信息</view>
-                <view class="warnMsg" bindtap="msgWarn">
+                <view tt:if="{{false}}" class="warnMsg" bindtap="msgWarn">
                     <image class="warn" src="/image/tixing.png" mode="aspectFill"/>
                     <text>开播提醒</text>
+                </view>
+                <view tt:if="{{true}}" class="warnMsg"  bindtap="broadcastRoom">
+                    <image class="warn" src="/image/tixing.png" mode="aspectFill"/>
+                    <text>已开播</text>
                 </view>
             </view>
             <view class="subhead">课程一二三五六七</view>

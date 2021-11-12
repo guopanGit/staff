@@ -1,1 +1,266 @@
-/* /Users/mac/Documents/work/staff/参谋/pages/my/course/video/video.ttss */
+/* 我的课程/video.ttss */
+
+@import url('/css/icon.ttss');
+
+.pageWrap {
+    background-color: #EAEAEA;
+}
+
+#myVideo {
+    width: 750rpx;
+    height: 420rpx;
+}
+
+.videoWrap {
+    position: relative;
+}
+
+.share {
+    width: 100rpx;
+    height: 100rpx;
+    position: absolute;
+    top: 0rpx;
+    right: 0rpx;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.share::after {
+    border: 0 !important;
+}
+
+.shareIcon {
+    width: 34rpx;
+    height: 38rpx;
+}
+
+.title {
+    display: flex;
+    height: 40rpx;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40rpx 28rpx 18rpx 28rpx;
+    font-size: 24rpx;
+    color: #666;
+}
+
+.titleName {
+    font-size: 28rpx;
+    font-weight: 500;
+    color: #333;
+}
+
+.synopsis {
+    padding: 14rpx 18rpx 20rpx 28rpx;
+    line-height: 34rpx;
+    font-size: 24rpx;
+    color: #999;
+}
+
+.wrap {
+    padding: 20rpx 28rpx;
+    background-color: #fff;
+    margin-bottom: 12rpx;
+}
+
+
+.projectWrap {
+    display: flex;
+    align-items: center;
+    width: 694rpx;
+    height: 92rpx;
+    padding: 0 19rpx 0 46rpx;
+    color: #333;
+    background-color: #eef7ff;
+}
+
+.projectName {
+    font-size: 36rpx;
+    font-weight: 500;
+}
+
+.brief {
+    margin: 0 40rpx 0 24rpx;
+    font-size: 28rpx;
+}
+
+.icons {
+    width: 100rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28rpx;
+    color: #4171f7;
+}
+
+.messageWrap {
+    padding: 40rpx 0;
+    color: #333;
+}
+
+.messageTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40rpx;
+    font-weight: 600;
+}
+
+.warn {
+    width: 36rpx;
+    height: 36rpx;
+    vertical-align: middle;
+    margin-right: 8rpx;
+}
+
+.warnMsg {
+    width: 196rpx;
+    height: 56rpx;
+    line-height: 56rpx;
+    border-radius: 56rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #fff;
+    background-color: #aaa;
+}
+
+.subhead {
+    padding: 20rpx 0;
+    font-size: 36rpx;
+    font-weight: 500;
+    color: #333;
+}
+
+.richTextWrap {
+    font-size: 26rpx;
+    color: #333;
+}
+
+.icons{
+    width: 120rpx;
+    position: relative;
+}
+
+.users {
+    width: 38rpx;
+    height: 38rpx;
+    position: absolute;
+    top: -19rpx;
+    border-radius: 50%;
+}
+
+.icon1{
+    z-index: 6;
+    left: 0;
+}
+
+.icon2{
+    z-index: 5;
+    left: 20rpx;
+}
+
+.icon3{
+    z-index: 4;
+    left: 40rpx;
+}
+
+.icon4{
+    z-index: 3;
+    left: 60rpx;
+}
+
+.icon5{
+    z-index: 1;
+    left: 80rpx;
+}
+
+.participant {
+    display: flex;
+    align-items: center;
+    margin-top: 22rpx;
+    font-size: 24rpx;
+    color: #666;
+}
+
+
+
+
+.content {
+    padding: 20rpx 28rpx;
+    background-color: #fff;
+}
+
+.navWrap {
+    display: flex;
+    width: 348rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    border-radius: 16rpx;
+    overflow: hidden;
+    text-align: center;
+    font-size: 32rpx;
+    color: #999;
+    background-color: rgba(65, 113, 247, 0.10);
+}
+
+.navName {
+    width: 174rpx;
+    text-align: center;
+}
+
+.current {
+    color: #fff;
+    background-color: #4171F7;
+}
+
+.nav1 {
+    padding: 20rpx 28rpx;
+}
+
+.askReply {
+    padding: 0 0 20rpx;
+}
+
+.askTitle {
+    padding-top: 20rpx;
+    font-size: 32rpx;
+    font-weight: 500;
+    color: #333;
+}
+
+.ask {
+    padding-top: 18rpx;
+    font-size: 28rpx;
+    color: #666;
+}
+
+.reply {
+    padding: 18rpx 0;
+    border-bottom: 2rpx solid rgba(144, 153, 153, 0.20);
+    font-size: 24rpx;
+    color: #999;
+}
+
+.iconfont {
+    color: #999;
+}
+
+.icon-right{
+    color: #4171f7;
+}
+
+.askReplyItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconWrap {
+    width: 50rpx;
+    height: 50rpx;
+    text-align: right;
+}
+
+
+.navImage {
+    margin: 0 auto;
+    width: 660rpx;
+}

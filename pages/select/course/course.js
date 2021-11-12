@@ -61,5 +61,17 @@ Page({
 
   getMe(){
     showToast('购买')
+  },
+
+  // 去直播
+  broadcastRoom() {
+    console.log(1111);
+    showToast('123')
+    tt.setClipboardData({
+      data: '直播链接',
+      success: (res) => {
+        console.log(res);
+      }
+    })
   }
 })

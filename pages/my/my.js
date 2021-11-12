@@ -56,7 +56,6 @@ Page({
         tt.getUserInfo({
           withCredentials: true,
           success: (res) => {
-            console.log(res);
             let userInfo = res.userInfo;
             let url = 'https://api.xiangmucanmou.com/user/auth_login'
             data.iv = res.iv;

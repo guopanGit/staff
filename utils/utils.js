@@ -58,6 +58,7 @@ export function ajaxPromise(url, data, method,) {
       },
       method,
       success: (res) => {
+        console.log(res);
         resolve(res.data)
       },
       fail: (res) => {
