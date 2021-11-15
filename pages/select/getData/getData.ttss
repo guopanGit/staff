@@ -1,0 +1,89 @@
+/* /获取资料资料/getData.ttss */
+
+.wrap {
+    padding: 0rpx 26rpx 40rpx 28rpx;
+}
+
+.ad {
+    width: 696rpx;
+    height: 198rpx;
+    border-radius: 8rpx;
+}
+
+.ad1 {
+    width: 690rpx;
+    height: 292rpx;
+    border-radius: 8rpx;
+}
+
+.fromWrap {
+    height: 134rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2rpx solid rgba(153, 153, 153, 0.20);
+}
+
+.inputWrap {
+    width: 428rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconWrap {
+    width: 50rpx;
+    height: 50rpx;
+    text-align: right;
+}
+
+.must {
+    margin-left: 24rpx;
+    font-size: 36rpx;
+    color: #FF0000;
+}
+
+.pickerVal{
+    font-size: 36rpx;
+}
+
+
+.verifyWrap {
+    width: 181rpx;
+    text-align: right;
+    font-size: 36rpx;
+    color: #3d74f3;
+}
+
+.verify{
+    width: 248rpx;
+}
+
+
+.textWrap {
+    padding-top: 126rpx;
+}
+
+.textarea {
+    width: 694rpx;
+    height: 212rpx;
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    border: 2rpx solid rgba(153, 153, 153, 0.80);
+}
+
+.btnWrap {
+    margin-top: 40rpx;
+    padding: 0 122rpx;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+}
+
+.btn {
+    width: 506rpx;
+    height: 96rpx;
+    line-height: 96rpx;
+    border-radius: 96px;
+    background-color: #3d74f3;
+}

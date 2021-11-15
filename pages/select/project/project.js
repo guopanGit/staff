@@ -55,12 +55,16 @@ Page({
 
   // 立即咨询
   consult() {
-    showToast('立即咨询')
+    tt.navigateTo({
+      url:'/pages/select/getData/getData?type=0'
+    })
   },
 
   // 获取资料
   getData() {
-    showToast('获取资料')
+    tt.navigateTo({
+      url:'/pages/select/getData/getData?type=1'
+    })
   },
 
   showMack() {

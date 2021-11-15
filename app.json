@@ -15,6 +15,7 @@
     "pages/select/project/project",
     "pages/select/details/details",
     "pages/select/course/course",
+    "pages/select/getData/getData",
     "component/topNav/topNav"
   ],
   "window": {

@@ -12,6 +12,7 @@ export function formatNumber(n) {
  * @dateTime 日期类型(日期/日期+时间)
  */
 export function formatTime(date, dateTime, divide) {
+  date = new Date(date)
   let year = date.getFullYear();
   let month = date.getMonth() + 1;
   let day = date.getDate();
@@ -28,8 +29,10 @@ export function formatTime(date, dateTime, divide) {
   // 日期 + 时间
   if (dateTime == 5) {
     return [year, month, day].map(formatNumber).join(divide) + ' ' + [hour, minute].map(formatNumber).join(':');
-  } else if (dateTime == 2) {
+  } else if (dateTime == 4) {
     return [minute, second].map(formatNumber).join(':');
+  } else if(dateTime == 3){
+    return [month, day].map(formatNumber).join(divide);
   } else {
     return [year, month, day].map(formatNumber).join(divide);
   }

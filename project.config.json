@@ -13,13 +13,13 @@
     "projectname": "参谋",
     "condition": {
         "miniprogram": {
-            "current": -1,
+            "current": 1635734283415,
             "list": [
                 {
                     "id": 1635734283415,
                     "name": "我的",
-                    "pathName": "pages/my/course/video/video",
-                    "query": "",
+                    "pathName": "pages/select/getData/getData",
+                    "query": "type=0",
                     "scene": "990001",
                     "launchFrom": "scan",
                     "location": "qr_code"

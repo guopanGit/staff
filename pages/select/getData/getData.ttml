@@ -1,0 +1,67 @@
+<!-- 获取资料/getData.ttml -->
+<view>
+    <topNav nav-data="{{navData}}"></topNav>
+</view>
+
+<view tt:if="{{type}}" class="pageWrap" style="padding-top: {{height*2 + 20}}px;">
+    <view class="wrap">
+        <image tt:if="{{porch == 1}}" class="ad" src="/image/grop.jpg" mode="aspectFill"/>
+        <image tt:if="{{porch == 0}}" class="ad1" src="/image/grop.jpg" mode="aspectFill"/>
+        <view class="fromWrap">
+            <view class="name">姓名</view>
+            <view class="inputWrap">
+                <input class="" value="{{name}}" type="text" placeholder="请输入姓名" bindinput="setName"/>
+                <view class="iconWrap" bindtap="emptyName">
+                    <icon tt:if="{{name !== ''}}" type="clear" size="12" color="#999"></icon>
+                </view>
+            </view>
+        </view>
+        <view class="fromWrap">
+            <view class="name">沟通时间</view>
+            <view class="inputWrap">
+                <picker class="picker" mode="multiSelector"  range="{{pickerTime}}"
+                        bindcolumnchange="columnchange" bindchange="setPicker">
+                    <view class="pickerVal {{picker == '请选择沟通时间' ? 'c9' : 'c3' }}">{{picker}}</view>
+                </picker>
+                <view class="iconWrap" bindtap="emptyPicker">
+                    <icon tt:if="{{picker !== '请选择沟通时间'}}" type="clear" size="12" color="#999"></icon>
+                </view>
+            </view>
+        </view>
+        <view class="fromWrap">
+            <view class="name">
+                <text>手机号码</text>
+                <text class="must">*</text>
+            </view>
+            <view class="inputWrap">
+                <input class="" value="{{phone}}" type="number" maxlength="11" placeholder="请输入手机号" bindinput="setPhone"/>
+                <view class="iconWrap" bindtap="emptyPhone">
+                    <icon tt:if="{{phone !== ''}}" type="clear" size="12" color="#999"></icon>
+                </view>
+            </view>
+        </view>
+        <view class="fromWrap">
+            <view class="name">
+                <text>短信验证码</text>
+                <text class="must">*</text>
+            </view>
+            <view class="inputWrap">
+                <input class="verify" value="{{verify}}" type="number" placeholder="请输入验证码" bindinput="getVerify"/>
+                <view class="verifyWrap" bindtap="emptyVerify">
+                   <view  class="getVerify">{{timer}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="textWrap">
+            <textarea class="textarea" value="{{textarea}}" placeholder="输入您想咨询的问题" bindinput="setIssue" />
+        </view>
+        <view class="btnWrap">
+            <view tt:if="{{porch == 1}}" class="btn" bindtap="getData">获取资料</view>
+            <view tt:if="{{porch == 0}}" class="btn" bindtap="torefer">马上咨询</view>
+        </view>
+    </view>
+</view>
+<view tt:if="{{!type}}" class="default">
+    <image class="defaulImg" src="/image/fail.png" mode="aspectFill"/>
+    <view>哎呀，我们还没有捕捉到数据，歇会再来吧～</view>
+</view>

@@ -248,6 +248,8 @@
     display: flex;
     height: 98rpx;
     position: fixed;
+    align-items: center;
+    justify-content: space-between;
     right: 0;
     bottom: 0;
     left: 0;
@@ -258,7 +260,6 @@
 .left{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 200rpx;
     height: 98rpx;
 }
@@ -267,8 +268,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex: 1;
-    width: 456rpx;
+    width: 480rpx;
     height: 98rpx;
     padding: 0 28rpx 0 54rpx;
 }
