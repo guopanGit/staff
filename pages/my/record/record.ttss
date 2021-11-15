@@ -1,84 +1,89 @@
 /* 项目浏览记录.ttss */
 
 @import url('../../../css/icon.ttss');
+
 .center {
     padding: 40rpx 28rpx 0;
 }
 
 .itemWrap {
-    display: flex;
-    padding: 20rpx 28rpx;
+    padding: 20rpx 0 20rpx 40rpx;
     margin-bottom: 40rpx;
     border-radius: 20rpx;
     box-shadow: 0 8rpx 8rpx rgba(0, 0, 0, 0.25);
     background-color: #EEF7FF;
 }
 
-.itemRight {
-    width: 100%;
-    padding-left: 24rpx;
-}
-
-.logoWrap {
-    width: 124rpx;
-    height: 124rpx;
-    border-radius: 16rpx;
-}
-
-.titleWrap {
+.itemTop {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-right: 24rpx;
+    font-size: 28rpx;
     color: #333;
 }
 
-.name {
-    display: inline-block;
-    width: 108rpx;
-    margin-right: 20rpx;
-    font-size: 36rpx;
-}
-
-.simple {
-    display: inline-block;
-    font-size: 28rpx;
-}
-
-.plan {
+.check {
     display: flex;
-    justify-content: space-between;
-    width: 390rpx;
-    padding-top: 14rpx;
+    align-items: center;
     font-size: 24rpx;
     color: #666;
 }
 
-.type {
-    display: inline-block;
-    border-radius: 8rpx;
-    padding: 4rpx 8rpx;
-    font-size: 24rpx;
-    color: #fff;
-    background-color: #F96C04;
-}
-
-.sum {
-    display: inline-block;
-    border-radius: 8rpx;
-    padding: 4rpx 8rpx;
-    margin: 0 0 0 20rpx;
-    font-size: 24rpx;
-    color: #fff;
-    background-color: #FF7171;
-}
-
-.titleTyupe {
+.itemMatter {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    border-bottom: 2rpx solid rgba(153,153,153,0.30);
 }
 
-.titleDetails {
-    display: inline-block;
-    font-size: 28rpx;
-    color: #4171F7;
+.logoWrap {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 16rpx;
+    margin-right: 24rpx;
 }
+
+.matter {
+    width: 100%;
+    position: relative;
+    padding: 20rpx 0 22rpx 0;
+    font-size: 24rpx;
+    color: #666;
+
+}
+
+.matterFoot{
+    width: 78rpx;
+    height: 72rpx;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.name{
+    margin-bottom: 10rpx;
+    font-size: 36rpx;
+    font-weight: 500;
+    color: #333;
+}
+
+.itemBottom{
+    display: flex;
+    padding-top: 16rpx;
+    font-size: 24rpx;
+    color: #666;
+}
+
+.cost{
+    margin-left: 56rpx;
+}
+
+.itemType{
+    color: #F6964F;
+}
+
+.itemNum{
+    color: #FF7171;
+}
+
+
