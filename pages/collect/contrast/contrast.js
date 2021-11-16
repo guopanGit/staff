@@ -71,7 +71,9 @@ Page({
       showToast('请选择两个对比')
       return false
     } else {
-     showToast('开始分析')
+      tt.navigateTo({
+        url: '/pages/collect/result/result'
+      })
     }
   }
 })

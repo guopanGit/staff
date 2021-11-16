@@ -55,6 +55,10 @@ view {
 
 /* 字体大小 */
 
+.fz40{
+    font-size: 40rpx;
+}
+
 .fz28{
     font-size: 28rpx;
 }

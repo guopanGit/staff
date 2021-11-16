@@ -13,7 +13,9 @@ App({
 
     // 获取系统信息
     let systemInfo = tt.getSystemInfoSync();
-    console.log(systemInfo);
+    let model = systemInfo.model;
+    this.globalData.isIphoneX = /iphone\sx/i.test(model) || (/iphone/i.test(model) && /unknown/.test(model)) || /iphone\s11/i.test(model);
+
 
     // 检查更新
     const updateManager = tt.getUpdateManager();
@@ -37,6 +39,7 @@ App({
   },
   globalData: {
     height: 0,
-    bottom: 0
+    bottom: 0,
+    isIphoneX: false,
   }
 })

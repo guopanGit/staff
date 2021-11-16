@@ -1,0 +1,181 @@
+/* 对比分析结果/result.ttss */
+
+@import url('/css/icon.ttss');
+
+.wrap {
+    padding: 0 28rpx 40rpx;
+}
+
+.resultWrap {
+    width: 694rpx;
+    margin-top: 40rpx;
+    padding: 28rpx 18rpx 60rpx 20rpx;
+    border-radius: 24rpx;
+    background-color: #EEF7FF;
+    box-shadow: 0rpx 8rpx 8rpx rgba(0, 0, 0, 0.25);
+}
+
+.result{
+    font-size: 36rpx;
+    font-weight: 500;
+    color: #333;
+}
+
+.notice{
+    margin: 16rpx 0 32rpx 0;
+    font-size: 24rpx;
+    color: rgba(102, 102, 102, 0.8);;
+}
+
+
+.nameWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 214rpx;
+}
+
+.blue {
+    width: 292rpx;
+    height: 192rpx;
+    background-image: url("https://file.xiangmucanmou.com/image/blue.png");
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+.red {
+    width: 452rpx;
+    height: 192rpx;
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url("https://file.xiangmucanmou.com/image/red.png");
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    padding-top: 22rpx;
+    font-size: 24rpx;
+    color: #fff;
+}
+
+.big {
+    width: 400rpx;
+    padding-right: 16rpx;
+    justify-content: flex-end;
+}
+
+.small {
+    width: 280rpx;
+    padding-left: 16rpx;
+    text-align: left;
+}
+
+
+.typeWrap {
+    display: inline-block;
+}
+
+.logo {
+    width: 76rpx;
+    height: 76rpx;
+    margin-right: 12rpx;
+    border-radius: 16rpx;
+    vertical-align: middle;
+}
+
+.logo1 {
+    margin-right: 0rpx;
+    margin-left: 12rpx;
+}
+
+.fz20{
+    margin-top: 10rpx;
+}
+
+.mate{
+    width: 202rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18rpx 18rpx 12rpx 16rpx;
+    color: #fff;
+}
+
+.itemMate{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 16rpx;
+}
+
+
+.redMate{
+    width: 290rpx;
+    padding: 18rpx 0 12rpx 16rpx;
+
+}
+
+.progress{
+    margin-left: 20rpx;
+    border-radius: 50rpx;
+    overflow: hidden;
+}
+
+.redProgressWrap{
+    padding-right: 16rpx;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.blueProgress{
+    width: 168rpx;
+}
+
+.redProgress{
+    width: 290rpx;
+}
+
+.refer{
+    width: 694rpx;
+    height: 124rpx;
+    border-radius: 20rpx;
+    margin-top:40rpx ;
+}
+
+.msgItem{
+    display: flex;
+    align-items: center;
+    height: 174rpx;
+}
+
+.icon{
+    width: 92rpx;
+    height: 92rpx;
+    margin-right: 24rpx;
+}
+
+.msgWrap{
+    width: 580rpx;
+    height: 174rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2rpx solid rgba(153,153,153,0.20);
+    color: #333;
+}
+
+.msg{
+    margin-top: 24rpx;
+    font-size: 28rpx;
+    color: #999;
+}
+
+.icon-right{
+    color: #999;
+}

@@ -10,6 +10,7 @@ Page({
     navData: {
       title: '项目详情'
     },
+    isIphoneX: false,
     type: false,
     height: 0,
     mack: false
@@ -17,6 +18,7 @@ Page({
   onLoad() {
     let pages = getCurrentPages().length;
     let height = getApp().globalData.height
+    let isIphoneX = getApp().globalData.isIphoneX
     let navData = {
       title: '项目详情',
       pages,
@@ -37,33 +39,34 @@ Page({
           this.setData({
             navData,
             height,
-            type
+            type,
+            isIphoneX
           })
         })
   },
 
   // 去项目详情
-  toDetails(){
+  toDetails() {
     tt.navigateTo({
-      url:'/pages/select/details/details'
+      url: '/pages/select/details/details'
     })
   },
 
-  collect(){
+  collect() {
     showToast('收藏')
   },
 
   // 立即咨询
   consult() {
     tt.navigateTo({
-      url:'/pages/select/getData/getData?type=0'
+      url: '/pages/select/getData/getData?type=0'
     })
   },
 
   // 获取资料
   getData() {
     tt.navigateTo({
-      url:'/pages/select/getData/getData?type=1'
+      url: '/pages/select/getData/getData?type=1'
     })
   },
 
@@ -80,5 +83,6 @@ Page({
   },
 
   // 分享
-  onShareAppMessage() {}
+  onShareAppMessage() {
+  }
 })

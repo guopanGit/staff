@@ -155,7 +155,7 @@
                 </view>
             </view>
         </view>
-        <view class="bottom">
+        <view class="bottom {{isIphoneX ? 'ipx' : ''}}">
             <view class="bottomTitle">项目课程</view>
             <block tt:for="{{4}}">
                 <view class="videoItem">
@@ -173,7 +173,7 @@
                 </view>
             </block>
         </view>
-        <view class="bottomNav">
+        <view class="bottomNav {{isIphoneX ? 'ipxNav' : ''}}">
             <view class="left">
                 <button class="shares" open-type="share">
                     <image class="sharesIcon" src="/image/fenxiang1.png" mode="aspectFill"/>

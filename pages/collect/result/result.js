@@ -1,20 +1,17 @@
-// 同行业对比.js
-import {
-  getType,
-  showToast
-} from '../../../utils/utils';
+// 对比分析结果/result.js
+import {getType} from "../../../utils/utils";
 
 Page({
   data: {
-    navData: {},
+    height: 0,
     type: false
   },
   onLoad(options) {
     let pages = getCurrentPages().length;
     let navData = {
-      title: '行业对比记录',
+      title: '对比分析结果',
       pages,
-      bgcolor: '#fff',
+      bgcolor: "#fff",
       color: '#333'
     }
     let height = getApp().globalData.height
@@ -35,11 +32,4 @@ Page({
           })
         })
   },
-
-  toDetails(e) {
-    console.log(e)
-    let val = e.currentTarget.dataset.val;
-    console.log(val)
-    showToast('对比结果')
-  }
 })

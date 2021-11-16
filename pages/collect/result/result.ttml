@@ -1,0 +1,90 @@
+<!-- 对比分析结果/result.ttml -->
+<view>
+    <topNav nav-data="{{navData}}"></topNav>
+</view>
+
+<view tt:if="{{type}}" class="wrap" style="padding-top: {{height*2 + 20}}px;">
+    <view class="resultWrap">
+        <view class="result">对比分析结果</view>
+        <view class="notice">本次分析数据均由项目方提供， 分析结果仅作参考</view>
+        <view class="nameWrap">
+            <view class="blue">
+                <view class="blueItem">
+                    <view class="name small">
+                        <image class="logo" src="/image/logo1.png" mode="" />
+                        <view class="typeWrap">
+                            <view class="fz28">送件侠</view>
+                            <view class="fz20">互联网/快递</view>
+                        </view>
+                    </view>
+                    <view class="mate">
+                        <view class="fz24">匹配度</view>
+                        <view class="fz28">38%</view>
+                    </view>
+                    <view class="progress blueProgress">
+                        <progress class="blueProgress" percent="{{38}}" stroke-width="16rpx"
+                                  active-color="#fff" background-color="rgba(255,255,255,0.20)" active="{{true}}" />
+                    </view>
+                </view>
+            </view>
+            <view class="red">
+                <view class="redItem">
+                    <view class="name big">
+                        <view class="typeWrap">
+                            <view class="fz28 tr">送件侠</view>
+                            <view class="fz20">互联网/快递</view>
+                        </view>
+                        <image class="logo logo1" src="/image/logo1.png" mode="" />
+                    </view>
+                    <view class="itemMate">
+                        <view class="mate redMate">
+                            <view class="fz28">62%</view>
+                            <view class="fz24">匹配度</view>
+                        </view>
+                    </view>
+                    <view class="redProgressWrap">
+                        <view class="progress">
+                            <progress class="redProgress" percent="{{62}}" stroke-width="16rpx"
+                                      active-color="#fff" background-color="rgba(255,255,255,0.20)" active="{{true}}" />
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <image class="refer" src="https://file.xiangmucanmou.com/image/refer.png" mode="aspectFill"/>
+    <view class="msgItem">
+        <image class="icon" src="/image/jiben.png" mode="aspectFill"/>
+        <view class="msgWrap">
+            <view>
+                <view class="fz40">项目基本信息对比</view>
+                <view class="msg">共14个对比数据</view>
+            </view>
+            <text class="iconfont icon-right"></text>
+        </view>
+    </view>
+    <view class="msgItem">
+        <image class="icon" src="/image/vs.png" mode="aspectFill"/>
+        <view class="msgWrap">
+            <view>
+                <view class="fz40">行业搜索指数对比</view>
+                <view class="msg">共14个对比数据</view>
+            </view>
+            <text class="iconfont icon-right"></text>
+        </view>
+    </view>
+    <view class="msgItem">
+        <image class="icon" src="/image/shoru.png" mode="aspectFill"/>
+        <view class="msgWrap">
+            <view>
+                <view class="fz40">项目投入产出对比</view>
+                <view class="msg">共14个对比数据</view>
+            </view>
+            <text class="iconfont icon-right"></text>
+        </view>
+    </view>
+</view>
+<view tt:if="{{!type}}" class="default">
+    <image class="defaulImg" src="/image/fail.png" mode="aspectFill"/>
+    <view>哎呀，我们还没有捕捉到数据，歇会再来吧～</view>
+</view>

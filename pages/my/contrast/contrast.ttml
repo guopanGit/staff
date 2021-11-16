@@ -3,7 +3,7 @@
   <topNav nav-data="{{navData}}"></topNav>
 </view>
 
-<view class="wrap" style="padding-top: {{height*2 + 20}}px;">
+<view tt:if="{{type}}" class="wrap" style="padding-top: {{height*2 + 20}}px;">
   <view tt:for="{{2}}">
     <view class="resultWrap" bindtap="toDetails" data-val="{{item}}">
       <view class="nameWrap">
@@ -56,4 +56,8 @@
         </view> 
     </view>
   </view>
+</view>
+<view tt:if="{{!type}}" class="default">
+    <image class="defaulImg" src="/image/fail.png" mode="aspectFill"/>
+    <view>哎呀，我们还没有捕捉到数据，歇会再来吧～</view>
 </view>

@@ -121,6 +121,11 @@
     padding-bottom: 20rpx;
 }
 
+.ipx{
+    background-color: #fff;
+    padding-bottom: 80rpx;
+}
+
 .bottomTitle{
     padding:20rpx 0 0 28rpx;
     font-size: 40rpx;
@@ -255,6 +260,12 @@
     left: 0;
     background-color: #fff;
     box-shadow: 0rpx 0rpx 8rpx 0rpx rgba(0, 0, 0, 0.25);
+}
+
+.ipxNav{
+    box-sizing: content-box;
+    padding-bottom: 50rpx;
+    background-color: #fff;
 }
 
 .left{
