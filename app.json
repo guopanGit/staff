@@ -16,6 +16,7 @@
     "pages/select/details/details",
     "pages/select/course/course",
     "pages/select/getData/getData",
+    "pages/collect/contrast/contrast",
     "component/topNav/topNav"
   ],
   "window": {

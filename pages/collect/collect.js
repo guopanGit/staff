@@ -1,4 +1,5 @@
-// /Users/mac/Documents/work/staff/参谋/pages/collect/collect.js
+// 收藏/collect.js
+
 import {showToast} from "../../utils/utils";
 
 Page({
@@ -29,8 +30,10 @@ Page({
     })
   },
 
-  toContrast(){
-    showToast('去对比')
+  toContrast() {
+    tt.navigateTo({
+      url: '/pages/collect/contrast/contrast'
+    })
   },
   // 下拉刷新
   onPullDownRefresh() {

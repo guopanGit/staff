@@ -1,0 +1,46 @@
+<!-- /Users/mac/Documents/work/staff/参谋/pages/collect/contrast/contrast.ttml -->
+<view>
+    <topNav nav-data="{{navData}}"></topNav>
+</view>
+<view tt:if="{{type}}" style="padding-top: {{height*2 + 20}}px;">
+    <view class="center">
+        <block tt:for="{{list}}">
+            <view class="itemWrap" bindtap="setContrast" data-inx="{{index}}">
+                <view class="itemTop">
+                    <view>送件侠，后现在时代聚合者...</view>
+                    <view class="check">
+                        <text class="iconfont icon-checked {{item.checked ? 'checked' : ''}}"></text>
+                    </view>
+                </view>
+                <view class="itemMatter">
+                    <view>
+                        <image class="logoWrap" src="/image/logo1.png" mode="aspectFill"/>
+                    </view>
+                    <view class="matter">
+                        <view class="name">送件侠</view>
+                        <view>融资中 / 融资中 / 融资中</view>
+                        <image class="matterFoot" src="/image/matterFoot.png" mode=""/>
+                    </view>
+                </view>
+                <view class="itemBottom">
+                    <view>
+                        <text>行业信息：</text>
+                        <text class="itemType">互联网/快递</text>
+                    </view>
+                    <view class="cost">
+                        <text>创业成本：</text>
+                        <text class="itemNum">5-10万</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+
+        <view class="btnWrap" bindtap="beginContrast">
+            <view class="btn">开始分析</view>
+        </view>
+    </view>
+</view>
+<view tt:if="{{!type}}" class="default">
+    <image class="defaulImg" src="/image/fail.png" mode="aspectFill"/>
+    <view>哎呀，我们还没有捕捉到数据，歇会再来吧～</view>
+</view>

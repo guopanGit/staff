@@ -1,0 +1,108 @@
+/* 对比/contrast.ttss */
+
+@import url('../../../css/icon.ttss');
+
+.center {
+    padding: 40rpx 28rpx 20rpx;
+}
+
+.itemWrap:last-child {
+    margin-bottom: 0;
+}
+
+
+.itemWrap {
+    padding: 20rpx 0 20rpx 40rpx;
+    margin-bottom: 40rpx;
+    border-radius: 20rpx;
+    box-shadow: 0 8rpx 8rpx rgba(0, 0, 0, 0.25);
+    background-color: #EEF7FF;
+}
+
+.itemTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 24rpx;
+    font-size: 28rpx;
+    color: #333;
+}
+
+.icon-checked {
+    font-size: 60rpx;
+    color: rgba(153, 153, 153, 0.5);
+}
+
+.checked{
+    color: #3D74F3;
+}
+
+.itemMatter {
+    display: flex;
+    align-items: center;
+    border-bottom: 2rpx solid rgba(153, 153, 153, 0.30);
+}
+
+.logoWrap {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 16rpx;
+    margin-right: 24rpx;
+}
+
+.matter {
+    width: 100%;
+    position: relative;
+    padding: 20rpx 0 22rpx 0;
+    font-size: 24rpx;
+    color: #666;
+
+}
+
+.matterFoot {
+    width: 78rpx;
+    height: 72rpx;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.name {
+    margin-bottom: 10rpx;
+    font-size: 36rpx;
+    font-weight: 500;
+    color: #333;
+}
+
+.itemBottom {
+    display: flex;
+    padding-top: 16rpx;
+    font-size: 24rpx;
+    color: #666;
+}
+
+.cost {
+    margin-left: 56rpx;
+}
+
+.itemType {
+    color: #F6964F;
+}
+
+.itemNum {
+    color: #FF7171;
+}
+
+.btnWrap{
+    padding: 95rpx 28rpx 40rpx;
+    text-align: center;
+    font-size: 44rpx;
+    color: #fff;
+}
+
+.btn{
+    height: 98rpx;
+    line-height: 98rpx;
+    background-color: #3D74F3;
+    border-radius: 6rpx;
+}
