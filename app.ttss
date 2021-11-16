@@ -53,6 +53,26 @@ view {
     color: #4171F7;
 }
 
+/* 字体大小 */
+
+.fz28{
+    font-size: 28rpx;
+}
+
+.fz24{
+    font-size: 24rpx;
+}
+
+.fz20{
+    font-size: 20rpx;
+}
+
+/* 字体对齐 */
+
+.tr{
+    text-align: right;
+}
+
 /* 背景颜色 */
 .bgcf {
     background-color: #fff;
