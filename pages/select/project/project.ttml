@@ -194,5 +194,5 @@
     <view>哎呀，我们还没有捕捉到数据，歇会再来吧～</view>
 </view>
 <view tt:if="{{mack}}" class="mack" bindtap="hideMack">
-    <view class="warn">创业参谋只自主采集了项目公司公开数据，其他项目信息和数据均由项目方提供，项目参谋的5纬度分析结果只做参考使用。</view>
+    <view class="warn">项目参谋只自主采集了项目公司公开数据，其他项目信息和数据均由项目方提供，项目参谋的5纬度分析结果只做参考使用。</view>
 </view>

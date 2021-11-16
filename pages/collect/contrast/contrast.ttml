@@ -36,7 +36,12 @@
         </block>
 
         <view class="btnWrap" bindtap="beginContrast">
-            <view class="btn">开始分析</view>
+            <view class="btn">
+                <view class="btn1">
+                    <image class="btnIcon" src="/image/fenxi.png" mode="aspectFill"/>
+                    <view class="btnText">开始分析</view>
+                </view>
+            </view>
         </view>
     </view>
 </view>

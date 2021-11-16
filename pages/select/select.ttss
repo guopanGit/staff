@@ -28,6 +28,7 @@
 
 .currentWrap {
     text-align: center;
+    background-color: #fff;
 }
 
 .current {
@@ -60,6 +61,11 @@
     height: 32rpx;
     box-sizing: content-box;
     padding: 40rpx 28rpx 0;
+    background-color: #fff;
+}
+
+.title{
+    background-color: #fff;
 }
 
 .titleName {
@@ -76,7 +82,7 @@
     left: 28rpx;
     bottom: -6rpx;
     font-size: 40rpx;
-    z-index: -1;
+    z-index: 2;
 }
 
 .l0 {
@@ -97,7 +103,6 @@
 
 .matterWrap {
     background-color: #eee;
-    margin-top: 8rpx;
 }
 
 .matterWrap:first-child {

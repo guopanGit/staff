@@ -3,7 +3,7 @@
 @import url('../../../css/icon.ttss');
 
 .center {
-    padding: 40rpx 28rpx 20rpx;
+    padding: 40rpx 28rpx 20rpx 28rpx;
 }
 
 .itemWrap:last-child {
@@ -94,6 +94,9 @@
 }
 
 .btnWrap{
+    position: fixed;
+    right: 10rpx;
+    bottom: 90rpx;
     padding: 95rpx 28rpx 40rpx;
     text-align: center;
     font-size: 44rpx;
@@ -101,8 +104,31 @@
 }
 
 .btn{
-    height: 98rpx;
-    line-height: 98rpx;
-    background-color: #3D74F3;
-    border-radius: 6rpx;
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 50%;
+    padding-top: 8rpx;
+    background-color: rgba(65, 113, 247, 0.5);
+    box-shadow: 0rpx 0rpx 20rpx rgba(33, 72, 181, 0.5);
+}
+.btn1{
+    width: 126rpx;
+    height: 126rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #4171F7;
+}
+
+.btnIcon{
+    width: 45rpx;
+    height: 45rpx;
+}
+
+.btnText{
+    margin-top: -40rpx;
+    font-size: 24rpx;
 }
