@@ -79,10 +79,10 @@ Page({
   // 固定元素
   onPageScroll(e) {
     let query = tt.createSelectorQuery();
-    query.select(".title").boundingClientRect((res) => {
+    query.select(".titlewrap").boundingClientRect((res) => {
       let {height, oldTop, isFixed} = this.data;
       let {top} = res;
-      if (top <= height * 2 + 24) {
+      if (top <= height * 2 + 20) {
         isFixed = true;
         this.setData({
           oldTop: e.scrollTop

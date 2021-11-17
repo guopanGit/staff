@@ -1,18 +1,12 @@
 App({
   onLaunch(options) {
-    // 获取导航栏高度
-    tt.getSystemInfo({
-      success: (res) => {
-        this.globalData.height = res.statusBarHeight
-      }
-    })
-
     // 获取胶囊位置
     let bottom = tt.getMenuButtonLayout().top;
     this.globalData.bottom = bottom;
 
-    // 获取系统信息
+    // 获取系统信息  获取导航栏高度
     let systemInfo = tt.getSystemInfoSync();
+    this.globalData.height = systemInfo.statusBarHeight
     let model = systemInfo.model;
     this.globalData.isIphoneX = /iphone\sx/i.test(model) || (/iphone/i.test(model) && /unknown/.test(model)) || /iphone\s11/i.test(model);
 

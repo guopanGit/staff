@@ -33,43 +33,45 @@
             </view>
         </view>
         <view tt:if="{{title == 1}}" class="matterWrap">
-            <block tt:for="{{10}}">
+            <block tt:for="{{5}}">
                 <view class="content"  bindtap="toProject">
-                    <view class="itemWrap">
-                        <view class="logoWrap">
-                            <image class="logoWrap" src="/image/logo1.png" mode=""/>
-                        </view>
-                        <view class="itemRight">
-                            <view class="titleTyupe">
-                                <view class="nameWrap">
-                                    <view class="name">送件侠</view>
-                                    <view class="type">互联网/快递</view>
-                                    <view class="sum">5-10万</view>
+                    <view class="list">
+                        <view class="itemWrap">
+                            <view class="logoWrap">
+                                <image class="logoWrap" src="/image/logo1.png" mode=""/>
+                            </view>
+                            <view class="itemRight">
+                                <view class="titleTyupe">
+                                    <view class="nameWrap">
+                                        <view class="name">送件侠</view>
+                                        <view class="type">互联网/快递</view>
+                                        <view class="sum">5-10万</view>
+                                    </view>
+                                    <view class="titleDetails">
+                                        <text>详情</text>
+                                        <text class="iconfont icon-right"></text>
+                                    </view>
                                 </view>
-                                <view class="titleDetails">
-                                    <text>详情</text>
-                                    <text class="iconfont icon-right"></text>
+                                <view>
+                                    <view class="simple">送件侠，后现在时代聚合者</view>
+                                </view>
+                                <view class="plan">
+                                    <view>融资中 / 融资中 / 融资中</view>
                                 </view>
                             </view>
-                            <view>
-                                <view class="simple">送件侠，后现在时代聚合者</view>
-                            </view>
-                            <view class="plan">
-                                <view>融资中 / 融资中 / 融资中</view>
-                            </view>
                         </view>
-                    </view>
-                    <view class="article">
-                        <image class="articleImg" src="/image/grop.jpg" mode="aspectFill"/>
-                        <view class="judge"><text class="head">参谋点评：</text>新兴行业，总公司产品研发能力强劲；用户数目达到500万，新型行业，总公司产品研发能力强进。
+                        <view class="article">
+                            <image class="articleImg" src="/image/grop.jpg" mode="aspectFill"/>
+                            <view class="judge"><text class="head">参谋点评：</text>新兴行业，总公司产品研发能力强劲；用户数目达到500万，新型行业，总公司产品研发能力强进。
+                            </view>
                         </view>
                     </view>
                 </view>
             </block>
         </view>
         <view tt:if="{{title == 2}}" class="matterWrap">
-            <view class="bgcf">
-                <block tt:for="{{10}}">
+            <view>
+                <block tt:for="{{2}}">
                     <view class="videoItem">
                         <view bindtap="getDetails" data-val="{{item}}">
                             <view class="video">
