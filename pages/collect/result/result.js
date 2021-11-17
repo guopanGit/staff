@@ -32,4 +32,10 @@ Page({
           })
         })
   },
+
+  toParticular(){
+    tt.navigateTo({
+      url: '/pages/collect/particular/particular'
+    })
+  }
 })

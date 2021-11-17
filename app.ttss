@@ -140,5 +140,6 @@ view {
     right: 0;
     bottom: 0;
     background-color: rgba(51, 51, 51, 0.6);;
-    z-index: 9999;
+    z-index: 89;
 }
+

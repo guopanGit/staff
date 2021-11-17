@@ -1,1 +1,262 @@
-/* /Users/mac/Documents/work/staff/参谋/pages/collect/particular/particular.ttss */
+/* 项目分析结果/particular.ttss */
+
+@import url('/css/icon.ttss');
+
+page {
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.top {
+    padding: 0 28rpx;
+    z-index: 10;
+}
+
+.resultWrap {
+    width: 694rpx;
+    margin-top: 40rpx;
+    padding: 28rpx 18rpx 60rpx 20rpx;
+    border-radius: 24rpx;
+    background-color: #EEF7FF;
+    box-shadow: 0rpx 8rpx 8rpx rgba(0, 0, 0, 0.25);
+}
+
+.result {
+    font-size: 36rpx;
+    font-weight: 500;
+    color: #333;
+}
+
+.notice {
+    margin: 16rpx 0 32rpx 0;
+    font-size: 24rpx;
+    color: rgba(102, 102, 102, 0.8);;
+}
+
+
+.nameWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 214rpx;
+}
+
+.blue {
+    width: 292rpx;
+    height: 192rpx;
+    background-image: url("https://file.xiangmucanmou.com/image/blue.png");
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+.red {
+    width: 452rpx;
+    height: 192rpx;
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url("https://file.xiangmucanmou.com/image/red.png");
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    padding-top: 22rpx;
+    font-size: 24rpx;
+    color: #fff;
+}
+
+.big {
+    width: 400rpx;
+    padding-right: 16rpx;
+    justify-content: flex-end;
+}
+
+.small {
+    width: 280rpx;
+    padding-left: 16rpx;
+    text-align: left;
+}
+
+
+.typeWrap {
+    display: inline-block;
+}
+
+.logo {
+    width: 76rpx;
+    height: 76rpx;
+    margin-right: 12rpx;
+    border-radius: 16rpx;
+    vertical-align: middle;
+}
+
+.logo1 {
+    margin-right: 0rpx;
+    margin-left: 12rpx;
+}
+
+.fz20 {
+    margin-top: 10rpx;
+}
+
+.mate {
+    width: 202rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18rpx 18rpx 12rpx 16rpx;
+    color: #fff;
+}
+
+.itemMate {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 16rpx;
+}
+
+
+.redMate {
+    width: 290rpx;
+    padding: 18rpx 0 12rpx 16rpx;
+
+}
+
+.progress {
+    margin-left: 20rpx;
+    border-radius: 50rpx;
+    overflow: hidden;
+}
+
+.redProgressWrap {
+    padding-right: 16rpx;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.blueProgress {
+    width: 168rpx;
+}
+
+.redProgress {
+    width: 290rpx;
+}
+
+.bottom {
+    position: absolute;
+    top: 586rpx;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+}
+
+.titleWraap {
+    background-color: #fff;
+    padding-left: 28rpx;
+    z-index: 22;
+}
+
+.title {
+    padding-top: 40rpx;
+}
+
+.icon-bottom {
+    margin-left: 20rpx;
+    color: #3D74F3;
+}
+
+.icon-top {
+    margin-left: 20rpx;
+    color: #3D74F3;
+}
+
+
+.mack1 {
+    background-color: rgba(51, 51, 51, 0.60);
+}
+
+.showClassify {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 46rpx;
+    z-index: 22;
+}
+
+.classifyItem {
+    width: 292rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-radius: 8rpx;
+    margin: 40rpx 40rpx 0 0;
+    text-align: center;
+    font-size: 28rpx;
+    color: #666;
+    background-color: #f0f0f0;
+}
+
+.now{
+    color: #3D74F3;
+    background-color: #eef7ff;
+}
+
+
+.center{
+    position: absolute;
+    top: 680rpx;
+    padding-left: 28rpx;
+    z-index: 18;
+}
+
+.chartItem{
+    width: 694rpx;
+    height: 466rpx;
+    border-radius: 24rpx;
+    position: relative;
+    padding: 20rpx;
+    background-color: #e4e4e4;
+}
+
+.chartTitle{
+    font-size: 28rpx;
+    color: #000;
+}
+
+.chartName{
+    position: absolute;
+    top: 20rpx;
+    right: 20rpx;
+}
+
+.nameItem{
+    display: flex;
+    margin-bottom: 12rpx;
+    font-size: 28rpx;
+    color: #666;
+}
+
+.color1,.color2{
+    width: 46rpx;
+    height: 24rpx;
+    margin-right: 14rpx;
+}
+
+.color1{
+    background-color: #D70000;
+}
+
+.color2{
+    background-color: #0A35E8;
+}
+
+
+

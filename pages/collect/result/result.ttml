@@ -53,7 +53,7 @@
         </view>
     </view>
     <image class="refer" src="https://file.xiangmucanmou.com/image/refer.png" mode="aspectFill"/>
-    <view class="msgItem">
+    <view class="msgItem" bindtap="toParticular">
         <image class="icon" src="/image/jiben.png" mode="aspectFill"/>
         <view class="msgWrap">
             <view>
@@ -63,7 +63,7 @@
             <text class="iconfont icon-right"></text>
         </view>
     </view>
-    <view class="msgItem">
+    <view class="msgItem" bindtap="toParticular">
         <image class="icon" src="/image/vs.png" mode="aspectFill"/>
         <view class="msgWrap">
             <view>
@@ -73,7 +73,7 @@
             <text class="iconfont icon-right"></text>
         </view>
     </view>
-    <view class="msgItem">
+    <view class="msgItem" bindtap="toParticular">
         <image class="icon" src="/image/shoru.png" mode="aspectFill"/>
         <view class="msgWrap">
             <view>
