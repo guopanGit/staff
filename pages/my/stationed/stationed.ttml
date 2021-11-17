@@ -4,7 +4,7 @@
         <topNav nav-data="{{navData}}"></topNav>
     </view>
    <view style="padding-top: {{height*2 + 20}}px;">
-        <image class="img" src="/image/grop.jpg" mode="aspectFill" />
+        <image class="img" src="https://file.xiangmucanmou.com/image/lianxi.png" mode="aspectFill" />
     <view class="center">
         <view class="bar">填写入驻资料</view>
         <view class="from">

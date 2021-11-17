@@ -207,8 +207,50 @@
     border-radius: 8rpx;
     margin-bottom: 22rpx;
     padding: 16rpx 24rpx;
-    background-color: #8852da;
 }
+
+.fenxi{
+    background-image: url("https://file.xiangmucanmou.com/image/fenxi.png");
+    background-size: 100% 100%;
+}
+
+.qushi{
+    background-image: url("https://file.xiangmucanmou.com/image/qushi.png");
+    background-size: 100% 100%;
+}
+
+.muoshi{
+    background-image: url("https://file.xiangmucanmou.com/image/muoshi.png");
+    background-size: 100% 100%;
+}
+
+.shili{
+    background-image: url("https://file.xiangmucanmou.com/image/shili.png");
+    background-size: 100% 100%;
+}
+
+.jieshao{
+    background-image: url("https://file.xiangmucanmou.com/image/jieshao.png");
+    background-size: 100% 100%;
+}
+
+.anli{
+    background-image: url("https://file.xiangmucanmou.com/image/anli.png");
+    background-size: 100% 100%;
+}
+
+.liucheng{
+    background-image: url("https://file.xiangmucanmou.com/image/liucheng.png");
+    background-size: 100% 100%;
+}
+
+.zhichi{
+    background-image: url("https://file.xiangmucanmou.com/image/zhichi.png");
+    background-size: 100% 100%;
+}
+
+
+
 
 .itemName{
     font-size: 28rpx;

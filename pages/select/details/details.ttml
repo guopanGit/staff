@@ -46,7 +46,7 @@
         <view class="navTitle">参谋分析 项目介绍</view>
         <scroll-view class="scrollView" scroll-x="{{true}}"
                      scroll-with-animation="{{true}}">
-            <view class="scrollItem cutItem" bindtap="cutItem">
+            <view class="scrollItem minFenxi cutItem" bindtap="cutItem">
                 <view>参谋分析</view>
                 <view tt:if="{{true}}" class="progressWrap">
                     <progress class="progress" style="border-radius: 6px;overflow: hidden;"
@@ -59,7 +59,7 @@
                     <text class="fulfilText">已完成</text>
                 </view>
             </view>
-            <view class="scrollItem" bindtap="cutItem">
+            <view class="scrollItem minQushi" bindtap="cutItem">
                 <view>行业趋势</view>
                 <view tt:if="{{true}}" class="progressWrap">
                     <progress class="progress" style="border-radius: 6px;overflow: hidden;"
@@ -72,7 +72,7 @@
                     <text class="fulfilText">已完成</text>
                 </view>
             </view>
-            <view class="scrollItem" bindtap="cutItem">
+            <view class="scrollItem minMuoshi" bindtap="cutItem">
                 <view>项目模式</view>
                 <view tt:if="{{true}}" class="progressWrap">
                     <progress class="progress" style="border-radius: 6px;overflow: hidden;"
@@ -85,7 +85,7 @@
                     <text class="fulfilText">已完成</text>
                 </view>
             </view>
-            <view class="scrollItem" bindtap="cutItem">
+            <view class="scrollItem minShili" bindtap="cutItem">
                 <view>公司实力</view>
                 <view tt:if="{{true}}" class="progressWrap">
                     <progress class="progress" style="border-radius: 6px;overflow: hidden;"
@@ -98,7 +98,7 @@
                     <text class="fulfilText">已完成</text>
                 </view>
             </view>
-            <view class="scrollItem" bindtap="cutItem">
+            <view class="scrollItem minJieshao" bindtap="cutItem">
                 <view>产品介绍</view>
                 <view tt:if="{{true}}" class="progressWrap">
                     <progress class="progress" style="border-radius: 6px;overflow: hidden;"
@@ -111,7 +111,7 @@
                     <text class="fulfilText">已完成</text>
                 </view>
             </view>
-            <view class="scrollItem" bindtap="cutItem">
+            <view class="scrollItem minAnli" bindtap="cutItem">
                 <view>成功案例</view>
                 <view tt:if="{{true}}" class="progressWrap">
                     <progress class="progress" style="border-radius: 6px;overflow: hidden;"
@@ -124,7 +124,7 @@
                     <text class="fulfilText">已完成</text>
                 </view>
             </view>
-            <view class="scrollItem" bindtap="cutItem">
+            <view class="scrollItem minLiucheng" bindtap="cutItem">
                 <view>合作流程</view>
                 <view tt:if="{{true}}" class="progressWrap">
                     <progress class="progress" style="border-radius: 6px;overflow: hidden;"
@@ -137,7 +137,7 @@
                     <text class="fulfilText">已完成</text>
                 </view>
             </view>
-            <view class="scrollItem" bindtap="cutItem">
+            <view class="scrollItem minZhichi" bindtap="cutItem">
                 <view>服务支持</view>
                 <view tt:if="{{true}}" class="progressWrap">
                     <progress class="progress" style="border-radius: 6px;overflow: hidden;"

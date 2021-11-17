@@ -207,11 +207,50 @@
     height: 120rpx;
     padding: 12rpx 0 0 24rpx;
     margin: 20rpx 16rpx 0 24rpx ;
-    background: #4a86fe;
     border-radius: 8rpx;
     font-size: 28rpx;
     font-weight: 500;
     color: #fff;
+}
+
+.minFenxi{
+    background-image: url("https://file.xiangmucanmou.com/image/minFenxi.png");
+    background-size: 100% 100%;
+}
+
+.minQushi{
+    background-image: url("https://file.xiangmucanmou.com/image/minQushi.png");
+    background-size: 100% 100%;
+}
+
+.minMuoshi{
+    background-image: url("https://file.xiangmucanmou.com/image/minMuoshi.png");
+    background-size: 100% 100%;
+}
+
+.minShili{
+    background-image: url("https://file.xiangmucanmou.com/image/minShili.png");
+    background-size: 100% 100%;
+}
+
+.minJieshao{
+    background-image: url("https://file.xiangmucanmou.com/image/minJieshao.png");
+    background-size: 100% 100%;
+}
+
+.minAnli{
+    background-image: url("https://file.xiangmucanmou.com/image/minAnli.png");
+    background-size: 100% 100%;
+}
+
+.minLiucheng{
+    background-image: url("https://file.xiangmucanmou.com/image/minLiucheng.png");
+    background-size: 100% 100%;
+}
+
+.minZhichi{
+    background-image: url("https://file.xiangmucanmou.com/image/minZhichi.png");
+    background-size: 100% 100%;
 }
 
 .cutItem{

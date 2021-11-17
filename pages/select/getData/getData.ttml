@@ -5,8 +5,8 @@
 
 <view tt:if="{{type}}" class="pageWrap" style="padding-top: {{height*2 + 20}}px;">
     <view class="wrap">
-        <image tt:if="{{porch == 1}}" class="ad" src="/image/grop.jpg" mode="aspectFill"/>
-        <image tt:if="{{porch == 0}}" class="ad1" src="/image/grop.jpg" mode="aspectFill"/>
+        <image tt:if="{{porch == 1}}" class="ad" src="https://file.xiangmucanmou.com/image/ziliao.png" mode="aspectFill"/>
+        <image tt:if="{{porch == 0}}" class="ad1" src="https://file.xiangmucanmou.com/image/zixun.png" mode="aspectFill"/>
         <view class="fromWrap">
             <view class="name">姓名</view>
             <view class="inputWrap">

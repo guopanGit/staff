@@ -41,7 +41,7 @@
         <view class="middle">
             <view class="middleTitle">参谋分析 项目介绍</view>
             <view class="items">
-                <view class="item" bindtap="toDetails">
+                <view class="item fenxi" bindtap="toDetails">
                     <view class="itemName">参谋分析</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{true}}" class="progressWrap">
@@ -55,7 +55,7 @@
                         <text class="fulfilText">已完成</text>
                     </view>
                 </view>
-                <view class="item" bindtap="toDetails">
+                <view class="item qushi" bindtap="toDetails">
                     <view class="itemName">行业趋势</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{true}}" class="progressWrap">
@@ -69,7 +69,7 @@
                         <text class="fulfilText">已完成</text>
                     </view>
                 </view>
-                <view class="item" bindtap="toDetails">
+                <view class="item muoshi" bindtap="toDetails">
                     <view class="itemName">项目模式</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{false}}" class="progressWrap">
@@ -83,7 +83,7 @@
                         <text class="fulfilText">已完成</text>
                     </view>
                 </view>
-                <view class="item" bindtap="toDetails">
+                <view class="item shili" bindtap="toDetails">
                     <view class="itemName">公司实力</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{false}}" class="progressWrap">
@@ -97,7 +97,7 @@
                         <text class="fulfilText">已完成</text>
                     </view>
                 </view>
-                <view class="item" bindtap="toDetails">
+                <view class="item jieshao" bindtap="toDetails">
                     <view class="itemName">产品介绍</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{false}}" class="progressWrap">
@@ -111,7 +111,7 @@
                         <text class="fulfilText">已完成</text>
                     </view>
                 </view>
-                <view class="item" bindtap="toDetails">
+                <view class="item anli" bindtap="toDetails">
                     <view class="itemName">成功案例</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{false}}" class="progressWrap">
@@ -125,7 +125,7 @@
                         <text class="fulfilText">已完成</text>
                     </view>
                 </view>
-                <view class="item" bindtap="toDetails">
+                <view class="item liucheng" bindtap="toDetails">
                     <view class="itemName">合作流程</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{true}}" class="progressWrap">
@@ -139,7 +139,7 @@
                         <text class="fulfilText">已完成</text>
                     </view>
                 </view>
-                <view class="item" bindtap="toDetails">
+                <view class="item zhichi" bindtap="toDetails">
                     <view class="itemName">服务支持</view>
                     <view class="duration">时长3分钟</view>
                     <view tt:if="{{true}}" class="progressWrap">

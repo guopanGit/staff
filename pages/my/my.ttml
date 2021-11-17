@@ -7,14 +7,14 @@
         <view class="uesr" bindtap="islogin">
             <view class="uesrWrap">
                 <view class="uesrImg">
-                    <image tt:if="{{!avatarUrl}}" class="uesrImg" src="/image/Ellipse 38.png" mode="aspectFill" />
+                    <image tt:if="{{!avatarUrl}}" class="uesrImg" src="https://file.xiangmucanmou.com/image/touxiang.png" mode="aspectFill" />
                     <image tt:if="{{avatarUrl}}" class="uesrImg" src="{{avatarUrl}}" mode="aspectFill" />
                 </view>
                 <view class="uesrName">{{nickName}}</view>
             </view>
         </view>
         <view class="main">
-            <image class="join" src="/image/ruzhu.png" mode="aspectFill" bindtap="toDetails" data-val="1" />
+            <image class="join" src="https://file.xiangmucanmou.com/image/ruzhu.png" mode="aspectFill" bindtap="toDetails" data-val="1" />
         </view>
     </view>
 
